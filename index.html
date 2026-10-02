@@ -11,10 +11,14 @@
 header{padding:18px 16px 8px} h1{font-size:22px;letter-spacing:.14em;margin:0;font-weight:normal} h1 span{color:var(--leaf)}
 .sub{color:var(--dim);font-size:14px}
 main{padding:8px 16px 32px} a{color:inherit;text-decoration:none}
-.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.lane{display:block}
 .k{color:var(--leaf);font-size:12px;letter-spacing:.12em}
 .big{font-size:20px;margin:2px 0}
-.src{color:var(--dim);font-size:13px}
+.src{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:13px}
+.src a{display:inline-flex;align-items:center;min-height:32px;color:var(--dim);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.src .page{color:var(--leaf)}
+a:focus-visible{outline:2px solid var(--leaf);outline-offset:3px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -53,7 +57,7 @@ const LANES=[
 {n:"Code",w:"One file. Words, look, steps. A gap when you do not know.",u:"https://github.com/splashdown1/tru-code",p:"https://splashdown1.github.io/tru-code/"},
 {n:"AI",w:"Ask for the source. A gap stays a gap. The reply is not a witness.",u:"https://github.com/splashdown1/tru-ai",p:"https://splashdown1.github.io/tru-ai/"}
 ];
-document.getElementById("out").innerHTML=LANES.map(x=>`<a class="card" href="${x.u}"><div class="k">LANE</div><div class="big">${x.n}</div><div>${x.w}</div><div class="src">Repo ${x.u.replace("https://github.com/","")} \u00b7 page ${x.p}</div></a>`).join("")+`<article class="card"><div class="k">SPACE</div><div class="big">One account is enough</div><div>GitHub does not meter public repositories. A single file over 100 MB is the wall, not the number of lanes. Save each page to the phone and it works with the radio off.</div></article>`;
+document.getElementById("out").innerHTML=LANES.map(x=>`<article class="card"><a class="lane" href="${x.p}" aria-label="Open ${x.n} lane"><div class="k">LANE</div><div class="big">${x.n}</div><div>${x.w}</div></a><div class="src"><a href="${x.u}">Repository: ${x.u.replace("https://github.com/","")}</a><a class="page" href="${x.p}">Open ${x.n} lane →</a></div></article>`).join("")+`<article class="card"><div class="k">SPACE</div><div class="big">One account is enough</div><div>GitHub does not meter public repositories. A single file over 100 MB is the wall, not the number of lanes. Save each page to the phone and it works with the radio off.</div></article>`;
 </script>
 </body>
 </html>
