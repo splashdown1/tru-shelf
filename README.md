@@ -31,5 +31,6 @@ Door for the public offline lanes.
 - Watch — one awake, a relief, a challenge word
 - Load — heavy high and close, hip belt, rain doubles it
 - Code — one file, words, look, steps
+- AI — ask for the source, keep the gap, save what you checked
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
