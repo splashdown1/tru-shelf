@@ -15,5 +15,13 @@ Door for the public offline lanes.
 - Astro — constants and eclipse geometry
 - Carrington — 1 September 1859
 - Rack — data hall, and the file that does not need one
+- Clock — device local time and UTC
+- Build — order of work, square, brace
+- Wire — US neutral and ground colors
+- Drain — IPC slope, trap, vent
+- Fleet — a ship, a fleet, a harbor
+- Speak — fixed Pashto lines
+- Fire — FM 21-76 site, fuel ladder, dead out
+- Nav — direction plus distance, back azimuth
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
