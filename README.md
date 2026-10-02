@@ -28,5 +28,6 @@ Door for the public offline lanes.
 - Cold — clean, avoid overheating, loose layers, dry
 - Wash — hands, cat hole, latrine below the water
 - Blade — stone, oil, sheath
+- Watch — one awake, a relief, a challenge word
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
