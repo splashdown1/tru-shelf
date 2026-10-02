@@ -27,5 +27,6 @@ Door for the public offline lanes.
 - Ford — channels, upstream pole, 45-degree course
 - Cold — clean, avoid overheating, loose layers, dry
 - Wash — hands, cat hole, latrine below the water
+- Blade — stone, oil, sheath
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
