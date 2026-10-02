@@ -31,7 +31,10 @@ const LANES=[
 {n:"Cord",w:"Six knots that hold a load, a join, or a loop.",u:"https://github.com/splashdown1/tru-cord",p:"https://splashdown1.github.io/tru-cord/"},
 {n:"Wind",w:"Beaufort 0–12 from what you can see. Not a forecast.",u:"https://github.com/splashdown1/tru-wind",p:"https://splashdown1.github.io/tru-wind/"},
 {n:"Water",w:"Emergency disinfection. EPA doses only. Settle first.",u:"https://github.com/splashdown1/tru-water",p:"https://splashdown1.github.io/tru-water/"},
-{n:"Sky",w:"Polaris, moon phase, Orion. No planet positions.",u:"https://github.com/splashdown1/tru-sky",p:"https://splashdown1.github.io/tru-sky/"}
+{n:"Sky",w:"Polaris, moon phase, Orion. No planet positions.",u:"https://github.com/splashdown1/tru-sky",p:"https://splashdown1.github.io/tru-sky/"},
+{n:"Astro",w:"AU, light-year, seasons, eclipse geometry. No date.",u:"https://github.com/splashdown1/tru-astro",p:"https://splashdown1.github.io/tru-astro/"},
+{n:"Carrington",w:"1 September 1859. Flare, storm, telegraph. No modern toll.",u:"https://github.com/splashdown1/tru-carrington",p:"https://splashdown1.github.io/tru-carrington/"},
+{n:"Rack",w:"What a data hall is, and what a saved file still does.",u:"https://github.com/splashdown1/tru-rack",p:"https://splashdown1.github.io/tru-rack/"}
 ];
 document.getElementById("out").innerHTML=LANES.map(x=>`<a class="card" href="${x.u}"><div class="k">LANE</div><div class="big">${x.n}</div><div>${x.w}</div><div class="src">Repo ${x.u.replace("https://github.com/","")} · page ${x.p}</div></a>`).join("")+`<article class="card"><div class="k">SPACE</div><div class="big">One account is enough</div><div>GitHub does not meter public repositories. A single file over 100 MB is the wall, not the number of lanes. Save each page to the phone and it works with the radio off.</div></article>`;
 </script>
