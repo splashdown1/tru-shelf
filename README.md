@@ -12,5 +12,8 @@ Door for the public offline lanes.
 - Wind — Beaufort
 - Water — EPA emergency disinfection
 - Sky — Polaris and moon phase
+- Astro — constants and eclipse geometry
+- Carrington — 1 September 1859
+- Rack — data hall, and the file that does not need one
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
