@@ -25,5 +25,6 @@ Door for the public offline lanes.
 - Nav — direction plus distance, back azimuth
 - Shelter — site, size, poncho lean-to
 - Ford — channels, upstream pole, 45-degree course
+- Cold — clean, avoid overheating, loose layers, dry
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
