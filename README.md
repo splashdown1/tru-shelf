@@ -23,5 +23,6 @@ Door for the public offline lanes.
 - Speak — fixed Pashto lines
 - Fire — FM 21-76 site, fuel ladder, dead out
 - Nav — direction plus distance, back azimuth
+- Shelter — site, size, poncho lean-to
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.

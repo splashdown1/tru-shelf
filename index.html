@@ -42,7 +42,8 @@ const LANES=[
 {n:"Fleet",w:"A ship, a fleet, a harbor. Not bots.",u:"https://github.com/splashdown1/tru-fleet",p:"https://splashdown1.github.io/tru-fleet/"},
 {n:"Speak",w:"Fixed Pashto lines. Not a translator.",u:"https://github.com/splashdown1/tru-speak",p:"https://splashdown1.github.io/tru-speak/"},
 {n:"Fire",w:"FM 21-76 site, fuel ladder, dead out. No friction-fire recipe.",u:"https://github.com/splashdown1/tru-fire",p:"https://splashdown1.github.io/tru-fire/"},
-{n:"Nav",w:"Direction plus distance. Back azimuth. No guessed declination.",u:"https://github.com/splashdown1/tru-nav",p:"https://splashdown1.github.io/tru-nav/"}
+{n:"Nav",w:"Direction plus distance. Back azimuth. No guessed declination.",u:"https://github.com/splashdown1/tru-nav",p:"https://splashdown1.github.io/tru-nav/"},
+{n:"Shelter",w:"Site, size, poncho lean-to. No snow cave.",u:"https://github.com/splashdown1/tru-shelter",p:"https://splashdown1.github.io/tru-shelter/"}
 ];
 document.getElementById("out").innerHTML=LANES.map(x=>`<a class="card" href="${x.u}"><div class="k">LANE</div><div class="big">${x.n}</div><div>${x.w}</div><div class="src">Repo ${x.u.replace("https://github.com/","")} \u00b7 page ${x.p}</div></a>`).join("")+`<article class="card"><div class="k">SPACE</div><div class="big">One account is enough</div><div>GitHub does not meter public repositories. A single file over 100 MB is the wall, not the number of lanes. Save each page to the phone and it works with the radio off.</div></article>`;
 </script>
