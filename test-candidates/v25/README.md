@@ -2,8 +2,9 @@
 
 **Status:** Public versioned test candidate, not a canonical release. This adds only `test-candidates/v25/`; the Shelf homepage, Portal, Chair source and earlier releases are unchanged.
 
-**TRU Clock build timestamp:** `2026-10-03T13:44:52.194Z` (UTC ISO string from `new Date().toISOString()`). Conversation state continues to use Unix-millisecond `Date.now()` marks.
-**Local audit timestamp (TRU Clock):** `2026-10-03T13:58:12.033Z` (UTC ISO string).
+**TRU Clock build timestamp:** `2026-10-03T13:56:32.912Z` (UTC ISO string from `new Date().toISOString()`). Conversation state continues to use Unix-millisecond `Date.now()` marks.
+**Local audit timestamp (TRU Clock):** `2026-10-03T14:07:39.036Z` (UTC ISO string).
+**Public audit timestamp (TRU Clock):** `2026-10-03T14:07:39.036Z` (UTC ISO string).
 
 ## What changed
 
