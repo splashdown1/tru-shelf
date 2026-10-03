@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10140f">
+<title>TRU PORTAL</title>
+<style>
+:root{--bg:#10140f;--ink:#e7f0dc;--dim:#a8b89a;--line:#2c3824;--leaf:#c6d86a;--card:#1a2216}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,serif}
+header{padding:18px 16px 8px;display:flex;gap:12px;align-items:center} h1{font-size:22px;letter-spacing:.14em;margin:0;font-weight:normal} h1 span{color:var(--leaf)}
+.sub{color:var(--dim);font-size:14px;margin:4px 0 0}
+.mark{width:36px;height:36px;flex:none}
+main{padding:8px 16px 32px} a{color:inherit;text-decoration:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.k{color:var(--leaf);font-size:12px;letter-spacing:.12em} .big{font-size:20px;margin:2px 0}
+.src{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:13px}
+.src a{color:var(--leaf);text-decoration:underline;text-underline-offset:3px}
+</style>
+</head>
+<body>
+<header>
+<svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0d0a06"/><path d="M15 6h2v4h4v2h-4v14h-2V12h-4v-2h4z" fill="#e8c96a"/></svg>
+<div><h1>TRU <span>PORTAL</span></h1><p class="sub">New tab. The ship you opened stays. This page does not replace it.</p></div>
+</header>
+<main id="out"></main>
+<script>
+const LANES=[
+{n:"Reader v23",w:"The working reader. Listen is not packed. Not a rewrite of v21.",u:"https://github.com/splashdown1/tru-shelf/blob/main/test-candidates/v23/TRU-v23.html",p:"https://splashdown1.github.io/tru-shelf/test-candidates/v23/TRU-v23.html"},
+{n:"Canonbound",w:"The Word. KJV, offline, canon-bound.",u:"https://github.com/splashdown1/tru-canonbound",p:"https://splashdown1.github.io/tru-canonbound/"},
+{n:"Lifeline",w:"Body. FM 21-76 Survival 1970 and FM 21-11 First Aid 1976.",u:"https://github.com/splashdown1/tru-lifeline",p:"https://splashdown1.github.io/tru-lifeline/"},
+{n:"Signal",w:"Be found. Distress, phonetic, Morse, ground-to-air panels.",u:"https://github.com/splashdown1/tru-signal",p:"https://splashdown1.github.io/tru-signal/"},
+{n:"Pantry",w:"Food that keeps. USDA process times and altitude only.",u:"https://github.com/splashdown1/tru-pantry",p:"https://splashdown1.github.io/tru-pantry/"},
+{n:"Mark",w:"Find north, pace a distance, read a scale.",u:"https://github.com/splashdown1/tru-mark",p:"https://splashdown1.github.io/tru-mark/"},
+{n:"Measure",w:"Units, kitchen, temperature, time. Arithmetic only.",u:"https://github.com/splashdown1/tru-measure",p:"https://splashdown1.github.io/tru-measure/"},
+{n:"Cord",w:"Six knots that hold a load, a join, or a loop.",u:"https://github.com/splashdown1/tru-cord",p:"https://splashdown1.github.io/tru-cord/"},
+{n:"Wind",w:"Beaufort 0\u201312 from what you can see. Not a forecast.",u:"https://github.com/splashdown1/tru-wind",p:"https://splashdown1.github.io/tru-wind/"},
+{n:"Water",w:"Emergency disinfection. EPA doses only. Settle first.",u:"https://github.com/splashdown1/tru-water",p:"https://splashdown1.github.io/tru-water/"},
+{n:"Sky",w:"Polaris, moon phase, Orion. No planet positions.",u:"https://github.com/splashdown1/tru-sky",p:"https://splashdown1.github.io/tru-sky/"},
+{n:"Astro",w:"AU, light-year, seasons, eclipse geometry. No date.",u:"https://github.com/splashdown1/tru-astro",p:"https://splashdown1.github.io/tru-astro/"},
+{n:"Carrington",w:"1 September 1859. Flare, storm, telegraph. No modern toll.",u:"https://github.com/splashdown1/tru-carrington",p:"https://splashdown1.github.io/tru-carrington/"},
+{n:"Rack",w:"What a data hall is, and what a saved file still does.",u:"https://github.com/splashdown1/tru-rack",p:"https://splashdown1.github.io/tru-rack/"},
+{n:"Clock",w:"Device local time and UTC. The face the other lanes share.",u:"https://github.com/splashdown1/tru-clock",p:"https://splashdown1.github.io/tru-clock/"},
+{n:"Build",w:"Order of work, square, brace. No span table.",u:"https://github.com/splashdown1/tru-build",p:"https://splashdown1.github.io/tru-build/"},
+{n:"Wire",w:"US neutral and ground colors. Shut off. No breaker size.",u:"https://github.com/splashdown1/tru-wire",p:"https://splashdown1.github.io/tru-wire/"},
+{n:"Drain",w:"IPC slope, trap, vent. Sewage downhill. No septic size.",u:"https://github.com/splashdown1/tru-drain",p:"https://splashdown1.github.io/tru-drain/"},
+{n:"Fleet",w:"A ship, a fleet, a harbor. Not bots.",u:"https://github.com/splashdown1/tru-fleet",p:"https://splashdown1.github.io/tru-fleet/"},
+{n:"Speaks",w:"Reads a packed line aloud. Does not listen.",u:"https://github.com/splashdown1/tru-speaks",p:"https://splashdown1.github.io/tru-speaks/"},
+{n:"Speak",w:"Fixed Pashto lines. Not a translator.",u:"https://github.com/splashdown1/tru-speak",p:"https://splashdown1.github.io/tru-speak/"},
+{n:"Fire",w:"FM 21-76 site, fuel ladder, dead out. No friction-fire recipe.",u:"https://github.com/splashdown1/tru-fire",p:"https://splashdown1.github.io/tru-fire/"},
+{n:"Nav",w:"Direction plus distance. Back azimuth. No guessed declination.",u:"https://github.com/splashdown1/tru-nav",p:"https://splashdown1.github.io/tru-nav/"},
+{n:"Shelter",w:"Site, size, poncho lean-to. No snow cave.",u:"https://github.com/splashdown1/tru-shelter",p:"https://splashdown1.github.io/tru-shelter/"},
+{n:"Ford",w:"Channels, upstream pole, 45-degree course. No raft.",u:"https://github.com/splashdown1/tru-ford",p:"https://splashdown1.github.io/tru-ford/"},
+{n:"Cold",w:"Clean, avoid overheating, loose layers, dry. No treatment.",u:"https://github.com/splashdown1/tru-cold",p:"https://splashdown1.github.io/tru-cold/"},
+{n:"Wash",w:"Hands, cat hole, latrine below the water. No soap formula.",u:"https://github.com/splashdown1/tru-wash",p:"https://splashdown1.github.io/tru-wash/"},
+{n:"Blade",w:"Stone, oil, sheath. No steel recipe.",u:"https://github.com/splashdown1/tru-blade",p:"https://splashdown1.github.io/tru-blade/"},
+{n:"Watch",w:"One awake, a relief, a challenge word. Not a sentry manual.",u:"https://github.com/splashdown1/tru-watch",p:"https://splashdown1.github.io/tru-watch/"},
+{n:"Load",w:"Heavy high and close. Hip belt. Rain can double it. No pound table.",u:"https://github.com/splashdown1/tru-load",p:"https://splashdown1.github.io/tru-load/"},
+{n:"Code",w:"One file. Words, look, steps. A gap when you do not know.",u:"https://github.com/splashdown1/tru-code",p:"https://splashdown1.github.io/tru-code/"},
+{n:"AI",w:"Ask for the source. A gap stays a gap. The reply is not a witness.",u:"https://github.com/splashdown1/tru-ai",p:"https://splashdown1.github.io/tru-ai/"},
+{n:"Radio",w:"On, it can read the ships. Off, it cannot.",u:"https://github.com/splashdown1/tru-radio",p:"https://splashdown1.github.io/tru-radio/"},
+{n:"Harbor",w:"Reads the public ships. Needs the radio. Not a lane.",u:"https://github.com/splashdown1/tru-harbor",p:"https://splashdown1.github.io/tru-harbor/"},
+{n:"Join",w:"A folder, not a fusion. Talk, reason, law. No spirit vector.",u:"https://github.com/splashdown1/tru-join",p:"https://splashdown1.github.io/tru-join/"},
+{n:"Door",w:"Points the ask at the ship that holds the card. A miss is a gap.",u:"https://github.com/splashdown1/tru-door",p:"https://splashdown1.github.io/tru-door/"},
+{n:"Rules",w:"The lane law. One file. A gap stays a gap.",u:"https://github.com/splashdown1/tru-rules",p:"https://splashdown1.github.io/tru-rules/"},
+{n:"Place",w:"Type a packed city. Get the coordinate. Not a map.",u:"https://github.com/splashdown1/tru-place",p:"https://splashdown1.github.io/tru-place/"},
+{n:"Sun",w:"Remaining light from a clear horizon. Not a clock.",u:"https://github.com/splashdown1/tru-sun",p:"https://splashdown1.github.io/tru-sun/"},
+{n:"Salt",w:"Draws water out. Seawater is not a drink. No cure schedule.",u:"https://github.com/splashdown1/tru-salt",p:"https://splashdown1.github.io/tru-salt/"},
+{n:"Quiet",w:"Light, sound, smoke. What gives you away. Not a sentry manual.",u:"https://github.com/splashdown1/tru-quiet",p:"https://splashdown1.github.io/tru-quiet/"},
+{n:"Fish",w:"Where they hold, bait, line. No poison.",u:"https://github.com/splashdown1/tru-fish",p:"https://splashdown1.github.io/tru-fish/"}
+];
+document.getElementById("out").innerHTML=LANES.map(x=>`<article class="card"><div class="k">DOOR</div><div class="big">${x.n}</div><div>${x.w}</div><div class="src"><a href="${x.p}" target="_blank" rel="noopener">Open in a new tab</a><a href="${x.u}" target="_blank" rel="noopener">Repository</a></div></article>`).join("")+`<article class="card"><div class="k">MARK</div><div class="big">Forward only</div><div>The old shelf and the old files were not changed. This portal is a copy of the table. A tap opens beside it.</div></article>`;
+</script>
+</body>
+</html>
