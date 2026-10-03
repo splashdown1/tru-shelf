@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10140f">
+<title>TRU v24 — Test Candidate</title>
+<style>
+:root{color-scheme:dark;--bg:#10140f;--panel:#1a2216;--line:#34412b;--ink:#edf2e6;--muted:#b4c1a7;--accent:#d1e276}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#26331f 0,#10140f 62%);color:var(--ink);font:16px/1.55 system-ui,sans-serif}main{max-width:760px;margin:0 auto;padding:clamp(24px,7vw,64px) 20px 72px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.16em;text-transform:uppercase}h1{font-family:Georgia,serif;font-size:clamp(34px,8vw,58px);line-height:1.04;font-weight:400;margin:.35em 0}.lede{color:var(--muted);max-width:58ch}.card{background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:18px;padding:22px;margin:24px 0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:999px;font-weight:650;text-decoration:none}a.button{color:#10140f;background:var(--accent)}a.secondary{color:var(--ink);background:transparent;border:1px solid var(--line)}code{overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Public test build · v24 · 2026-10-03T12:24:22.884Z</div>
+<h1>TRU</h1>
+<p class="lede">A versioned candidate for hands-on testing. The self-contained HTML runs offline after it loads. Definitions are concise; word studies keep the deeper material.</p>
+<section class="card">
+<h2>Open the candidate</h2>
+<p>The app is about 35 MB, so allow a moment for it to load.</p>
+<div class="actions">
+<a class="button" href="TRU-v24.html">Open TRU v24</a>
+<a class="button secondary" href="TRU-v24.html" download>Download the HTML file</a>
+</div>
+</section>
+<section class="card">
+<h2>What to test</h2>
+<ul>
+<li><code>define love</code> versus <code>word study love</code></li>
+<li><code>define English</code> and <code>word study English</code> should not guess at a Strong’s entry</li>
+<li><code>define math</code> should not suggest H4962; explicit <code>Strong’s H4962</code> remains available</li>
+<li>Voice status should match the voices actually exposed by your device</li>
+<li>Voice input is not packed; type the ask</li>
+</ul>
+</section>
+<section class="card">
+<strong>File size</strong> 35,032,318 bytes<br>
+<strong>SHA-256</strong> <code>3b083d444589a6158601302f4ef839f3cc896ae27d98954f21e2484d2d92162c</code><br>
+<strong>TRU Clock timestamp</strong> <code>2026-10-03T12:24:22.884Z</code><br>
+<strong>Status</strong> Test candidate, not a canonical release
+</section>
+<footer>Hosted under a new versioned path on TRU Shelf. The Shelf homepage and existing lanes are unchanged. <a href="README.md">Build notes</a>.</footer>
+</main>
+</body>
+</html>
