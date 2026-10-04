@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v34 audit</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,sans-serif;color:#203740;background:#f4f8fa}body{max-width:850px;margin:40px auto;padding:0 20px}h1,h2{line-height:1.2}section{background:white;border:1px solid #c5d5da;border-radius:12px;padding:20px;margin:16px 0}code{overflow-wrap:anywhere}a{color:#00589a}.ok{color:#204f36}
+</style>
+</head>
+<body>
+<h1>TRU v34 audit</h1>
+<p>Human-test candidate for the light/dark display toggle, contrast, control separation and control descriptions.</p>
+<section><h2>Change set</h2><ul><li>Dark mode remains the default; a LIGHT/DARK toggle changes theme and persists the choice locally.</li><li>Light mode uses darker text across ready state, cards, metadata and controls. The audited text-pair contrast minimum is 6.07:1.</li><li>Chair and TRU Portal are separated on desktop and moved into a dedicated header row on narrow screens.</li><li>Chair and Portal have descriptive accessible names; the existing controls retain their behavior.</li><li>Portal identifies the app as v34.</li></ul></section>
+<section><h2>Verification</h2><ul class="ok"><li>Deterministic v34 build from the pinned v33 artifact; exact source hash recorded in README.md.</li><li>Byte-level verifier confirms no other app bytes changed outside the build stamp and v34 display/control patch.</li><li>Contrast verifier: minimum 6.07:1 for checked text/background pairs.</li><li>Local browser checks: saved theme survives reload; Chair and Portal open; desktop and phone-width controls do not overlap; no browser errors.</li><li>Public Pages verification is recorded after deployment.</li></ul></section>
+<section><h2>Limits</h2><p>Local smoke tests are not user acceptance. This candidate does not alter TRU knowledge or its underlying data. It remains an artifact-based candidate and does not resolve the missing matching v17 modular source tree.</p><p>Parent v33: <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v33/">versioned preview</a>.</p></section>
+</body>
+</html>
