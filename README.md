@@ -2,6 +2,15 @@
 
 Door for the public offline lanes.
 
+Open the page: https://splashdown1.github.io/tru-shelf/
+
+Two engines sit above the cards:
+
+- Canonbound — scripture. https://github.com/splashdown1/tru-canonbound
+- Lifeline — survival and first aid. https://github.com/splashdown1/tru-lifeline
+
+## Lanes
+
 - Canonbound — scripture
 - Lifeline — survival and first aid
 - Signal — distress and codes
@@ -20,6 +29,7 @@ Door for the public offline lanes.
 - Wire — US neutral and ground colors
 - Drain — IPC slope, trap, vent
 - Fleet — a ship, a fleet, a harbor
+- Speaks — reads a packed line aloud. Does not listen.
 - Speak — fixed Pashto lines
 - Fire — FM 21-76 site, fuel ladder, dead out
 - Nav — direction plus distance, back azimuth
@@ -32,6 +42,22 @@ Door for the public offline lanes.
 - Load — heavy high and close, hip belt, rain doubles it
 - Code — one file, words, look, steps
 - AI — ask for the source, keep the gap, save what you checked
+- Place — type a packed city, get the coordinate. Not a map.
+- Sun — remaining light from a clear horizon. Not a clock.
+- Salt — draws water out. Seawater is not a drink. No cure schedule.
+- Quiet — light, sound, smoke. What gives you away. Not a sentry manual.
 - Fish — where they hold, bait, line
+
+## Not lanes
+
+These ships are public. They are not cards.
+
+- Rules — the lane law. One file. A gap stays a gap. https://github.com/splashdown1/tru-rules
+- Door — points the ask at the ship that holds the card. A miss is a gap. https://github.com/splashdown1/tru-door
+- Join — a folder, not a fusion. https://github.com/splashdown1/tru-join
+- Radio — on, it can read the ships. Off, it cannot. https://github.com/splashdown1/tru-radio
+- Harbor — reads the public ships. Needs the radio. Not a lane. https://github.com/splashdown1/tru-harbor
+- Rival — the one that governs. Not a lane. Not on the shelf. https://github.com/splashdown1/tru-rival
+- Sight — pinned 2 October 2026. Not built. No camera ship yet. https://github.com/splashdown1/tru-sight
 
 One account holds this. GitHub does not charge public repositories by count. The wall is a single file over 100 MB, not the number of lanes.
