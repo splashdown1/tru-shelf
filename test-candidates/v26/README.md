@@ -1,6 +1,6 @@
 # TRU v26 test candidate
 
-**Status:** Public, versioned test candidate; not a canonical release. It supersedes v25 for testing the merged query and lexicon corrections. The Shelf homepage, Portal, Chair source and canonical releases are unchanged.
+**Status:** Historical public versioned test candidate; v27 is the current candidate for testing the lexicon source corrections. v26 is not a canonical release. The Shelf homepage, Portal, Chair source and canonical releases are unchanged.
 
 **TRU Clock build timestamp:** `2026-10-03T21:26:21.659Z` (UTC ISO string from `new Date().toISOString()`). Conversation-state timestamps remain Unix milliseconds from `Date.now()`.
 **TRU Clock audit timestamp:** `2026-10-03T21:28:12.946Z` (UTC ISO string from `new Date().toISOString()`).
