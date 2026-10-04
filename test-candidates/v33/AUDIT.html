@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v33 audit — forgiveness quotations</title>
+<style>
+:root{color-scheme:dark;font:16px/1.6 system-ui,sans-serif;background:#0b1017;color:#edf3f8}body{max-width:900px;margin:0 auto;padding:36px 22px}h1,h2{line-height:1.2}h1{color:#d7b74d}h2{margin-top:2rem;color:#8fdcf1}a{color:#8fdcf1}code{background:#17212a;padding:.15rem .35rem;border-radius:4px}.card{border:1px solid #33434d;border-radius:10px;padding:18px;margin:16px 0}.ok{color:#a3e6bd}.muted{color:#aab7c1}li{margin:.45rem 0}
+</style>
+</head>
+<body>
+<h1>TRU v33 — forgiveness quotations audit</h1>
+<p><strong>Status:</strong> Versioned public human-test candidate; not canonical.</p>
+<p><a href="./">Open v33</a> · <a href="./TRU-v33.html">Direct app file</a></p>
+<section class="card">
+<h2>Why this change</h2>
+<p>The user's earlier <code>thoughts about forgiveness</code> query returned a GAP. The requested fix is a focused card of Jesus' recorded words on forgiveness, not an AI-generated doctrinal answer.</p>
+<p>v33 adds a direct response for forgiveness prompts and appends the same card to <code>word study forgiveness</code>. Existing lexicon, topical, dictionary and deep-entry results remain in place.</p>
+</section>
+<section class="card">
+<h2>Quotation set</h2>
+<p>Ten selected KJV quotations or excerpts from six passages marked in the bundled red-letter index:</p>
+<ul><li>Matthew 6:14–15</li><li>Matthew 18:22</li><li>Mark 11:25</li><li>Luke 17:3–4</li><li>Luke 23:34</li><li>Luke 7:47–48, 50</li></ul>
+<p>Each displayed line is read from the bundled KJV by reference. Luke 23:34 is a direct speech-only excerpt (“Father, forgive them; for they know not what they do.”), excluding the narrator's clause. The card adds no paraphrase. The displayed citations are clickable and open the corresponding local verse.</p>
+</section>
+<section class="card">
+<h2>Verification</h2>
+<ul class="ok"><li>Deterministic v33 build pinned to v32 SHA-256 <code>3e7f30d68f5720855164a508c6ae40beb7fa292b89ad81ff19deed7ea51d7da7</code>.</li><li>All ten references exist in the local KJV payload and are marked in the local red-letter index.</li><li>The red-letter query adapter now reads the nested book/chapter/verse map; direct forgiveness prompts, word-study integration, attribution, the Luke excerpt and no-paraphrase note are checked by <code>verify_v33.py</code>.</li><li>Local browser smoke tests confirmed the abbreviated forgiveness prompt, word-study merge, general red-letter mercy query, unrelated GAP, and clickable Matthew 6:14 citation.</li></ul>
+<p>App size: <code>35,441,403 bytes</code>. SHA-256: <code>84ad555375198d16588d9bec28ae2c3ff4140f205f620a5521f256a8698e2f08</code>.</p>
+</section>
+<section class="card muted">
+<h2>Limit</h2>
+<p>This scoped addition answers forgiveness prompts only. It does not fill the broader knowledge lane or change the missing v17 modular-source lineage.</p>
+</section>
+</body>
+</html>
