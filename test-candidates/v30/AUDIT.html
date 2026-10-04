@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRU v30 — audit</title>
+<style>
+:root{color-scheme:dark;--bg:#071012;--panel:#0d1b1e;--line:#24515a;--text:#e5f3f2;--muted:#a3bdc0;--accent:#37d9e6;--good:#9de1ad;--warn:#f1d18b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#12353b 0,transparent 36%),var(--bg);color:var(--text);font:16px/1.55 system-ui,sans-serif}.wrap{max-width:900px;margin:auto;padding:40px 22px 64px}header,.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;margin:18px 0}h1,h2{line-height:1.2}h1{color:var(--accent);margin:.2rem 0}h2{font-size:1.15rem;margin-top:0}p,li{color:var(--muted)}strong{color:var(--text)}code{color:#d4f5f3;background:#102529;padding:.12rem .3rem;border-radius:4px;overflow-wrap:anywhere}.pill{display:inline-block;padding:.2rem .6rem;border:1px solid var(--good);border-radius:99px;color:var(--good);font-size:.82rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border:1px solid var(--line);border-radius:10px;padding:14px}a{color:var(--accent)}table{width:100%;border-collapse:collapse}th,td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}th{color:var(--text)}@media(max-width:650px){.grid{grid-template-columns:1fr}table{font-size:.9rem}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header><span class="pill">HUMAN TEST CANDIDATE · v30</span><h1>Source-note audit</h1><p>New, versioned candidate derived byte-for-byte from the v29 test artifact, with a narrow Euclid source-disclosure correction and formatted MATH card rendering.</p><p><a href="./TRU-v30.html">Open TRU v30</a></p></header>
+<section class="panel"><h2>Finding</h2><p>The v29 pack provenance claimed figure-letter references were omitted from Euclid definitions when they referred to printed diagrams. That is too broad: the v29 supplement definition preserves letter labels, while other quoted definitions omit examples that appear in Casey's source. v30 now discloses the mixed treatment rather than rewriting quotations.</p><p>Primary source: <a href="https://www.gutenberg.org/cache/epub/21076/pg21076-images.html">Project Gutenberg eBook 21076, Book I</a>.</p></section>
+<section class="panel"><h2>Cross-checks</h2><table><thead><tr><th>Passage</th><th>Casey source</th><th>App excerpt</th><th>Result</th></tr></thead><tbody>
+<tr><td>Definition XIII, supplements</td><td>Includes <code>BAC</code>, <code>CAD</code>, <code>BA</code>, and <code>AD</code>.</td><td>Retains those labels.</td><td>Confirmed in source.</td></tr>
+<tr><td>Definitions XXXIII–XXXIV, radius/diameter</td><td>Includes examples <code>CD</code> and <code>AB</code>.</td><td>Omits the examples.</td><td>Disclosure corrected.</td></tr>
+<tr><td>Axiom XII</td><td>Includes <code>(AB, CD)</code>, <code>(AC)</code>, and <code>(BAC, ACD)</code>.</td><td>Omits the parenthetical figure labels.</td><td>Disclosure corrected.</td></tr>
+</tbody></table><p>The printed diagrams are not bundled with the app; the cited primary text remains the reference for full context.</p></section>
+<section class="panel"><h2>Change boundary</h2><ul><li>Corrected the math-pack provenance and added a visible note to Euclid MATH cards.</li><li>Enabled the existing safe, escaped HTML-card rendering path; the old MATH response showed its <code>&lt;div&gt;</code> tags as literal text.</li><li>Kept all 44 entries, 172 title keys, entry quotations, and unrelated app data unchanged.</li><li>Updated the embedded build stamp for v30.</li></ul></section>
+<section class="panel"><h2>Build identity</h2><div class="grid"><div class="box"><strong>Parent v29 SHA-256</strong><p><code>d5db2b284e373fe6d6c364c337b1e6c7125d67dbec2bd9487e8cf6988e119f83</code></p></div><div class="box"><strong>v30 SHA-256</strong><p><code>df6fcf9f8756a77ba6b5971b49a3ac1ccf0218caea4399ee3468dcd5df4f9c42</code></p></div></div><p>Size: 35,435,836 bytes. Deterministic artifact-based build; no claim that the unavailable v17 modular source has been recovered.</p></section>
+<section class="panel"><h2>Human test checklist</h2><ol><li>Run <code>math: supplements</code>, <code>math: radius</code>, and <code>math: axioms</code>; confirm the source note reads normally and no markup is exposed.</li><li>Check <code>john 3:16</code> and <code>2+2</code> still use their expected routes.</li><li>Check a colliding math/Strong's term such as <code>math: circle</code>; retain the explicit-prefix limitation in mind.</li></ol><p>v30 remains a test candidate, not a canonical release.</p></section>
+</main>
+</body>
+</html>
