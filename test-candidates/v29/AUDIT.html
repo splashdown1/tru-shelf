@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10140f">
+<title>TRU v29 audit record</title>
+<style>
+:root{--bg:#10140f;--ink:#e7f0dc;--dim:#a8b89a;--line:#2c3824;--leaf:#c6d86a;--card:#1a2216;--warn:#e8c96a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 Georgia,serif}
+header,main{padding:16px}
+h1{font-size:22px;letter-spacing:.08em;font-weight:normal;margin:0}
+h1 span{color:var(--leaf)}
+h2{font-size:16px;letter-spacing:.08em;color:var(--leaf);font-weight:normal;margin:18px 0 8px}
+.sub{color:var(--dim);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+code,a{color:var(--leaf)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{text-align:left;vertical-align:top;border-top:1px solid var(--line);padding:6px 4px}
+th{color:var(--dim);font-weight:normal}
+.warn{color:var(--warn)}
+ul{margin:6px 0 0;padding-left:18px}
+</style>
+</head>
+<body>
+<header>
+<h1>TRU <span>v29</span> record</h1>
+<p class="sub">Audit of the v28 push, then the local next build. Posterity page. Not a lane. Not canonical.</p>
+</header>
+<main>
+<article class="card">
+<div class="k">PARENT</div>
+<p>Commit <code>22bbea2f</code> on splashdown1/tru-shelf, 2026-10-04 02:03 UTC. “Add TRU v28 math-canon lane candidate.” SHA-256 <code>cd22b3b57c4782ca6a2ce9436d992809ea37cdfee70f9331e0d15f48229a4318</code>. Matches the README. Clock <code>2026-10-04T02:02:28.010Z</code>.</p>
+<p><a href="https://splashdown1.github.io/tru-shelf/test-candidates/v28/">v28 preview</a> · <a href="https://github.com/splashdown1/tru-shelf/commit/22bbea2ff577850498d7b7cdae1964afb3a0f470">commit</a></p>
+</article>
+<article class="card">
+<h2>WHAT v28 HOLDS</h2>
+<ul>
+<li>New <code>math-data</code> slot. 44 entries, 172 exact titles. Ray 1880 (24) and Casey’s Euclid I, 1885 (20). Quoted, cited, public domain.</li>
+<li>No external script or URL. Zero network at runtime, same as v27.</li>
+<li>Scripture still wins bare and <code>define</code> forms when Strong’s has an exact hit: circle, square, point, line, division, addition, angle, plane, faith.</li>
+<li>Calculator still answers <code>12 times 12</code> and <code>45% of 100</code> because those strings are not titles.</li>
+<li>G4102 defect from v27 was carried, not fixed.</li>
+</ul>
+</article>
+<article class="card">
+<h2>REROUTE AND FIX</h2>
+<table>
+<tr><th>Item</th><th>v28</th><th>v29</th></tr>
+<tr><td><code>math:</code> prefix</td><td class="warn">Claimed to force MATH. <code>explicit</code> was set and never used. Strong’s still won.</td><td>Prefix forces the card.</td></tr>
+<tr><td>Bare <code>math</code></td><td class="warn">Title index maps it to Ray. H4962 is not an English hit, so the lane stole it. README said the opposite.</td><td>Bare <code>math</code> / <code>maths</code> stay off the lane. <code>define mathematics</code> and <code>math: math</code> still open Ray.</td></tr>
+<tr><td>Route order</td><td class="warn">MATH ran before commands and before the calculator.</td><td>MATH runs after the calculator.</td></tr>
+<tr><td>G4102 count</td><td class="warn">242 packed, README said 244. Missing believe (with G1537) and them that believe.</td><td>Line matches Blue Letter Bible 244.</td></tr>
+<tr><td>Usage on the seven</td><td class="warn">Abridged outline sold as a Thayer quote. G4102 drops fidelity.</td><td>Marked “Abridged outline.” Not expanded.</td></tr>
+<tr><td>G1680 root</td><td class="warn">Empty while <code>def</code> names ἔλπω.</td><td>Filled from that Strong’s line.</td></tr>
+<tr><td>Prime</td><td>Ray Art. 91 lists 1 as prime. Quote is faithful. Modern definition is not.</td><td>Quote kept. Source note added on the card.</td></tr>
+<tr><td>Pack count</td><td class="warn">README says 30 and “6+6”. File has 44.</td><td>Recorded. Entries not deleted.</td></tr>
+<tr><td>Figure letters</td><td class="warn">README says kept. Pack provenance says omitted.</td><td>Open. Quotes not rewritten.</td></tr>
+</table>
+</article>
+<article class="card">
+<h2>v29 ARTIFACT</h2>
+<p>Clock <code>2026-10-04T02:20:00.000Z</code>. SHA-256 <code>d5db2b284e373fe6d6c364c337b1e6c7125d67dbec2bd9487e8cf6988e119f83</code>. 35,435,236 bytes.</p>
+<p><a href="TRU-v29.html">Open TRU-v29.html</a> · same bytes as <a href="index.html">index.html</a></p>
+</article>
+<article class="card">
+<h2>TEST THESE</h2>
+<ul>
+<li><code>math: circle</code> → Euclid, not Strong’s.</li>
+<li><code>define circle</code> → Strong’s still.</li>
+<li><code>math</code> → not Ray. <code>define mathematics</code> → Ray Art. 6–8.</li>
+<li><code>prime number</code> → Ray, plus the note that 1 is his prime and not the modern one.</li>
+<li><code>12 times 12</code>, <code>45% of 100</code> → CALC.</li>
+<li><code>strongs g4102</code> → count line sums to 244.</li>
+<li><code>calculus</code> → gap.</li>
+<li><code>john 3:16</code> → scripture.</li>
+</ul>
+</article>
+</main>
+</body>
+</html>
