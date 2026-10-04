@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v31 · routing audit</title>
+<style>
+:root{color-scheme:dark;--bg:#081019;--panel:#101c27;--line:#294054;--text:#edf4f6;--muted:#a7bac4;--accent:#79d7c5;--gold:#e6c96e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#163044 0,var(--bg) 55%);color:var(--text);font:16px/1.65 system-ui,sans-serif}main{max-width:960px;margin:auto;padding:48px 22px 72px}h1,h2{line-height:1.2}h1{font-size:clamp(2rem,6vw,3.4rem);margin:.2em 0}h2{font-size:1.3rem;margin:0 0 .6em}p,li{color:var(--muted)}a{color:var(--accent)}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:26px 0}.card,section{background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:16px;padding:20px}.card strong{display:block;color:var(--text);font-size:1.2rem}.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:4px 11px;color:var(--accent);font-size:.82rem;margin:0 5px 5px 0}code{color:#fff;background:#172735;border-radius:5px;padding:.1em .35em}.checks li{margin:.65em 0}.hash{overflow-wrap:anywhere;font-size:.86rem}.note{border-left:3px solid var(--gold);padding-left:14px}
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">TRU · offline Bible study</p>
+<h1>v31 routing audit</h1>
+<p>Public, versioned human-test candidate. The release corrects one routing failure found in v30 testing: unqualified <code>math</code> was mistaken for Strong’s H4962.</p>
+<div class="grid">
+<div class="card"><span class="eyebrow">Preview</span><strong><a href="./">Open v31</a></strong><p>Use this for the human test; no install required.</p></div>
+<div class="card"><span class="eyebrow">Artifact</span><strong>35,436,254 bytes</strong><p class="hash">SHA-256<br><code>bd16405f63035b06483eb259c11f43cfdf2f295104bc4d7b4362e8d883cab190</code></p></div>
+<div class="card"><span class="eyebrow">Lineage</span><strong>v30 → v31</strong><p>Exact pinned patch; embedded JSON data and all 44 math entries / 172 title keys are unchanged.</p></div>
+</div>
+<section>
+<h2>What changed</h2>
+<p>A narrow query guard now routes unqualified <code>math</code>, <code>maths</code>, and common question forms to a concise scope reply: general mathematics is outside TRU’s offline Bible sources. It no longer offers the unrelated H4962 lexicon entry as a suggestion.</p>
+<p>Explicit <code>Strong’s H4962</code>, <code>math: circle</code>, and <code>define mathematics</code> continue to their existing entries. The v30 Euclid source-disclosure note and all embedded data remain untouched.</p>
+<p class="note">The matching modular source tree for canonical v17 SUPER is still missing. This candidate is honestly labelled as a deterministic artifact-level patch from v30, not a rebuild from that source tree.</p>
+</section>
+<section style="margin-top:14px">
+<h2>Five human checks</h2>
+<ol class="checks">
+<li><code>math</code> → general-mathematics scope reply; no Strong’s result or H4962 suggestion.</li>
+<li><code>tell me about math</code> → same scope reply.</li>
+<li><code>math: circle</code> → Euclid MATH card, with the v30 source note.</li>
+<li><code>define mathematics</code> → existing Math canon entry.</li>
+<li><code>Strong’s H4962</code> → explicit Hebrew lexicon entry.</li>
+</ol>
+<p>Unqualified collisions such as <code>circle</code> remain Bible-first; use <code>math:</code> to force the Math canon.</p>
+</section>
+<p style="margin-top:26px"><span class="pill">PUBLIC TEST</span><span class="pill">NOT CANONICAL</span><span class="pill">OFFLINE DATA</span></p>
+</main>
+</body>
+</html>
