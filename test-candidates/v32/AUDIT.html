@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v32 audit</title>
+<style>
+:root{color-scheme:light dark;font:16px/1.55 system-ui,sans-serif}body{max-width:900px;margin:3rem auto;padding:0 1.2rem}h1,h2{line-height:1.2}section{border:1px solid #8886;border-radius:12px;padding:1rem 1.2rem;margin:1rem 0}code{overflow-wrap:anywhere}.pass{color:#34d399}
+</style>
+</head>
+<body>
+<main>
+<h1>TRU v32 — routing audit</h1>
+<p>This version addresses the user-reported v31 result where bare <code>math</code> returned a TRU_CORE scope message instead of the available Math canon entry.</p>
+<section>
+<h2>Change</h2>
+<p>Unqualified <code>math</code>, <code>maths</code>, and supported phrasing such as <code>define math</code> now resolve to <em>Mathematics</em> in the MATH lane. The generic terms bypass the exact-Strong’s collision check, preventing the unrelated H4962 entry from winning. Explicit Strong’s lookup remains available; plain <code>circle</code> still favours the Bible lexicon, while <code>math: circle</code> forces the Euclid MATH entry.</p>
+</section>
+<section>
+<h2>Verification</h2>
+<ul>
+<li class="pass">Pinned v31 parent SHA-256: <code>bd16405f63035b06483eb259c11f43cfdf2f295104bc4d7b4362e8d883cab190</code>.</li>
+<li class="pass">All embedded JSON data is unchanged: 44 Math entries and 172 title keys.</li>
+<li class="pass">Local browser smoke: <code>math</code>, <code>tell me about math</code>, <code>maths</code>, <code>define math</code>, and <code>define mathematics</code> render the Mathematics card.</li>
+<li class="pass">Local browser smoke: <code>math: circle</code> renders the Euclid MATH card; plain <code>circle</code> remains H2329; <code>Strong's H4962</code> remains directly available.</li>
+<li class="pass">No browser errors observed during the smoke test.</li>
+</ul>
+</section>
+<section>
+<h2>Build</h2>
+<p>35,435,806 bytes. SHA-256: <code>3e7f30d68f5720855164a508c6ae40beb7fa292b89ad81ff19deed7ea51d7da7</code>. Deterministic patch script and verifier: <code>build_v32.py</code> and <code>verify_v32.py</code>.</p>
+<p>Human test candidate only. The missing modular source tree matching v17 SUPER remains a separate provenance and maintenance limitation.</p>
+</section>
+</main>
+</body>
+</html>
