@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v35 audit</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,sans-serif;color:#203740;background:#f4f8fa}body{max-width:850px;margin:40px auto;padding:0 20px}h1,h2{line-height:1.2}section{background:white;border:1px solid #c5d5da;border-radius:12px;padding:20px;margin:16px 0}code{overflow-wrap:anywhere}a{color:#00589a}.ok{color:#204f36}
+</style>
+</head>
+<body>
+<h1>TRU v35 audit</h1>
+<p>Human-test candidate for exact one-word local lexicon lookup. It addresses a false positive where bare “English” matched an H853 gloss rather than an exact English index entry.</p>
+<section><h2>Change set</h2><ul><li>A bare one-token lexical query returns a match only if the term is an exact key in an English, transliteration or lemma index.</li><li>Unindexed “English” returns the explicit exact-match GAP instead of Hebrew H853.</li><li>Explicit Strong’s-code lookup remains available, including H853.</li><li>The app data, Math routing and exact “love” lexical query are unchanged.</li><li>The patch is pinned to the v34 artifact and updates only the exact lookup guard and build stamp.</li></ul></section>
+<section><h2>Verification</h2><ul class="ok"><li>Deterministic builder pins the v34 SHA-256 recorded in README.md.</li><li>Verifier confirms no embedded payload changed and known exact terms remain indexed.</li><li>Local browser smoke tests: “English” and “define English” return GAP; `math` returns Mathematics; explicit Strong’s H853 still resolves; `love` still returns its exact matches.</li><li>Public Pages verification is recorded after deployment.</li></ul></section>
+<section><h2>Limits</h2><p>This changes bare one-token lookup only; it does not redefine explicit Strong’s queries or broad “word study” behaviour. It is an artifact-based candidate and does not resolve the missing matching v17 modular source tree.</p><p>Parent v34: <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v34/">versioned preview</a>.</p></section>
+</body>
+</html>
