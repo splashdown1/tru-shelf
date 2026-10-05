@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v37 audit</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,sans-serif;color:#203740;background:#f4f8fa}body{max-width:850px;margin:40px auto;padding:0 20px}h1,h2{line-height:1.2}section{background:white;border:1px solid #c5d5da;border-radius:12px;padding:20px;margin:16px 0}code{overflow-wrap:anywhere}a{color:#00589a}.ok{color:#204f36}
+</style>
+</head>
+<body>
+<h1>TRU v37 audit</h1>
+<p>Versioned human-test candidate for explicit Hebrew/Greek lexical questions. Matching local Strong’s entries are prioritised without removing related entries.</p>
+<section><h2>Change set</h2><ul><li>Explicit Hebrew lexical requests rank Hebrew entries first; explicit Greek requests rank Greek entries first.</li><li>Other language entries and the existing Nave, Easton and deep lexicon material remain available.</li><li>Queries without an explicit language keep the existing ranking.</li><li>No embedded source or corpus data changed.</li></ul></section>
+<section><h2>Verification</h2><ul class="ok"><li>Deterministic builder pins v36 SHA-256 <code>3f0974f1836ca0df685857ffa888962859c990b9d2fa7a83865c265aeeea6fa5</code>.</li><li>Verifier confirms all 11 embedded source/data blocks are byte-identical.</li><li>The 30-case five-plus-word pilot v1.2 scores 27 targets passed, 0 failed, and 3 cases deferred for human review.</li><li>Browser checks show H7965 first for Hebrew, G1515 first for Greek, and the default G1515-first result when no language is named.</li></ul></section>
+<section><h2>Limits and links</h2><p>This is a narrow ranking improvement, not open-ended language recognition. The benchmark's three review-only questions remain unresolved. This artifact-based candidate does not resolve the missing matching v17 modular source tree.</p><p>Parent v36: <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v36/">versioned preview</a>. <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v37/TRU-v37.html">Open the v37 app</a>.</p></section>
+</body>
+</html>
