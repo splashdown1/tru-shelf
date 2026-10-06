@@ -17,3 +17,10 @@
 2. Start the reader at Psalms (poetry pace: slower, more silence between verses), then Genesis (law/narrative: plain, shorter gaps).
 3. Toggle SONG FLAT mid-read — delivery returns to uniform.
 4. `song status` / `song off` / `song on` from the input line.
+
+## Song v2 additions (2026-10-06)
+
+- Wake-word fix: `tru start reading at <ref>` now works (the reader lane required the query to start with the intent word; the `tru` prefix made it GAP).
+- New singing command: `tru start singing at <ref>` / `start singing at <ref>` / `sing at <ref>` — forces SONG AUTO and starts the reader there. Bare `start singing` continues at the current position. `song on/off/status` unchanged.
+- Progress line now shows the active pace class in AUTO (`Reading Psalms 23:1 • poetry pace`) so Song is visibly on.
+- Phrase queries beginning with "sing" (`sing unto the lord`) are not hijacked — only reader-style singing intents are.
