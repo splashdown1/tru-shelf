@@ -89,3 +89,7 @@ python3 quality/benchmarks/run_question_benchmark.py \
 ```
 
 The runner refuses to overwrite an existing report path. Choose new filenames. These targeted tests do not prove every KJV citation is theologically adequate, validate user-supplied interpretations, or establish general-purpose performance. The three review-only prompts remain unscored until their intended behaviour is agreed.
+
+### Human session audit (2026-10-06)
+
+A real-machine session transcript was audited against the v40 artifact source: [`reports/human-session-audit-v40-2026-10-06.md`](reports/human-session-audit-v40-2026-10-06.md). GAP/doctrine behaviour held; the audit verifies lexicon data defects in the embedded Strong's block (1,415 duplicated definitions, 523 empty definitions, plus usage-token and transliteration mangling) that predate v40, and two routing/voice findings. These are recorded, not yet fixed.
