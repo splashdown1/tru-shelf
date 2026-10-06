@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v39 audit</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,sans-serif;color:#203740;background:#f4f8fa}body{max-width:850px;margin:40px auto;padding:0 20px}h1,h2{line-height:1.2}section{background:white;border:1px solid #c5d5da;border-radius:12px;padding:20px;margin:16px 0}code{overflow-wrap:anywhere}a{color:#00589a}.ok{color:#204f36}
+</style>
+</head>
+<body>
+<h1>TRU v39 audit</h1>
+<p>Versioned human-test candidate for source-backed exact-term question routing.</p>
+<section><h2>Change set</h2><ul><li>Exact single-term definition questions now prefer the exact local entry when the earlier result is a GAP, phrase-search noise, or incidental deep-gloss match.</li><li>“What is a chair?” no longer presents Thayer G2828 as a modern chair definition; it gives an exact-match GAP.</li><li>“What is a door?” now resolves H8179 rather than searching the phrase “a door”.</li><li>Relevant Easton's results remain intact, including the full harp entry and the harp-use follow-up.</li><li>No embedded source/data blocks changed.</li></ul></section>
+<section><h2>Verification</h2><ul class="ok"><li>Deterministic builder pins v38 SHA-256 <code>a1cee6f5b01e0c11cfd53046533b924125125180d1b11fd84be8695329c147ea</code>.</li><li>Verifier confirms all 11 embedded source/data blocks are byte-identical.</li><li>Object-routing v1.0: v38 1/5; v39 5/5.</li><li>Five-plus-word v1.3 pilot: 28/28 scored targets pass; three review cases remain deferred.</li><li>The 20-version comparison tested v19–v38 with five queries each, for 100 observations.</li></ul></section>
+<section><h2>Limits and links</h2><p>This is a narrow exact-term routing correction, not open-ended reasoning or a source-data expansion. Unsupported words still receive a transparent GAP.</p><p>Parent v38: <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v38/">versioned preview</a>. <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v39/TRU-v39.html">Open the v39 app</a>.</p></section>
+</body>
+</html>
