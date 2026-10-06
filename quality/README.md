@@ -1,86 +1,91 @@
 # TRU Shelf quality and audit materials
 
-The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-shelf/quality/). This folder publishes repeatable local regression checks and their recorded results. It is separate from TRU's offline app data.
+The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-shelf/quality/). This folder publishes repeatable local regression checks and recorded results. It is separate from TRU's offline app data.
 
-## Current candidate
+## Current human-test candidate: v40
 
-- [v39 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v39/)
-- [v39 app](https://splashdown1.github.io/tru-shelf/test-candidates/v39/TRU-v39.html)
-- [v39 test notes](../test-candidates/v39/README.md)
-- Commit: `2803c5d074a90ae54c922604ea92aba48d39ce9a`
-- App SHA-256: `be82106355cf5848f1533df0c8cc216f505d1ad03bf622e2a98b4a8812e66ebb`
+- [v40 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v40/)
+- [v40 app](https://splashdown1.github.io/tru-shelf/test-candidates/v40/TRU-v40.html)
+- [v40 test notes](../test-candidates/v40/README.md)
+- App SHA-256: `8c7df8f1b79efc5dee5ff8ac6863043d726444ccfd965343b4ab6d4d26fdefad`
 
-v39 is a human-test candidate, not a canonical release. It is a routing-only, artifact-based patch to v38; all 11 embedded source/data blocks are unchanged. The matching modular source tree for v17 SUPER has not been recovered, so this candidate does not claim to reproduce that source build.
+v40 is a non-canonical, artifact-based patch to public v39. It adds a browser-local teaching shelf for up to 500 question-and-answer entries. Each entry needs one to five individual references that resolve in the local KJV. The user-supplied answer is shown with the exact local KJV text; citation existence is checked, but interpretation is not independently reviewed. Exact question matching normalises case and punctuation and does not infer paraphrases. The shelf starts empty and is personal to each browser; it is not a preloaded 500-question corpus.
 
-## Verify the v39 lineage
+## Verify v40 lineage
 
-The pinned verifier checks the public v39 SHA-256, reconstructs the deterministic patch from the public v38 artifact, and confirms all 11 embedded source/data blocks are unchanged. It does not alter the published candidate.
-
-```sh
-python3 quality/verify_v39.py
-```
-
-To create and verify a separate rebuilt copy, choose a new, unused output path. The builder refuses to overwrite an existing file:
+The pinned verifier reconstructs v40 from the public v39 artifact and confirms that all 11 embedded source/data blocks are byte-identical:
 
 ```sh
-python3 quality/build_v39.py --output /tmp/TRU-v39-rebuilt.html
-python3 quality/verify_v39.py --artifact /tmp/TRU-v39-rebuilt.html
+python3 quality/verify_v40.py
 ```
 
-The builder and verifier use only Python's standard library. Their source is [`build_v39.py`](build_v39.py) and [`verify_v39.py`](verify_v39.py).
+For a separate rebuild, use a new output path; the builder refuses to overwrite an existing file:
+
+```sh
+python3 quality/build_v40.py --output /tmp/TRU-v40-rebuilt.html
+cmp /tmp/TRU-v40-rebuilt.html test-candidates/v40/TRU-v40.html
+```
+
+The v40 builder and verifier use only Python's standard library: [`build_v40.py`](build_v40.py) and [`verify_v40.py`](verify_v40.py). The matching modular source tree for v17 SUPER remains unrecovered; v40 does not claim to reproduce that source build.
 
 ## Published checks
 
-### Five-plus-word pilot (`question-quality-public-v1.0`)
+### Five-plus-word question pilot (`question-quality-public-v1.0`)
 
-Thirty-one generic prompts cover Bible questions, Scripture lookup, word study, explicit Hebrew/Greek intent, bounded out-of-scope queries, and three intentionally unscored review cases. v38 and v39 each pass 28 of 28 scored target checks; three cases remain `REVIEW`. The fixture is a sanitised, public test set rather than a transcript of private conversations.
+Thirty-one generic prompts cover Bible questions, Scripture lookup, word study, explicit Hebrew/Greek intent, bounded out-of-scope queries, and three intentionally unscored review cases. v38, v39 and v40 pass 28 of 28 scored target checks; three cases remain `REVIEW`. This is a curated pilot, not a statistically representative benchmark.
 
 - Fixture: [`benchmarks/question-quality-public-v1.0.jsonl`](benchmarks/question-quality-public-v1.0.jsonl)
 - v38 report: [`reports/question-quality-v38-v1.0.json`](reports/question-quality-v38-v1.0.json)
 - v39 report: [`reports/question-quality-v39-v1.0.json`](reports/question-quality-v39-v1.0.json)
+- v40 report: [`reports/question-quality-v40-v1.0.json`](reports/question-quality-v40-v1.0.json)
 
 ### Exact-term object routing (`object-routing-v1.0`)
 
-Five checks cover exact definitions for `chair` and `door`, both as short and longer questions, plus a dictionary answer that must be preserved. The v38 result is 1/5; v39 is 5/5.
+Five checks cover exact definitions for `chair` and `door`, both as short and longer questions, plus a dictionary answer that must be preserved. v38 passes 1/5; v39 and v40 pass 5/5.
 
 - Fixture: [`benchmarks/object-routing-v1.0.jsonl`](benchmarks/object-routing-v1.0.jsonl)
 - v38 report: [`reports/object-routing-v38-v1.0.json`](reports/object-routing-v38-v1.0.json)
 - v39 report: [`reports/object-routing-v39-v1.0.json`](reports/object-routing-v39-v1.0.json)
+- v40 report: [`reports/object-routing-v40-v1.0.json`](reports/object-routing-v40-v1.0.json)
 - Historical comparison: [`reports/object-routing-history-v1.0.md`](reports/object-routing-history-v1.0.md), with all 100 machine-readable observations in [`reports/object-routing-history-v1.0.json`](reports/object-routing-history-v1.0.json)
+
+### Scripture teaching mechanics (`scripture-teaching-v1.0`)
+
+Eight sequential local checks cover missing or invalid citations, a valid answer and exact retrieval, listing and removal, and backward compatibility with ordinary `remember:`. All 8 pass on v40. A separate isolated browser test fills the 500-entry capacity and confirms a new question is refused while an existing one remains updateable.
+
+- Fixture: [`benchmarks/scripture-teaching-v1.0.jsonl`](benchmarks/scripture-teaching-v1.0.jsonl)
+- v40 report: [`reports/scripture-teaching-v40-v1.0.json`](reports/scripture-teaching-v40-v1.0.json)- Capacity check: [`test_v40_capacity.py`](test_v40_capacity.py) — verifies the 500-entry limit and safe update at capacity.
+
+The teaching feature's 500-entry capacity is **not** a 500-question benchmark and does not mean any answers are preloaded. The five-plus-word pilot remains at 31 cases; expand its answer key only in small, source-checked batches after human review.
+
+## Earlier v39 lineage
+
+The v39 candidate is preserved at [its preview](https://splashdown1.github.io/tru-shelf/test-candidates/v39/). Its deterministic builder and verifier remain available as [`build_v39.py`](build_v39.py) and [`verify_v39.py`](verify_v39.py).
 
 ## Re-running locally
 
-The runner requires Python 3 and the `agent-browser` command. It loads the candidate HTML into a local browser and calls TRU's local router directly; it does not call an AI service or retain app memory between test cases.
-
-Verify the pinned v39 parent, exact deterministic patch and unchanged embedded data blocks:
-
-```sh
-python3 quality/verify_v39.py
-```
-
-To rebuild without risking an already-published file, choose a new output path. The builder refuses to overwrite existing files:
-
-```sh
-python3 quality/build_v39.py --output /tmp/TRU-v39-rebuilt.html
-cmp /tmp/TRU-v39-rebuilt.html test-candidates/v39/TRU-v39.html
-```
+The runner requires Python 3 and `agent-browser`. It opens the standalone artifact and calls TRU's local router directly; it does not use an AI service. Each fixture is executed sequentially in one browser session so stateful command tests can teach, retrieve, and forget an entry.
 
 From the repository root:
 
 ```sh
+python3 quality/verify_v40.py
 python3 quality/benchmarks/run_question_benchmark.py \
-  --html test-candidates/v39/TRU-v39.html \
+  --html test-candidates/v40/TRU-v40.html \
+  --cases quality/benchmarks/question-quality-public-v1.0.jsonl \
   --record quality/reports/local-question-results.json
 
 python3 quality/benchmarks/run_question_benchmark.py \
-  --html test-candidates/v39/TRU-v39.html \
+  --html test-candidates/v40/TRU-v40.html \
   --cases quality/benchmarks/object-routing-v1.0.jsonl \
   --minimum-words 1 \
   --record quality/reports/local-object-results.json
+
+python3 quality/benchmarks/run_question_benchmark.py \
+  --html test-candidates/v40/TRU-v40.html \
+  --cases quality/benchmarks/scripture-teaching-v1.0.jsonl \
+  --minimum-words 1 \
+  --record quality/reports/local-scripture-teaching-results.json
 ```
 
-The runner refuses to overwrite an existing report path. Choose a new filename each time. To compare v38, change the `--html` path to `test-candidates/v38/TRU-v38.html` and use a new report name.
-
-## Limits
-
-These are focused regression tests, not a statistically representative language benchmark and not theological validation. Target checks confirm expected routing, citations or evidence markers for the questions listed; they do not prove the completeness or correctness of every passage or interpretation. Review-only cases are deliberately not scored until their intended behaviour is agreed. The history audit tested five prompts against public candidates v19–v38; it does not establish that every historical query behaves identically.
+The runner refuses to overwrite an existing report path. Choose new filenames. These targeted tests do not prove every KJV citation is theologically adequate, validate user-supplied interpretations, or establish general-purpose performance. The three review-only prompts remain unscored until their intended behaviour is agreed.

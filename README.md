@@ -6,6 +6,8 @@ Open the page: https://splashdown1.github.io/tru-shelf/
 
 Quality & audit: https://splashdown1.github.io/tru-shelf/quality/ — published benchmarks, versioned results, and source-lineage limits.
 
+Current human-test candidate: [TRU v40 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v40/) · [direct app](https://splashdown1.github.io/tru-shelf/test-candidates/v40/TRU-v40.html) · [test notes](https://splashdown1.github.io/tru-shelf/test-candidates/v40/README.md). v40 adds a 500-entry, locally taught Scripture Q&A shelf; each entry must cite one to five valid local KJV verses. It is a test candidate, not a canonical release.
+
 Two engines sit above the cards:
 
 - Canonbound — scripture. https://github.com/splashdown1/tru-canonbound

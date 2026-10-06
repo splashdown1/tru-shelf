@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRU v40 audit</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,sans-serif;color:#203740;background:#f4f8fa}body{max-width:850px;margin:40px auto;padding:0 20px}h1,h2{line-height:1.2}section{background:white;border:1px solid #c5d5da;border-radius:12px;padding:20px;margin:16px 0}code{overflow-wrap:anywhere}a{color:#00589a}.ok{color:#204f36}
+</style>
+</head>
+<body>
+<h1>TRU v40 audit</h1>
+<p>Versioned human-test candidate for a user-taught, Scripture-backed question shelf.</p>
+<section><h2>Change set</h2><ul><li>Adds a browser-local shelf for up to 500 exact question-and-answer entries.</li><li>Each entry requires one to five valid, individual references checked against the embedded KJV. Cited KJV text is shown with the user-supplied wording.</li><li>Lookup is exact after case and punctuation normalisation; it does not guess paraphrases. Add alternate phrasings as separate entries.</li><li>The local app starts with no new Q&A entries. Answers are user supplied; checking that references exist is not theological review.</li><li>Ordinary TRU routes and ordinary <code>remember:</code> notes remain available.</li></ul></section>
+<section><h2>Verification</h2><ul class="ok"><li>Deterministic builder pins v39 SHA-256 <code>be82106355cf5848f1533df0c8cc216f505d1ad03bf622e2a98b4a8812e66ebb</code>.</li><li>Verifier confirms all 11 embedded source/data blocks are byte-identical.</li><li>Five-plus-word pilot: 28/28 scored targets pass; 3 cases remain review-only.</li><li>Object-routing suite: 5/5 pass.</li><li>Scripture-teaching suite: 8/8 sequential checks pass; the 500-entry capacity test also passes.</li><li>Live local-browser input test successfully saved and retrieved a two-verse answer.</li></ul></section>
+<section><h2>Limits and links</h2><p>The 500-entry shelf is stored in browser-local memory and is not part of this public HTML file. Use the app's <code>export</code> command to download the local brain/overlay JSON. The references are verified against the local KJV; the user's answer wording and interpretation are not independently adjudicated.</p><p>Parent v39: <a href="https://splashdown1.github.io/tru-shelf/test-candidates/v39/">versioned preview</a>. <a href="README.md">Read the v40 teaching guide and test prompts</a>. <a href="TRU-v40.html">Open the v40 app</a>.</p><p>v40 SHA-256: <code>8c7df8f1b79efc5dee5ff8ac6863043d726444ccfd965343b4ab6d4d26fdefad</code>.</p></section>
+</body>
+</html>
