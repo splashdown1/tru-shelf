@@ -4,6 +4,8 @@ Door for the public offline lanes.
 
 Open the page: https://splashdown1.github.io/tru-shelf/
 
+Quality & audit: https://splashdown1.github.io/tru-shelf/quality/ — published benchmarks, versioned results, and source-lineage limits.
+
 Two engines sit above the cards:
 
 - Canonbound — scripture. https://github.com/splashdown1/tru-canonbound

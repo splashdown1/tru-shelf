@@ -1,0 +1,1162 @@
+[
+  {
+    "version": 19,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 19,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 19,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 19,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 19,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 20,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 20,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 20,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 20,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 20,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 21,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 21,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 21,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 21,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 21,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 22,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 22,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 22,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 22,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 22,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 23,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 23,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 23,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 23,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 23,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 24,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 24,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 24,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 24,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 24,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 25,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 25,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 25,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 25,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 25,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 26,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 26,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 26,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 26,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 26,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 27,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 27,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 27,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 27,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 27,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 28,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 28,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 28,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 28,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 28,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 29,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 29,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 29,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 29,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 29,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 30,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 30,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 30,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 30,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 30,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 31,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 31,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 31,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 31,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 31,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 32,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 32,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 32,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 32,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 32,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 33,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 33,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 33,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 33,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 33,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 34,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 34,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 34,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 34,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 34,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 35,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 35,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 35,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 35,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 35,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 36,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 36,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 36,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 36,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 36,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 37,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 37,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 37,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 37,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 37,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  },
+  {
+    "version": 38,
+    "q": "What is a chair?",
+    "verdict": "DEFINE",
+    "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+    "refs": [],
+    "nodes": [
+      "G2828",
+      "G2362"
+    ]
+  },
+  {
+    "version": 38,
+    "q": "What is a door?",
+    "verdict": "SCRIPTURE",
+    "source": "KJV phrase search • local",
+    "refs": [],
+    "nodes": [
+      "2cor 2:12",
+      "col 4:3",
+      "ezk 8:8"
+    ]
+  },
+  {
+    "version": 38,
+    "q": "Can you tell me what a chair is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 38,
+    "q": "Can you tell me what a door is in Scripture?",
+    "verdict": "GAP",
+    "source": "KJV + LOGOS Lexicon • local",
+    "refs": [],
+    "nodes": []
+  },
+  {
+    "version": 38,
+    "q": "What is a harp?",
+    "verdict": "DEFINE",
+    "source": "Easton's Dictionary (1897) • local",
+    "refs": [
+      "gen 4:21",
+      "gen 31:27",
+      "1sa 16:23",
+      "2ch 20:28",
+      "psa 33:2",
+      "psa 137:2",
+      "1ki 10:11",
+      "1ki 10:12"
+    ],
+    "nodes": [
+      "harp"
+    ]
+  }
+]

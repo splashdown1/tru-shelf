@@ -1,0 +1,5 @@
+{"id":"chair_short_no_false_match","query":"What is a chair?","category":"short_definition","status":"target","checks":{"verdict_any":["GAP"],"reply_any":[["No exact local Bible lexicon entry"]],"reply_none":[["G2828","DEEP LEXICON"]]}}
+{"id":"door_short_exact_entry","query":"What is a door?","category":"short_definition","status":"target","checks":{"verdict_any":["DEFINE"],"evidence_any":[["H8179"]],"reply_none":[["PHRASE • \"a door\""]]}}
+{"id":"chair_long_no_guess","query":"Can you tell me what a chair is in Scripture?","category":"long_definition","status":"target","checks":{"verdict_any":["GAP"],"reply_any":[["No exact local Bible lexicon entry"]],"reply_none":[["G2828","DEEP LEXICON"]]}}
+{"id":"door_long_exact_entry","query":"Can you tell me what a door is in Scripture?","category":"long_definition","status":"target","checks":{"verdict_any":["DEFINE"],"evidence_any":[["H8179"]]}}
+{"id":"harp_dictionary_control","query":"What is a harp?","category":"short_definition","status":"target","checks":{"verdict_any":["DEFINE"],"evidence_any":[["EASTON • Harp"]]}}

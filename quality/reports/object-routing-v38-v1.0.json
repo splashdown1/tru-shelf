@@ -1,0 +1,105 @@
+{
+  "benchmark": "object-routing-v1.0",
+  "artifact": "test-candidates/v38/TRU-v38.html",
+  "artifact_sha256": "a1cee6f5b01e0c11cfd53046533b924125125180d1b11fd84be8695329c147ea",
+  "cases": [
+    {
+      "id": "chair_short_no_false_match",
+      "query": "What is a chair?",
+      "word_count": 4,
+      "target_status": "target",
+      "observed": {
+        "id": "chair_short_no_false_match",
+        "verdict": "DEFINE",
+        "source": "Thayer's (1889) + Brown-Driver-Briggs • deep lexicon • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "G2828",
+          "G2362"
+        ],
+        "reply": "DEEP LEXICON • What is a chair? G2828: prop. a place for lying down or reclining; hence 1. a hut, erected to pass the night in. 2. a tent. 3. anything to recline on; a chair in which to lean back the head, reclining-chair. 4. a company reclining; a row or party of persons reclining at meal: so in plur., Lk. ix. 14, on which cf. W. 229 (214); likewise in Joseph. antt. 12, 2, 12; Plut. Sert. 26.* G2362: a throne, seat, i. e. a chair of state having a footstool; assigned in the N. T. to kings, hence by meton. for kingly power, royalty: Lk. i. 32, 52; Acts ii. 30. metaph. to God, the governor of the world: Mt. v. 34; xxiii. 22; Acts vii. 49 (Is. lxvi. 1); Rev. i. 4; iii. 21; iv. 2-6, 9, 10, etc.; Heb. iv. 16; viii. 1; xii. 2. to the Messiah, the partner and assistant in the divine administration: Mt. xix. 28; xxv. 31; Rev. iii. 21; xx. 11; xxii. 8; hence the divine power belonging to Christ, Heb. i. 8. to judges, i. q. tribunal or bench (Plut. mor. p. 807 b.): Mt. xix. 28; Lk. xxii. 30; Rev. xx. 4. to elders: Rev. iv. 4; xi. 16. to Satan: Rev. ii. 13. to the beast (concerning which see θηρίον): Rev. xvi. 10. θρόνος is used by meton. of one who holds dominion or exercises authority; thus in plur. of angels: Col. i. 16 [see Bp. Lghtft. ad loc.]*"
+      }
+    },
+    {
+      "id": "door_short_exact_entry",
+      "query": "What is a door?",
+      "word_count": 4,
+      "target_status": "target",
+      "observed": {
+        "id": "door_short_exact_entry",
+        "verdict": "SCRIPTURE",
+        "source": "KJV phrase search • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "2cor 2:12",
+          "col 4:3",
+          "ezk 8:8"
+        ],
+        "reply": "PHRASE • \"a door\" 2cor 2:12 — Furthermore, when I came to Troas to preach Christ's gospel, and a door was opened unto me of the Lord, col 4:3 — Withal praying also for us, that God would open unto us a door of utterance, to speak the mystery of Christ, for which I am also in bonds: ezk 8:8 — Then said he unto me, Son of man, dig now in the wall: and when I had digged in the wall, behold a door. Showing the top 3 of 30 matches."
+      }
+    },
+    {
+      "id": "chair_long_no_guess",
+      "query": "Can you tell me what a chair is in Scripture?",
+      "word_count": 10,
+      "target_status": "target",
+      "observed": {
+        "id": "chair_long_no_guess",
+        "verdict": "GAP",
+        "source": "KJV + LOGOS Lexicon • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No canon match. Try a verse, a word, a Strong's number, or a phrase from Scripture."
+      }
+    },
+    {
+      "id": "door_long_exact_entry",
+      "query": "Can you tell me what a door is in Scripture?",
+      "word_count": 10,
+      "target_status": "target",
+      "observed": {
+        "id": "door_long_exact_entry",
+        "verdict": "GAP",
+        "source": "KJV + LOGOS Lexicon • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No canon match. Try a verse, a word, a Strong's number, or a phrase from Scripture."
+      }
+    },
+    {
+      "id": "harp_dictionary_control",
+      "query": "What is a harp?",
+      "word_count": 4,
+      "target_status": "target",
+      "observed": {
+        "id": "harp_dictionary_control",
+        "verdict": "DEFINE",
+        "source": "Easton's Dictionary (1897) • local",
+        "scripture_ref": "gen 4:21",
+        "refs": [
+          "gen 4:21",
+          "gen 31:27",
+          "1sa 16:23",
+          "2ch 20:28",
+          "psa 33:2",
+          "psa 137:2",
+          "1ki 10:11",
+          "1ki 10:12"
+        ],
+        "nodes": [
+          "harp"
+        ],
+        "reply": "EASTON • Harp (Heb. kinnor), the national instrument of the Hebrews. It was invented by Jubal (Gen. 4:21). Some think the word kinnor denotes the whole class of stringed instruments. It was used as an accompaniment to songs of cheerfulness as well as of praise to God (Gen. 31:27; 1 Sam. 16:23; 2 Chr. 20:28; Ps. 33:2; 137:2). In Solomon’s time harps were made of almug-trees (1 Kings 10:11, 12). In 1 Chr. 15:21 mention is made of “harps on the Sheminith;” Revised Version, “harps set to the Sheminith;” better perhaps “harps of eight strings.” The soothing effect of the music of the harp is referred to 1 Sam. 16:16, 23; 18:10; 19:9. The church in heaven is represented as celebrating the triumphs of the Redeemer “harping with their harps” (Rev. 14:2)."
+      }
+    }
+  ],
+  "summary": {
+    "PASS": 1,
+    "FAIL": 4,
+    "REVIEW": 0
+  }
+}

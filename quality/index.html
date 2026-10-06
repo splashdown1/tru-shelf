@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TRU Shelf's public quality checks, versioned results and source-lineage limits.">
+<title>TRU Shelf — Quality &amp; Audit</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f2ed;--fg:#1b211f;--muted:#5e6862;--card:#fffefa;--line:#d8ddd7;--accent:#205b49;--soft:#e5efe9}
+@media(prefers-color-scheme:dark){:root{--bg:#111715;--fg:#edf1ed;--muted:#aeb8b1;--card:#1a211e;--line:#35423b;--accent:#9fd1b4;--soft:#24362d}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:900px;margin:0 auto;padding:48px 22px 72px}header{margin-bottom:30px}.eyebrow{color:var(--accent);font-size:.8rem;font-weight:750;letter-spacing:.13em;text-transform:uppercase}h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;letter-spacing:-.04em;margin:.4rem 0 1rem}h2{font-size:1.35rem;line-height:1.25;margin:0 0 .55rem}p{margin:.4rem 0 1rem;color:var(--muted)}a{color:var(--accent);font-weight:650;text-underline-offset:3px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.score{display:inline-block;background:var(--soft);color:var(--accent);border-radius:999px;padding:4px 11px;font-size:.82rem;font-weight:750}ul{padding-left:1.25rem;margin:.6rem 0;color:var(--muted)}li{margin:.35rem 0}.meta{font-size:.9rem;overflow-wrap:anywhere}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:var(--muted);font-size:.9rem}code{font-size:.92em;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">TRU Shelf · Public QA</div>
+<h1>Quality &amp; audit</h1>
+<p>Versioned checks for TRU's offline routing, with results and known limits. These are regression checks, not a claim that every biblical interpretation is settled.</p>
+</header>
+<section class="card">
+<h2>Current human-test build: v39</h2>
+<p><span class="score">Test candidate · not canonical</span></p>
+<ul>
+<li><a href="../test-candidates/v39/">Open the v39 preview</a></li>
+<li><a href="../test-candidates/v39/TRU-v39.html">Open the standalone app</a></li>
+<li><a href="../test-candidates/v39/README.md">Read the v39 change notes and test prompts</a></li>
+</ul>
+<p class="meta">Commit <code>2803c5d074a90ae54c922604ea92aba48d39ce9a</code><br>App SHA-256 <code>be82106355cf5848f1533df0c8cc216f505d1ad03bf622e2a98b4a8812e66ebb</code></p>
+</section>
+<div class="grid">
+<section class="card">
+<h2>Five-plus-word question pilot</h2>
+<p><span class="score">v38: 28/28 · v39: 28/28</span></p>
+<p>31 generic test prompts: 28 scored targets and 3 review-only cases left unscored.</p>
+<ul>
+<li><a href="benchmarks/question-quality-public-v1.0.jsonl">Public test questions and checks</a></li>
+<li><a href="reports/question-quality-v38-v1.0.json">v38 recorded results</a></li>
+<li><a href="reports/question-quality-v39-v1.0.json">v39 recorded results</a></li>
+</ul>
+</section>
+<section class="card">
+<h2>Exact-term object routing</h2>
+<p><span class="score">v38: 1/5 · v39: 5/5</span></p>
+<p>Checks that chair does not trigger an unrelated gloss, door reaches its exact local entry, and an existing harp dictionary answer remains available.</p>
+<ul>
+<li><a href="benchmarks/object-routing-v1.0.jsonl">Five-case fixture</a></li>
+<li><a href="reports/object-routing-v38-v1.0.json">v38 recorded results</a></li>
+<li><a href="reports/object-routing-v39-v1.0.json">v39 recorded results</a></li>
+<li><a href="reports/object-routing-history-v1.0.md">Historical comparison across v19–v38</a></li>
+</ul>
+</section>
+</div>
+<section class="card">
+<h2>Source lineage and limits</h2>
+<p>v39 is an artifact-based routing patch to v38, with all 11 embedded source/data blocks verified byte-identical. The matching modular source tree for the older v17 SUPER has not been recovered; v39 is not claimed to rebuild it. The published scores check selected routing and evidence markers only. They do not establish source completeness, theological correctness, or general-purpose performance.</p>
+<p><a href="verify_v39.py">Verify the pinned v39 hash and lineage</a> · <a href="build_v39.py">View the deterministic build patch</a></p>
+<p><a href="README.md">Read the methods, runner instructions and full caveats</a> · <a href="https://github.com/splashdown1/tru-shelf">View the public repository</a></p>
+</section>
+<footer>Reports are pinned to public candidate hashes. The review-only questions are intentionally not scored until their intended behaviour is agreed.</footer>
+</main>
+</body>
+</html>

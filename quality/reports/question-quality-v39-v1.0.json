@@ -1,0 +1,607 @@
+{
+  "benchmark": "question-quality-public-v1.0",
+  "artifact": "test-candidates/v39/TRU-v39.html",
+  "artifact_sha256": "be82106355cf5848f1533df0c8cc216f505d1ad03bf622e2a98b4a8812e66ebb",
+  "cases": [
+    {
+      "id": "hope_future",
+      "query": "How can Scripture encourage hope for the future?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "hope_future",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "rom 15:13",
+        "refs": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "nodes": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "reply": "SCRIPTURE • HOPE Romans 15:13 — Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost. Hebrews 6:19 — Which hope we have as an anchor of the soul, both sure and stedfast, and which entereth into that within the veil; 1 Peter 1:3 — Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead, abundant: Gr. much"
+      }
+    },
+    {
+      "id": "love_bible",
+      "query": "What does the Bible say about love?",
+      "word_count": 7,
+      "target_status": "target",
+      "observed": {
+        "id": "love_bible",
+        "verdict": "TOPICAL",
+        "source": "Nave's Topical Bible + Torrey's Textbook • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "love"
+        ],
+        "reply": "TOPIC • LOVE SOURCE nave • local OF CHILDREN FOR PARENTS OF GOD, LOVE OF OF MAN FOR GOD Ex 20:6 ; De 5:10; 6:5; 7:9; 10:12; 11:1,13,22; 13:3; 30:6,16,20 ; Jos 22:5; 23:11 ; Ps 18:1; 31:23; 37:4; 45:10,11; 63:5,6; 69:35,36; 73:25,26; 91:14; 97:10; 116:1; 145:20 ; Pr 8:17; 23:26 ; Isa 56:6,7 ; Jer 2:2,3 ; Mt 22:37,38 ; Mr 12:29,30,32,33 ; Lu 11:42 ; Joh 5:42 ; Ro 5:5; 8:28; 1 Co 8:3; Php 1:9; 2 Th 3:5; 2Ti 1:7; 1 Jo 2:5,15; 3:17,18; 4:12,16-21; 5:1-3; 2Jo 1:6 ; Jude 1:21 OF MAN FOR JESUS Mt 10:37,38; 25:34-40; 27:55-61 ; Mr 9:41 ; Lu 2:29,30; 7:47 ; Joh 8:42; 14:15,21,23,28; 15:9; 16:27; 17:26; 21:17 ; Ac 21:13; 1 Co 16:22; 2Co 5:6,8,14,15 ; Ga 5:6,22; 6:14 ; Eph 3:17-19; 4:15; 6:24 ; Php 1:9,20,21,23; 3:7,8 ; Col 1:8; 2 Th 3:5; 2Ti 1:13; 4:8 ; Phm 1:5 ; Heb 6:10 ; Jas 1:12; 2:5; 1 Pe 1:8; 2:7; Re 2:4 INSTANCES OF LOVE FOR JESUS • Mary Mt 26:6-13 ; Joh 12:3-8 ; Lu 10:39 • Peter Mt 17:4 ; Joh 13:37; 18:10; 20:3-6; 21:7 • Thomas Joh 11:16 • The disciples Mr 16:10 ; Lu 24:17-41 ; Joh 20:20 • Mary Magdalene and other disciples Mt 27:55,56,61; 28:1-9 ; Lu 8:2,3; 23:27,55,56; 24:1-10 ; Joh 20:1,2,11-18 • A man from Gadara (Gerasa) out of whom Jesus cast an evil spirit Mr 5:18 • Joseph of Aramathaea Mt 27:57-60 SEE ALSO CHILDREN • nave + torrey In answer to prayer • To Abraham Ge 15:2-5 ; with 21:1,2 • Isaac Ge 25:21 • Leah Ge 30:17-22 SEE ALSO FRATERNITY • nave General scriptures concerning Ge 13:8 ; De 15:7-15 ; Ps 22:22; 133:1-3 ; Zec 11:14 ; Mal 2:10 ; Mt 5:22-24; 18:15-18,21,22,35; 23:8; 25:40 ; Joh 13:34; 15:12; 20:17 ; Ro 12:10; 1 Co 6:1-8; 8:1-13; Ga 6:1,2; 1 Th 4:9; 2Th 3:14,15 ; Heb 13:1; 1 Pe 1:22; 2:17; 3:8; 2Pe 1:5,7; 1 Jo 2:9-11; 3:17 INSTANCES OF • The Nazarites, vows of Nu 6:1-21 ; La 4:7 ; Am 2:11,12 ; Ac 21:24-31 See NAZARITES … 25 more entries in this topic RELATED TOPICS CHILDREN · FRATERNITY · RICHES · PARENTS · also BROTHER · FRIENDSHIP"
+      }
+    },
+    {
+      "id": "forgive_person",
+      "query": "What guidance does Scripture give about forgiving someone who has caused harm?",
+      "word_count": 12,
+      "target_status": "target",
+      "observed": {
+        "id": "forgive_person",
+        "verdict": "TOPICAL",
+        "source": "Nave's Topical Bible + Torrey's Textbook • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "forgiveness"
+        ],
+        "reply": "TOPIC • FORGIVENESS SOURCE nave • local OF ENEMIES Ex 23:4,5 ; Pr 19:11; 24:17,29; 25:21,22 ; Ec 7:21 ; Mt 5:7,39-41,43-48; 6:12,14,15; 18:21-35 ; Mr 11:25,26 ; Lu 6:27-37; 11:4; 17:3,4 ; Ro 12:14,17,19-21; 1 Co 4:12,13; Eph 4:32 ; Col 3:13 ; Phm 1:10-18; 1 Pe 3:9 See ENEMY INSTANCES OF • Esau forgives Jacob Ge 33:4,11 • Joseph forgives his brothers Ge 45:5-15; 50:19-21 • Moses forgives the Israelites Nu 12:1-13 • David forgives Saul 1 Sa 24:10-12; 26:9,23; 2Sa 1:14-17 • David forgives Shimei 2Sa 16:9-13; 19:23 ; with 1 Ki 2:8,9 • Solomon forgives Adonijah 1Ki 1:53 • The prophet of Judah forgives Jeroboam 1Ki 13:3-6 • Jesus forgives his enemies Lu 23:34 OF SINS … 1 more entries in this topic RELATED TOPICS ENEMY · SIN, FORGIVENESS OF"
+      }
+    },
+    {
+      "id": "peace_hebrew",
+      "query": "What does peace mean in Hebrew?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "peace_hebrew",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local + Nave's/Torrey • offline",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "H7965",
+          "H7999",
+          "H1826",
+          "H7962",
+          "G1515"
+        ],
+        "reply": "H7965 שָׁלוֹם (šālôm) masculine noun DEFINITION safe; figuratively, well, happy, friendly; welfare, health, prosperity, peace USAGE completeness, soundness, welfare, peace, completeness (in number), safety, soundness (in body), welfare, health, prosperity, peace, quiet, tranquillity, contentment, peace, friendship, of human relationships, with God especially in covenant relationship, peace (from war), peace (as adjective) KJV peace(175x), well(14x), peaceably(9x), welfare(5x), salute (with H7592)(4x), prosperity(4x), did(3x), safe(3x), health(2x), peaceable(2x), miscellaneous(15x) ROOT H7999 | שָׁלַם | pay, peace, recompense, reward, render, restore, repay, perform, good, end, requite, restitution, finished, again, amends, full, misc H7999 שָׁלַם (šālam) verb DEFINITION shaw-lam' a primitive root to be safe (in mind, body or estate) figuratively, to be (causatively, make) completed by implication, to be friendly by extension, to reciprocate (in various applications) — make amends, (make an) end, finish, full, give again, make good, (re-) pay (again), (make) (to) (be at) peace(-able), that is perfect, perform, (make) prosper(-ous), recompense, render, requite, make restitution, restore, reward, shaw-lam' a primitive root to be safe (in mind, body or estate) figuratively, to be (causatively, make) completed by implication, to be friendly by extension, to reciprocate (in various applications) — make amends, (make an) end, finish, full, give again, make good, (re-) pay (again), (make) (to) (be at) peace(-able), that is perfect, perform, (make) prosper(-ous), recompense, render, requite, make restitution, restore, reward USAGE to be in a covenant of peace, be at peace, (Qal), to be at peaceful one (participle), (Pual) one in covenant of peace (participle), (Hiphil), to make peace with, to cause to be at peace, (Hophal) to live in peace, to be complete, be sound, (Qal), to be complete, be finished, be ended, to be sound, be uninjured, (Piel), to complete, finish, to make safe, to make whole or good, restore, make compensation, to make good, pay, to requite, recompense, reward, (Pual), to be performed, to be repaid, be requited, (Hiphil), to complete, perform, to make an end of KJV pay(19x), peace(11x), recompense(11x), reward(10x), render(9x), restore(8x), repay(7x), perform(7x), good(6x), end(4x), requite(4x), restitution(4x), finished(3x), again(3x), amends(1x), full(1x), () ROOT primitive root H1826 דָּמַם (dāmam) verb DEFINITION to be dumb by implication, to be astonished, to stop also to perish — cease, be cut down (off), forbear, hold peace, quiet self, rest, be silent, keep (put to) silence, be (stand) still, tarry, wait USAGE to be silent, be still, wait, be dumb, grow dumb, (Qal), to be silent, to be still, die, to be struck dumb, (Niphal) to be silenced, be made silent, destroyed, (Poal) to make quiet, (Hiphil) to make silent (cause to die) KJV silence(6x), still(6x), silent(4x), rest(2x), cease(2x), forbear(1x), peace(1x), quieted(1x), tarry(1x), wait(1x) ROOT H1724 | דָּהַם | astonied H7962 שַׁלְוָה (šalvâ) feminine noun DEFINITION security (genuine or false) — abundance, peace(-ably), prosperity, quietness USAGE quietness, ease, prosperity KJV prosperity(3x), peaceably(2x), quietness(1x), abundance(1x), peace(1x) ROOT H7951 | שָׁלָה | prosper, safety, happy G1515 εἰρήνη (eirēnē) feminine noun DEFINITION peace; quietness; rest; by implication, prosperity USAGE a state of national tranquillity, exemption from the rage and havoc of war, peace between individuals, i.e. harmony, concord, security, safety, prosperity, felicity, (because peace and harmony make and keep things safe and prosperous), of the Messiah' s peace, the way that leads to peace (salvation), of Christianity, the tranquil state of a soul assured of its salvation through Christ, and so fearing nothing from God and content with its earthly lot, of whatsoever sort that is, the blessed state of devout and upright men after death KJV peace(89x), one(1x), rest(1x), quietness(1x) ROOT primitive root Source: LOGOS Lexicon • offline Strong's/KJV companion TOPIC • PEACE SOURCE nave + torrey • local EXEMPLIFIED • By Abraham Ge 13:8,9 • Abimelech Ge 26:29 • Mordecai Es 10:3 • David Ps 120:7 See CHARITABLENESS See NATION, PEACE OF SOCIAL Ge 45:24 ; Le 26:6 ; Job 5:23,24 ; Ps 34:14; 120:6,7; 133:1 ; Pr 12:20; 15:17; 16:7; 17:1,14; 20:3 ; Ec 4:6 ; Isa 2:4; 45:7 ; Jer 29:7 ; Ho 2:18 ; Zec 8:19 ; Mt 5:9; 10:21,22,34-36 ; Mr 9:50 ; Lu 2:14 ; Ac 7:26-29; 17:7-9 ; Ro 12:18; 14:19; 1 Co 14:33; 2Co 13:11 ; Eph 4:3; 1 Th 5:13; 1Ti 2:2; 2 Ti 2:22; Heb 12:14 ; Jas 3:17,18; 1 Pe 3:10,11 SPIRITUAL Job 22:21,26; 34:29 ; Ps 1:1,2; 4:8; 17:15; 25:12,13; 29:11; 37:4,11,37; 73:25,26; 85:8; 119:165; 125:1,5 ; Pr 3:13-18,24; 14:14 ; Isa 9:6; 11:6-9,13; 12:1,2; 25:7,8; 26:3,12; 27:5; 28:12; 30:26; 32:2,17,18; 48:18; 53:5; 54:1,10,13; 55:2,12; 57:1,2,19; 60:20 ; Jer 33:6 ; Eze 34:25 ; Hag 2:9 ; Mal 2:5 ; Lu 1:79; 2:14 ; Joh 7:38; 14:27; 16:33; 20:19 ; Ac 10:36 ; Ro 2:10; 5:1; 8:6; 10:15; 14:17; 15:13,33; 1 Co 1:3; 2Co 1:2 ; Ga 1:3; 5:22 ; Eph 2:14-17 ; Php 4:7,9 ; Col 1:20; 3:15; 1 Th 1:1; 2Th 3:16; 1 Ti 1:2; 2Ti 1:2 ; Tit 1:4 ; Phm 1:3 ; Re 1:4 See CHARITABLENESS See JOY See PRAISE … 42 more entries in this topic RELATED TOPICS CHARITABLENESS · NATION, PEACE OF · JOY · PRAISE STUDY OUTLINE • topical grouping, not a doctrinal definition"
+      }
+    },
+    {
+      "id": "afraid_action",
+      "query": "What biblical guidance is there for someone facing fear?",
+      "word_count": 9,
+      "target_status": "target",
+      "observed": {
+        "id": "afraid_action",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "isa 41:10",
+        "refs": [
+          "isa 41:10",
+          "ps 56:3",
+          "2tim 1:7"
+        ],
+        "nodes": [
+          "isa 41:10",
+          "ps 56:3",
+          "2tim 1:7"
+        ],
+        "reply": "SCRIPTURE • COURAGE WHEN AFRAID Isaiah 41:10 — Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness. Psalms 56:3 — What time I am afraid, I will trust in thee. 2 Timothy 1:7 — For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."
+      }
+    },
+    {
+      "id": "jesus_loving_enemies",
+      "query": "What does Jesus say about loving enemies?",
+      "word_count": 7,
+      "target_status": "target",
+      "observed": {
+        "id": "jesus_loving_enemies",
+        "verdict": "TRUTH",
+        "source": "KJV • words of Jesus, locally red-letter indexed",
+        "scripture_ref": "lk 6:27",
+        "refs": [
+          "lk 6:27",
+          "mt 5:44"
+        ],
+        "nodes": [
+          "lk 6:27",
+          "mt 5:44"
+        ],
+        "reply": "WORDS OF JESUS • LOVING ENEMIES Luke 6:27 — But I say unto you which hear, Love your enemies, do good to them which hate you, Matthew 5:44 — But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you; KJV text from passages marked as Jesus’ words in the local red-letter index."
+      }
+    },
+    {
+      "id": "jesus_forgiveness",
+      "query": "What does Jesus say about forgiveness?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "jesus_forgiveness",
+        "verdict": "TRUTH",
+        "source": "KJV • words of Jesus, locally red-letter indexed",
+        "scripture_ref": "mt 6:14",
+        "refs": [],
+        "nodes": [
+          "mt 6:14",
+          "mt 6:15",
+          "mt 18:22",
+          "mk 11:25",
+          "lk 17:3",
+          "lk 17:4",
+          "lk 23:34",
+          "lk 7:47",
+          "lk 7:48",
+          "lk 7:50"
+        ],
+        "reply": "WORDS OF JESUS • FORGIVENESS Matthew 6:14–15 mt 6:14 — For if ye forgive men their trespasses, your heavenly Father will also forgive you: mt 6:15 — But if ye forgive not men their trespasses, neither will your Father forgive your trespasses. Matthew 18:22 mt 18:22 — Jesus saith unto him, I say not unto thee, Until seven times: but, Until seventy times seven. Mark 11:25 mk 11:25 — And when ye stand praying, forgive, if ye have ought against any: that your Father also which is in heaven may forgive you your trespasses. Luke 17:3–4 lk 17:3 — Take heed to yourselves: If thy brother trespass against thee, rebuke him; and if he repent, forgive him. lk 17:4 — And if he trespass against thee seven times in a day, and seven times in a day turn again to thee, saying, I repent; thou shalt forgive him. Luke 23:34 lk 23:34 — Father, forgive them; for they know not what they do. Luke 7:47–48, 50 lk 7:47 — Wherefore I say unto thee, Her sins, which are many, are forgiven; for she loved much: but to whom little is forgiven, the same loveth little. lk 7:48 — And he said unto her, Thy sins are forgiven. lk 7:50 — And he said to the woman, Thy faith hath saved thee; go in peace. KJV excerpts from passages marked as Jesus’ words in the local red-letter index. When a verse includes narration, only Jesus’ spoken words are quoted. No paraphrase added."
+      }
+    },
+    {
+      "id": "meaning_life",
+      "query": "What is the meaning of life according to Scripture?",
+      "word_count": 9,
+      "target_status": "target",
+      "observed": {
+        "id": "meaning_life",
+        "verdict": "TRUTH",
+        "source": "KJV doctrine • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "the purpose of life is to fear god, keep his commandments, know him through christ, and glorify him in faithful love and obedience. scripture says, fear god, and keep his commandments: for this is the whole duty of man. (eccl 12:13; john 17:3; 1 cor 10:31)"
+      }
+    },
+    {
+      "id": "truth_bible",
+      "query": "What does the Bible mean by truth?",
+      "word_count": 7,
+      "target_status": "target",
+      "observed": {
+        "id": "truth_bible",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local + Nave's/Torrey • offline + Easton",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "H571",
+          "G225",
+          "H530",
+          "G3483",
+          "G227"
+        ],
+        "reply": "H571 אֶמֶת ('ĕmeṯ) adverb, feminine noun DEFINITION stability (figuratively) certainty, truth, trustworthiness — assured(-ly), establishment, faithful, right, sure, true (-ly, -th), verity USAGE firmness, faithfulness, truth, sureness, reliability, stability, continuance, faithfulness, reliableness, truth, as spoken, of testimony and judgment, of divine instruction, truth as a body of ethical or religious knowledge, true doctrine, in truth, truly KJV truth(92x), true(18x), truly(7x), right(3x), faithfully(2x), assured(1x), assuredly(1x), establishment(1x), faithful(1x), sure(1x), verity(1x) ROOT H539 | אָמַן | believe, assurance, faithful, sure, established, trust, verified, stedfast, continuance, father, bring up, nurse, be nursed, surely be, stand fast, fail, trusty G225 ἀλήθεια (alētheia) feminine noun DEFINITION al ' -thi-a from USAGE objectively, what is true in any matter under consideration, truly, in truth, according to truth, of a truth, in reality, in fact, certainly, what is true in things appertaining to God and the duties of man, moral and religious truth, in the greatest latitude, the true notions of God which are open to human reason without his supernatural intervention, the truth as taught in the Christian religion, respecting God and the execution of his purposes through Christ, and respecting the duties of man, opposing alike to the superstitions of the Gentiles and the inventions of the Jews, and the corrupt opinions and precepts of false teachers even among Christians, subjectively, truth as a personal excellence, that candour of mind which is free from affection, pretence, simulation, falsehood, deceit KJV truth(107x), true(1x), verity(1x) ROOT G227 | ἀληθής | true, truly, truth H530 אֱמוּנָה ('ĕmûnâ) feminine noun DEFINITION literally firmness figuratively security morally fidelity — faith(-ful, -ly, -ness, (man)), set office, stability, steady, truly, truth, verily USAGE firmness, fidelity, steadfastness, steadiness KJV faithfulness(18x), truth(13x), faithfully(5x), office(5x), faithful(3x), faith(1x), stability(1x), steady(1x), truly(1x), verily(1x) ROOT H529 | אֵמוּן | faithful, truth, faith G3483 ναί (nai) particle DEFINITION na ,nahee a primary particle of strong affirmation yes — even so, , verily, yea, yes. na ,nahee a primary particle of strong affirmation yes — even so, , verily, yea, yes USAGE yea, verily, truly, assuredly, even so KJV yea(23x), yes(3x), truth(1x), verily(1x), surely(1x) ROOT primitive root G227 ἀληθής (alēthēs) adjective DEFINITION true (as notconcealing) — true, truly, truth USAGE true, loving the truth, speaking the truthful KJV true(23x), truly(1x), truth(1x) ROOT G1 | ἄλφα | Alpha Source: LOGOS Lexicon • offline Strong's/KJV companion TOPIC • TRUTH SOURCE nave + torrey • local Saints should worship God in Joh 4:24 ; with Ps 145:18 Serve God in Jos 24:14; 1 Sa 12:24 Walk in the presence of God in 1 Ki 2:4; 2Ki 20:3 Keep religious feasts with 1 Co 5:8 Esteem, as inestimable Pr 23:23 Love Zec 8:19 Rejoice in 1 Co 13:6 Speak, to one another Zec 8:16 ; Eph 4:25 Execute judgment with Zec 8:16 Meditate upon Php 4:8 Bind, around the neck Pr 3:3 Write, upon the tables of the heart Pr 3:3 … 123 more entries in this topic STUDY OUTLINE • topical grouping, not a doctrinal definition DICTIONARY • Truth Used in various senses in Scripture. In Prov. 12:17, 19, it denotes that which is opposed to falsehood. In Isa. 59:14, 15, Jer. 7:28, it means fidelity or truthfulness. The doctrine of Christ is called “the truth of the gospel” (Gal. 2:5), “the truth” (2 Tim. 3:7; 4:4). Our Lord says of himself, “I am the way, and the truth” (John 14:6). Easton's Bible Dictionary (1897) • source-backed, public domain DEEP • BDB (Brown-Driver-Briggs, 1906) אֱמֶת noun feminine firmness, faithfulness, truth (contracted for אֱמֶנֶת from אָמֵן ) Gen 24:48 + 106 t.; suffix אֲמִתּוֺ , אֲמִתְּךָ Ps 91:4 + 18 t. 1. reliability, sureness: דֶּרֶח אֱמֶת sure way Gen 24:48 ( J ); שׂכר אמת sure reward Prov 11:18 אות אמת sure token Josh 2:12 ( J ); זֶרַע אמת Jer 2:21 . 2. stability, con-tinuance: שָׁלוֺם וֶאֱמֶת peace and stability Isa 39:8 (= 2Kgs 20:19 ) Esth 9:30 ; Jer 33:6 ; Zech 8:19 , compare שׁלום אמת Jer 14:13 . 3. faithfulness, reliableness: ( α ) of men אִישׁ אֱמֶת faithful man Neh 7:2 אנשׁי אמת Exod 18:21 ( E ); הָלַח בֶּאֱמֶת walk in faithfulness, faithfully 1Kgs 2:4 ; 1Kgs 3:6 ; 2Kgs 20:3 ; Isa 38:3 compare 1Sam 12:24 of ׳ י , בַּאֲמִתֶּ֑ךָ Ps 25:5 ; Ps 26:3 ; Ps 86:11 עיר האמת Zech 8:3 of men Ps 45:5 ; Ps 51:8 ; 2Chr 31:20 ; 2Chr 32:1 ; Prov 29:14 ; Isa 10:20 ; Isa 42:3 ; Isa 48:1 ובתמים ׳ בא Judg 9:16 ; Judg 9:19 ; Josh 24:14 ׳ חֶסֶד וֶאֱ mercy and faithfulness Prov 3:3 ; Prov 14:22 ; Prov 16:6 ; Prov 20:28 ; Hos 4:1 , & the phrase עשׂה חסד ואמת Gen 24:49 ; Gen 47:29 ; Josh 2:14 ( J ) 2Sam 15:20 . \\ \\ \\ ( b ) an attribute of God Ps 54:7 ; Ps 71:22 ; Isa 38:18 ; Isa 38:19 ; Isa 61:8 נתן אמת Mic 7:20 עשׂה אמת Ezek 18:9 ; Neh 9:33 עשׂה חסד ואמת Gen 32:11 ( J ) 2Sam 2:6 רב חסד ואמת abundant in mercy and faithfulness Exod 34:6 ( J ) Ps 86:15 these attributes are also associated Ps 40:11 ; Ps 40:12 ; Ps 61:8 ; Ps 115:1 ; Ps 138:2 ; Isa 16:5 ; Gen 24:27 ( J ); they are messengers of God to men Ps 57:4 ; Ps 85:11 ; Ps 89:15 compare Ps 43:3 חסד ואמת ׳ כל ארחות י Ps 25:10 the faithfulness of God endureth for ever Ps 117:2 he keepeth it for ever Ps 146:6 it reacheth unto the skies Ps 57:11 ; Ps 108:5 it is shield & buckler Ps 91:4 he is אל אמת Ps 31:6 = אלהי אמת 2Chr 15:3 אֱמֶת is also associated with the divine ישׁר Ps 111:8 צֶדֶק Ps 85:12 צְדָקָה Zech 8:8 מִשְׁפָּט Ps 111:7 ; Jer 4:2 & salvation Ps 69:14 . 4. truth \\ \\ \\ ( a ) as spoken: דבר אמת speak truth 1Kgs 22:16 ; 2Chr 18:15 ; Jer 9:4 ; Zech 8:16 ; Ps 15:2 ׳ דִּבְרֵי א Eccl 12:10 אֱמֶת הַדָּבָר the thing is certainly true Deut 13:15 ; Deut 17:4 אִמְרֵי אֱמֶת = אמרים אמת Prov 22:21 הגה אמת Prov 8:7 ׳ הגיד א Dan 11:2 , אֲמִתְּךָ Ps 30:10 שׂפת אמת Prov 12:19 אֱמֶת it is true Isa 43:9 האמת אתכם whether truth is with you Gen 42:16 ( E ) compare Isa 59:14 ; Isa 59:15 . \\ \\ \\ ( b ) of testimony and judgment עֵד אֱמֶת true witness Prov 14:25 עד אמת ונאמן Jer 42:5 משׁפט אמת Ezek 18:8 ; Zech 7:9 שָׁפַט אמת Zech 8:16 . \\ \\ \\ ( c ) of divine instruction כְּחָב אֱמֶת Dan 10:21 תורת אמת Mal 2:6 compare Neh 9:13 תורתך אמת Ps 119:142 בְּפִיךָ אמת ׳ דבר י 1Kgs 17:24 compare 2Sam 7:28 ׳ משׁפטי י אמת Ps 19:10 ראשׁ דברך אמת Ps 119:160 מצותיך אמת Ps 119:151 . \\ \\ \\ ( d ) truth as a body of ethical or religious knowledge Dan 8:12 להשׂכיל באמתך Dan 9:13 . 5. adverb in truth, truly Ps 132:11 יהוה אלהים אמת Yahweh is God in truth, truly Jer 10:10 elsewhere בֶּאֱמֶת Judg 9:15 ; Ps 145:18 ; Jer 26:15 ; Jer 28:9 ; Jer 32:41 ."
+      }
+    },
+    {
+      "id": "peace_find",
+      "query": "Where can I find peace in the Bible?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "peace_find",
+        "verdict": "TOPICAL",
+        "source": "Nave's Topical Bible + Torrey's Textbook • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "peace"
+        ],
+        "reply": "TOPIC • PEACE SOURCE nave + torrey • local EXEMPLIFIED • By Abraham Ge 13:8,9 • Abimelech Ge 26:29 • Mordecai Es 10:3 • David Ps 120:7 See CHARITABLENESS See NATION, PEACE OF SOCIAL Ge 45:24 ; Le 26:6 ; Job 5:23,24 ; Ps 34:14; 120:6,7; 133:1 ; Pr 12:20; 15:17; 16:7; 17:1,14; 20:3 ; Ec 4:6 ; Isa 2:4; 45:7 ; Jer 29:7 ; Ho 2:18 ; Zec 8:19 ; Mt 5:9; 10:21,22,34-36 ; Mr 9:50 ; Lu 2:14 ; Ac 7:26-29; 17:7-9 ; Ro 12:18; 14:19; 1 Co 14:33; 2Co 13:11 ; Eph 4:3; 1 Th 5:13; 1Ti 2:2; 2 Ti 2:22; Heb 12:14 ; Jas 3:17,18; 1 Pe 3:10,11 SPIRITUAL Job 22:21,26; 34:29 ; Ps 1:1,2; 4:8; 17:15; 25:12,13; 29:11; 37:4,11,37; 73:25,26; 85:8; 119:165; 125:1,5 ; Pr 3:13-18,24; 14:14 ; Isa 9:6; 11:6-9,13; 12:1,2; 25:7,8; 26:3,12; 27:5; 28:12; 30:26; 32:2,17,18; 48:18; 53:5; 54:1,10,13; 55:2,12; 57:1,2,19; 60:20 ; Jer 33:6 ; Eze 34:25 ; Hag 2:9 ; Mal 2:5 ; Lu 1:79; 2:14 ; Joh 7:38; 14:27; 16:33; 20:19 ; Ac 10:36 ; Ro 2:10; 5:1; 8:6; 10:15; 14:17; 15:13,33; 1 Co 1:3; 2Co 1:2 ; Ga 1:3; 5:22 ; Eph 2:14-17 ; Php 4:7,9 ; Col 1:20; 3:15; 1 Th 1:1; 2Th 3:16; 1 Ti 1:2; 2Ti 1:2 ; Tit 1:4 ; Phm 1:3 ; Re 1:4 See CHARITABLENESS See JOY See PRAISE … 42 more entries in this topic RELATED TOPICS CHARITABLENESS · NATION, PEACE OF · JOY · PRAISE"
+      }
+    },
+    {
+      "id": "strongs_h157",
+      "query": "Please define Strong's H157 for me.",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "strongs_h157",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local • offline",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "H157"
+        ],
+        "reply": "H157 אָהַב ('āhaḇ) verb DEFINITION to have affection for (sexually or otherwise):—(be-) love(-d, -ly, -r), like, friend. USAGE to love, (Qal), human love for another, includes family, and sexual, human appetite for objects such as food, drink, sleep, wisdom, human love for or to God, act of being a friend, lover (participle), friend (participle), God' s love toward man, to individual men, to people Israel, to righteousness, (Niphal), lovely (participle), loveable (participle), (Piel), friends, lovers (fig. of adulterers), to like KJV love (169x), lovers (19x), friends (12x), beloved (5x), liketh (1x), lovely (1x), loving (1x) ROOT primitive root Source: LOGOS Lexicon • offline Strong's/KJV companion DEEP • BDB (Brown-Driver-Briggs, 1906) אָהֵב 216 verb love — Qal Perfect אָהֵ֑ב Gen 27:9 + 7 t; אָשֵהבּ Gen 27:14 אָהַב Gen 37:3 + 3 t.; אֲֵהבָךָ Deut 15:16 3 feminine singular אָֽהֲבָה Song 1:7 +, etc.; Imperfect (הָֿ֑ב) יֶאֱהַב Prov 3:12 +; 1 singular אֵהָ֑ב Prov 8:17 (compare Ew § 192 d Ges «GKC:68»§ 68 . 1); וָָֽאֹהַ֖ב Mal 1:2 וָאֹהֲבֵהוּ Hos 11:1 אֹהֲבֵם Hos 14:5 וָאֹהֲבֵם Ps 119:167 2 masculine plural תְּאֵהֲבוּ Prov 1:22 (compare Kö I p. 394 Ges «GKC:63»§ 63 R 2); תֶּאֱהָ֑בוּ Zech 8:17 תָּאֱהָבוּן Ps 4:3 Imperative אֱהַבֿ Hos 3:1 אֱהָבֶהָ Prov 4:6 אֶהֱבוּ Ps 31:24 ; Amos 5:15 אֱהָ֑בוּ Zech 8:19 Infinitive construct אֱהֹב Eccl 3:8 אַהֲבָה Deut 10:12 +; אֲהֲבַת Mic 6:8 + etc.; compare also below \\ \\ n. אהבה below; Participle אֹהֵב ( אוֺהֵב ) Deut 10:18 + 26 t.; feminine construct אֲהֻבַת Hos 3:1 is probably active compare Ba NB 174 ff ; suffix אֹהֲבִי Isa 41:8 etc.; feminine אֹהֶ֫בֶת Gen 25:28 אֹהַ֫בְתִּי Hos 10:11 etc.; Passive participle אָהוּב Neh 13:26 אֲהוּבָה Deut 21:15 (twice in verse); Deut 21:16 . — love (mostly with accusative, followed by לְ + object Lev 19:18 ; Lev 19:34 ; 2Chr 19:2 (late), followed by בְּ Eccl 5:9 absolute Eccl 3:8 & see below), (affection both pure & impure, divine & human); — 1. human love to human object; absolute, opposed to hate שָׂנֵא Eccl 3:8 of love to son Gen 22:2 ; Gen 25:28 ; Gen 37:3 ; Gen 37:4 ; Gen 44:20 ( J E ) Prov 13:24 so also 2Sam 13:21 ᵐ5 Ew Th We , compare Dr , of David's loving Amnon; never to parent, but mother-in-law Ruth 4:15 of man's love to woman; wife Gen 24:67 ; Gen 29:20 ; Gen 29:30 (compare v Gen 29:18 ):32 ( J E ), also Deut 21:15 (twice in verse); Deut 21:16 ; Judg 14:16 ; 1Sam 1:5 ; 2Chr 11:21 ; Esth 2:17 ; Hos 3:1 ; Eccl 9:9 but also Gen 34:3 ( J ) Judg 16:4 ; Judg 16:15 ; 2Sam 13:1 ; 2Sam 13:4 ; 2Sam 13:15 (where of carnal desire) 1Kgs 11:1 compare v 1Kgs 11:2 ; Hos 3:1 רֵעַ ׳ א loving a paramour , see Ba NB 176 ; woman's love to man 1Sam 18:20 (so v 1Sam 18:28 ᵑ0 , but read וְבִי כָליִֿשְׂרָאֵל אֹהֵב אֹתוֺ ᵐ5 We Dr ) Song 1:3 ; Song 1:4 ; Song 1:7 ; Song 3:1 ; Song 3:2 ; Song 3:3 ; Song 3:4 (5 t. subject נַפְשִׁי ); compare also figurative of adulterous Judah Jer 2:25 ; Isa 57:8 ; Ezek 16:37 of love of slave to master Exod 21:5 ( J E ) Deut 15:16 inferior to superior 1Sam 18:22 compare v 1Sam 18:16 love to neighbour Lev 19:18 ( וְאָהַבְתָּ לְרֵעֲךָ כָּמוֺ֑ךָ ), partic to stranger Lev 19:34 (both P ), Deut 10:18 ; Deut 10:19 love of friend to friend 1Sam 16:21 ; 1Sam 18:1 ; 1Sam 18:3 ; 1Sam 20:17 (twice in verse); Job 19:19 ; Prov 17:1 compare 2Sam 19:7 (twice in verse); 2Chr 19:2 see also Prov 9:8 ; Prov 16:13 compare Prov 15:12 see especially Participle below 2. less often of appetite, object food, Gen 27:7 ; Gen 27:9 ; Gen 27:14 ( J E ); drink Hos 3:1 ; Prov 21:17 husbandry 2Chr 26:10 compare figurative of Ephraim Hos 10:11 followed by infinitive; length of life Ps 34:13 of cupidity Hos 9:1 ; 1Sam 1:23 ; Eccl 5:9 (twice in verse); of love of sleep Prov 20:13 compare figurative of sluggish watchmen (followed by infinitive) Isa 56:10 also with object abstract wisdom (personified), knowledge, righteousness, etc. Prov 4:6 ; Prov 8:17 ; Prov 8:21 ; Prov 12:1 ; Prov 22:11 ; Prov 29:3 ; Amos 5:15 ; Mic 6:8 (infinitive || infinitives) Zech 8:19 , compare Prov 19:8 קֹנֶה לֵב אֹהֵב נַפְשׁוֺ ; object folly, evil, etc., Mic 3:2 ; Mic 4:3 ; Ps 11:5 ; Ps 52:5 ; Ps 52:6 ; Ps 109:17 ; Prov 1:22 ; Prov 8:36 ; Prov 17:19 (twice in verse), compare Prov 18:21 ; Zech 8:17 , compare כֵּן ׳ א Amos 4:5 ; Jer 5:3 , followed by Infinitive Hos 12:8 ; Jer 14:10 , especially of idolatry Hos 4:13 (where strike out הֵבוּ compare Kö 1. p. 395 ) Jer 8:2 . 3. love to God Exod 20:6 ( J E ) elsewhere Hexateuch only Deut 5:10 ; Deut 6:5 ; Deut 7:9 + 9 t. Deuteronomy + Josh 22:5 ; Josh 23:11 also Judg 5:31 ; 1Kgs 3:3 ; Neh 1:5 ; Dan 9:4 especially in (late) Ps 31:24 ; Ps 116:1 ; Ps 145:20 , but usually followed by name, law, etc. of ׳ י Ps 5:12 ; Ps 26:8 ; Ps 40:17 ; Ps 69:37 ; Ps 70:5 ; Ps 97:10 ; Ps 119:47 + 11 t. Ps 119 compare Isa 56:6 compare also of love to Jerusalem Isa 66:10 ; Ps 122:6 . 4. especially Participle אֹהֵב = \\ \\ \\ ( a ) lover , Lam 1:2 (figurative of Jerusalem); \\ \\ \\ ( b ) friend Hiram of David 1Kgs 5:15 , compare Jer 20:4 ; Jer 20:6 ; Esth 5:10 ; Esth 5:14 ; Esth 6:13 ; Ps 38:12 (|| רֵעַ ) so Ps 88:19 , Prov 14:20 also Prov 18:24 ; Prov 27:6 Abraham of God Isa 41:8 ; 2Chr 20:7 . 5. of divine love \\ \\ \\ ( a ) to individual men Deut 4:37 ; 2Sam 12:24 ; Prov 3:12 ; Prov 15:9 ; Ps 146:8 ; Neh 13:26 \\ \\ \\ ( b ) to people Israel, etc. Deut 7:8 ; Deut 7:13 ; Deut 23:6 ; Hos 3:1 ; Hos 9:15 ; Hos 11:1 ; Hos 14:5 ; 1Kgs 10:9 ; 2Chr 2:10 ; 2Chr 9:8 ; 2Chr 48:14 ; (3 t. in verse); Ps 47:5 to Jerusalem Ps 78:68 ; Ps 87:2 \\ \\ \\ ( c ) to righteousness, etc. Ps 11:7 ; Ps 33:5 ; Ps 37:28 ; Ps 45:8 ; Ps 99:4 ; Isa 61:8 ; Mal 2:11 . Niph`al Participle plural הַנֶּאֱהָבִים 2Sam 1:23 lovely, loveable of Saul & Jonath. (|| הַנְּעִימִם ). Pi`el Participle plural suffix (בָֿ֑י) מְאַהֲבַי Hos 2:7 + 3 t.; (בָֿ֑יִח) מְאַהֲבַיִח Jer 22:20 + 6 t.; מְאַהֲבֶיהָ Hos 2:9 + 4 t. 1. friends Zech 13:6 2. lovers in figure of adulterous Israel Hos 2:7 ; Hos 2:9 ; Hos 2:12 ; Hos 2:14 ; Hos 2:15 ; Ezek 23:5 ; Ezek 23:9 Judah Jer 22:20 ; Jer 22:22 ; Jer 30:14 ; Lam 1:19 ; Ezek 16:33 ; Ezek 16:36 ; Ezek 16:37 ; Ezek 23:22 ."
+      }
+    },
+    {
+      "id": "courage_verse",
+      "query": "Can you show me a verse about courage?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "courage_verse",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "dt 31:6",
+        "refs": [
+          "dt 31:6",
+          "isa 41:10"
+        ],
+        "nodes": [
+          "dt 31:6",
+          "isa 41:10"
+        ],
+        "reply": "SCRIPTURE • COURAGE Deuteronomy 31:6 — Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee. Isaiah 41:10 — Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness."
+      }
+    },
+    {
+      "id": "mercy_bible",
+      "query": "What does Scripture teach about mercy?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "mercy_bible",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "lk 6:36",
+        "refs": [
+          "lk 6:36",
+          "ps 103:8",
+          "eph 2:4"
+        ],
+        "nodes": [
+          "lk 6:36",
+          "ps 103:8",
+          "eph 2:4"
+        ],
+        "reply": "SCRIPTURE • MERCY Luke 6:36 — Be ye therefore merciful, as your Father also is merciful. Psalms 103:8 — The LORD is merciful and gracious, slow to anger, and plenteous in mercy. plentious...: Heb. great in mercy Ephesians 2:4 — But God, who is rich in mercy, for his great love wherewith he loved us,"
+      }
+    },
+    {
+      "id": "love_god",
+      "query": "What does it mean to love God with one’s whole life?",
+      "word_count": 11,
+      "target_status": "target",
+      "observed": {
+        "id": "love_god",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "dt 6:5",
+        "refs": [
+          "dt 6:5",
+          "mk 12:30",
+          "mt 22:37"
+        ],
+        "nodes": [
+          "dt 6:5",
+          "mk 12:30",
+          "mt 22:37"
+        ],
+        "reply": "SCRIPTURE • LOVE OF GOD Deuteronomy 6:5 — And thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy might. Mark 12:30 — And thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind, and with all thy strength: this is the first commandment. Matthew 22:37 — This is the first and great commandment."
+      }
+    },
+    {
+      "id": "one_another",
+      "query": "Where does Jesus teach us to love one another?",
+      "word_count": 9,
+      "target_status": "target",
+      "observed": {
+        "id": "one_another",
+        "verdict": "TRUTH",
+        "source": "KJV • words of Jesus, locally red-letter indexed",
+        "scripture_ref": "jn 13:34",
+        "refs": [
+          "jn 13:34",
+          "jn 15:12"
+        ],
+        "nodes": [
+          "jn 13:34",
+          "jn 15:12"
+        ],
+        "reply": "WORDS OF JESUS • LOVE ONE ANOTHER John 13:34 — A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another. John 15:12 — This is my commandment, That ye love one another, as I have loved you. KJV text from passages marked as Jesus’ words in the local red-letter index."
+      }
+    },
+    {
+      "id": "math_scope",
+      "query": "Can you tell me about math?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "math_scope",
+        "verdict": "MATH",
+        "source": "Math canon • Ray's New Higher Arithmetic (1880) + Euclid Elements Book I, ed. John Casey (1885) • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "math:mathematics"
+        ],
+        "reply": "MATH • Mathematics Mathematics is the science of quantity. The elementary branches of mathematics are Arithmetic, Algebra, and Geometry. Ray's New Higher Arithmetic, Van Antwerp, Bragg &amp; Co., 1880 (public domain), Art. 6–8 • public domain • local"
+      }
+    },
+    {
+      "id": "rest_bible",
+      "query": "Where can I find rest according to Scripture?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "rest_bible",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "mt 11:28",
+        "refs": [
+          "mt 11:28",
+          "jer 6:16",
+          "heb 4:9"
+        ],
+        "nodes": [
+          "mt 11:28",
+          "jer 6:16",
+          "heb 4:9"
+        ],
+        "reply": "SCRIPTURE • REST Matthew 11:28 — Come unto me, all ye that labour and are heavy laden, and I will give you rest. Jeremiah 6:16 — Thus saith the LORD, Stand ye in the ways, and see, and ask for the old paths, where is the good way, and walk therein, and ye shall find rest for your souls. But they said, We will not walk therein. Hebrews 4:9 — There remaineth therefore a rest to the people of God. rest: or, keeping of a sabbath"
+      }
+    },
+    {
+      "id": "hope_scripture",
+      "query": "Can you show me a Bible verse about hope?",
+      "word_count": 9,
+      "target_status": "target",
+      "observed": {
+        "id": "hope_scripture",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "rom 15:13",
+        "refs": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "nodes": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "reply": "SCRIPTURE • HOPE Romans 15:13 — Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost. Hebrews 6:19 — Which hope we have as an anchor of the soul, both sure and stedfast, and which entereth into that within the veil; 1 Peter 1:3 — Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead, abundant: Gr. much"
+      }
+    },
+    {
+      "id": "lord_prayer",
+      "query": "Can you explain the Lord's Prayer in simple words?",
+      "word_count": 9,
+      "target_status": "target",
+      "observed": {
+        "id": "lord_prayer",
+        "verdict": "TOPICAL",
+        "source": "Nave's Topical Bible + Torrey's Textbook • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "lords-prayer"
+        ],
+        "reply": "TOPIC • LORD’S PRAYER SOURCE nave • local General scriptures concerning Mt 6:9-13 ; Lu 11:2-4"
+      }
+    },
+    {
+      "id": "house_god",
+      "query": "What does the Bible say about God's house?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "house_god",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local + Nave's/Torrey • offline + Easton",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "H1005",
+          "G3624",
+          "G3614",
+          "G3613"
+        ],
+        "reply": "H1005 בַּיִת (bayiṯ) masculine noun DEFINITION house USAGE house (of men), house (of God) KJV house(44x) ROOT H1004 | בַּיִת | household, home, within, temple, prison, place, family, families, dungeon, misc G3624 οἶκος (oikos) masculine noun DEFINITION o ' -kos of uncertain affinity a dwelling (more or less extensive, literal orfigurative) by implication, a family (more or less related, literallyor figuratively) — home, house(-hold), temple. o ' -kos of uncertain affinity a dwelling (more or less extensive, literal orfigurative) by implication, a family (more or less related, literallyor figuratively) — home, house(-hold), temple USAGE a house, an inhabited house, home, any building whatever, of a palace, the house of God, the tabernacle, any dwelling place, of the human body as the abode of demons that possess it, of tents, and huts, and later, of the nests, stalls, lairs, of animals, the place where one has fixed his residence, one's settled abode, domicile, the inmates of a house, all the persons forming one family, a household, the family of God, of the Christian Church, of the church of the Old and New Testaments, stock, family, descendants of one KJV house(104x), household(3x), () ROOT primitive root G3614 οἰκία (oikia) feminine noun DEFINITION properly, residence (abstractly), but usually (concretely)an abode (literally or figuratively) by implication, a family(especially domestics) — home, house(-hold) USAGE a house, an inhabited edifice, a dwelling, the inmates of a house, the family, property, wealth, goods KJV house(92x), household(1x) ROOT G3624 | οἶκος | household, home, at home, misc G3613 οἰκητήριον (oikētērion) neuter noun DEFINITION aresidence (literally or figuratively) — habitation, house USAGE a dwelling place, habitation, of the body as a dwelling place for the spirit KJV house(1x), habitation(1x) ROOT G3611 | οἰκέω | dwell Source: LOGOS Lexicon • offline Strong's/KJV companion TOPIC • HOUSE SOURCE nave • local Built of • Stone Le 14:40-45 ; Isa 9:10 ; Am 5:11 • Brick Ge 11:3 ; Ex 1:11-14 ; Isa 9:10 • Wood So 1:17 ; Isa 9:10 Built into city walls Jos 2:15 Used for worship Ac 1:13,14; 12:12 ; Ro 16:5; 1 Co 16:19; Col 4:15 ; Phm 1:2 “A man’s castle,” De 24:10,11 ARCHITECTURE OF • Foundations of stone 1Ki 5:17; 7:9 ; Ezr 6:3 ; Jer 51:26 • Figurative Ps 87:1 ; Isa 28:16; 48:13 ; Ro 15:20; 1 Co 3:11; Eph 2:20; 1 Ti 6:19; Heb 6:1 ; Re 21:14 • Cornerstone Job 38:6 ; Ps 144:12 • Figurative Ps 118:22 ; Isa 28:16 ; Eph 2:20; 1 Pe 2:6 … 25 more entries in this topic STUDY OUTLINE • topical grouping, not a doctrinal definition DICTIONARY • House Till their sojourn in Egypt the Hebrews dwelt in tents. They then for the first time inhabited cities (Gen. 47:3; Ex. 12:7; Heb. 11:9). From the earliest times the Assyrians and the Canaanites were builders of cities. The Hebrews after the Conquest took possession of the captured cities, and seem to have followed the methods of building that had been pursued by the Canaanites. Reference is made to the stone (1 Kings 7:9; Isa. 9:10) and marble (1 Chr. 29:2) used in building, and to the internal wood-work of the houses (1 Kings 6:15; 7:2; 10:11, 12; 2 Chr. 3:5; Jer. 22:14). “Ceiled houses” were such as had beams inlaid in the walls to which wainscotting was fastened (Ezra 6:4; Jer. 22:14; Hag. 1:4). “Ivory houses” had the upper parts of the walls adorned with figures in stucco with gold and ivory (1 Kings 22:39; 2 Chr. 3:6; Ps. 45:8). The roofs of the dwelling-houses were flat, and are often alluded to in Scripture (2 Sam. 11:2; Isa. 22:1; Matt. 24:17). Sometimes tents or booths were erected on them (2 Sam. 16:22). They were protected by parapets or low walls (Deut. 22:8). On the house-tops grass sometimes grew (Prov. 19:13; 27:15; Ps. 129:6, 7). They were used, not only as places of recreation in the evening, but also sometimes as sleeping-places at night (1 Sam. 9:25, 26; 2 Sam. 11:2; 16:22; Dan. 4:29; Job 27:18; Prov. 21:9), and as places of devotion (Jer. 32:29; 19:13). Easton's Bible Dictionary (1897) • source-backed, public domain"
+      }
+    },
+    {
+      "id": "future_promise",
+      "query": "What promises does God give for our future?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "future_promise",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "jer 29:11",
+        "refs": [
+          "jer 29:11",
+          "rom 8:28",
+          "heb 6:19"
+        ],
+        "nodes": [
+          "jer 29:11",
+          "rom 8:28",
+          "heb 6:19"
+        ],
+        "reply": "SCRIPTURE • FUTURE PROMISES Jeremiah 29:11 — For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end. expected...: Heb. end and expectation Romans 8:28 — And we know that all things work together for good to them that love God, to them who are the called according to his purpose. Hebrews 6:19 — Which hope we have as an anchor of the soul, both sure and stedfast, and which entereth into that within the veil;"
+      }
+    },
+    {
+      "id": "weather_boundary",
+      "query": "What is the weather right now?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "weather_boundary",
+        "verdict": "TRU_CORE",
+        "source": "TRU scope • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "That request is outside the local Bible sources, and live or general facts are not available offline. I can help with a Bible verse, word, topic, or cross-reference."
+      }
+    },
+    {
+      "id": "wifi_boundary",
+      "query": "How can someone connect a phone to Wi-Fi?",
+      "word_count": 9,
+      "target_status": "target",
+      "observed": {
+        "id": "wifi_boundary",
+        "verdict": "TRU_CORE",
+        "source": "TRU scope • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "That request is outside the local Bible sources, and live or general facts are not available offline. I can help with a Bible verse, word, topic, or cross-reference."
+      }
+    },
+    {
+      "id": "bitcoin_boundary",
+      "query": "What is the Bitcoin price today in dollars?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "bitcoin_boundary",
+        "verdict": "TRU_CORE",
+        "source": "TRU scope • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "That request is outside the local Bible sources, and live or general facts are not available offline. I can help with a Bible verse, word, topic, or cross-reference."
+      }
+    },
+    {
+      "id": "mars_boundary",
+      "query": "How many moons does Mars have right now?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "mars_boundary",
+        "verdict": "TRU_CORE",
+        "source": "TRU scope • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "That request is outside the local Bible sources, and live or general facts are not available offline. I can help with a Bible verse, word, topic, or cross-reference."
+      }
+    },
+    {
+      "id": "universe_authority_review",
+      "query": "Who is in control of the universe?",
+      "word_count": 7,
+      "target_status": "review",
+      "observed": {
+        "id": "universe_authority_review",
+        "verdict": "GAP",
+        "source": "KJV + LOGOS Lexicon • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No canon match. Try a verse, a word, a Strong's number, or a phrase from Scripture."
+      }
+    },
+    {
+      "id": "forgiveness_doctrine_review",
+      "query": "What does Scripture say about people who sin?",
+      "word_count": 8,
+      "target_status": "review",
+      "observed": {
+        "id": "forgiveness_doctrine_review",
+        "verdict": "GAP",
+        "source": "KJV + LOGOS Lexicon • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No canon match. Try a verse, a word, a Strong's number, or a phrase from Scripture."
+      }
+    },
+    {
+      "id": "house_building_review",
+      "query": "How does a person build a house without electricity?",
+      "word_count": 9,
+      "target_status": "review",
+      "observed": {
+        "id": "house_building_review",
+        "verdict": "GAP",
+        "source": "KJV + LOGOS Lexicon • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No canon match. Try a verse, a word, a Strong's number, or a phrase from Scripture."
+      }
+    },
+    {
+      "id": "hope_five_word",
+      "query": "Where can people find hope in Scripture?",
+      "word_count": 7,
+      "target_status": "target",
+      "observed": {
+        "id": "hope_five_word",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "rom 15:13",
+        "refs": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "nodes": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "reply": "SCRIPTURE • HOPE Romans 15:13 — Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost. Hebrews 6:19 — Which hope we have as an anchor of the soul, both sure and stedfast, and which entereth into that within the veil; 1 Peter 1:3 — Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead, abundant: Gr. much"
+      }
+    },
+    {
+      "id": "peace_greek",
+      "query": "What does peace mean in Greek?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "peace_greek",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local + Nave's/Torrey • offline",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "G1515",
+          "H7965",
+          "H7999",
+          "H1826",
+          "H7962"
+        ],
+        "reply": "G1515 εἰρήνη (eirēnē) feminine noun DEFINITION peace; quietness; rest; by implication, prosperity USAGE a state of national tranquillity, exemption from the rage and havoc of war, peace between individuals, i.e. harmony, concord, security, safety, prosperity, felicity, (because peace and harmony make and keep things safe and prosperous), of the Messiah' s peace, the way that leads to peace (salvation), of Christianity, the tranquil state of a soul assured of its salvation through Christ, and so fearing nothing from God and content with its earthly lot, of whatsoever sort that is, the blessed state of devout and upright men after death KJV peace(89x), one(1x), rest(1x), quietness(1x) ROOT primitive root H7965 שָׁלוֹם (šālôm) masculine noun DEFINITION safe; figuratively, well, happy, friendly; welfare, health, prosperity, peace USAGE completeness, soundness, welfare, peace, completeness (in number), safety, soundness (in body), welfare, health, prosperity, peace, quiet, tranquillity, contentment, peace, friendship, of human relationships, with God especially in covenant relationship, peace (from war), peace (as adjective) KJV peace(175x), well(14x), peaceably(9x), welfare(5x), salute (with H7592)(4x), prosperity(4x), did(3x), safe(3x), health(2x), peaceable(2x), miscellaneous(15x) ROOT H7999 | שָׁלַם | pay, peace, recompense, reward, render, restore, repay, perform, good, end, requite, restitution, finished, again, amends, full, misc H7999 שָׁלַם (šālam) verb DEFINITION shaw-lam' a primitive root to be safe (in mind, body or estate) figuratively, to be (causatively, make) completed by implication, to be friendly by extension, to reciprocate (in various applications) — make amends, (make an) end, finish, full, give again, make good, (re-) pay (again), (make) (to) (be at) peace(-able), that is perfect, perform, (make) prosper(-ous), recompense, render, requite, make restitution, restore, reward, shaw-lam' a primitive root to be safe (in mind, body or estate) figuratively, to be (causatively, make) completed by implication, to be friendly by extension, to reciprocate (in various applications) — make amends, (make an) end, finish, full, give again, make good, (re-) pay (again), (make) (to) (be at) peace(-able), that is perfect, perform, (make) prosper(-ous), recompense, render, requite, make restitution, restore, reward USAGE to be in a covenant of peace, be at peace, (Qal), to be at peaceful one (participle), (Pual) one in covenant of peace (participle), (Hiphil), to make peace with, to cause to be at peace, (Hophal) to live in peace, to be complete, be sound, (Qal), to be complete, be finished, be ended, to be sound, be uninjured, (Piel), to complete, finish, to make safe, to make whole or good, restore, make compensation, to make good, pay, to requite, recompense, reward, (Pual), to be performed, to be repaid, be requited, (Hiphil), to complete, perform, to make an end of KJV pay(19x), peace(11x), recompense(11x), reward(10x), render(9x), restore(8x), repay(7x), perform(7x), good(6x), end(4x), requite(4x), restitution(4x), finished(3x), again(3x), amends(1x), full(1x), () ROOT primitive root H1826 דָּמַם (dāmam) verb DEFINITION to be dumb by implication, to be astonished, to stop also to perish — cease, be cut down (off), forbear, hold peace, quiet self, rest, be silent, keep (put to) silence, be (stand) still, tarry, wait USAGE to be silent, be still, wait, be dumb, grow dumb, (Qal), to be silent, to be still, die, to be struck dumb, (Niphal) to be silenced, be made silent, destroyed, (Poal) to make quiet, (Hiphil) to make silent (cause to die) KJV silence(6x), still(6x), silent(4x), rest(2x), cease(2x), forbear(1x), peace(1x), quieted(1x), tarry(1x), wait(1x) ROOT H1724 | דָּהַם | astonied H7962 שַׁלְוָה (šalvâ) feminine noun DEFINITION security (genuine or false) — abundance, peace(-ably), prosperity, quietness USAGE quietness, ease, prosperity KJV prosperity(3x), peaceably(2x), quietness(1x), abundance(1x), peace(1x) ROOT H7951 | שָׁלָה | prosper, safety, happy Source: LOGOS Lexicon • offline Strong's/KJV companion TOPIC • PEACE SOURCE nave + torrey • local EXEMPLIFIED • By Abraham Ge 13:8,9 • Abimelech Ge 26:29 • Mordecai Es 10:3 • David Ps 120:7 See CHARITABLENESS See NATION, PEACE OF SOCIAL Ge 45:24 ; Le 26:6 ; Job 5:23,24 ; Ps 34:14; 120:6,7; 133:1 ; Pr 12:20; 15:17; 16:7; 17:1,14; 20:3 ; Ec 4:6 ; Isa 2:4; 45:7 ; Jer 29:7 ; Ho 2:18 ; Zec 8:19 ; Mt 5:9; 10:21,22,34-36 ; Mr 9:50 ; Lu 2:14 ; Ac 7:26-29; 17:7-9 ; Ro 12:18; 14:19; 1 Co 14:33; 2Co 13:11 ; Eph 4:3; 1 Th 5:13; 1Ti 2:2; 2 Ti 2:22; Heb 12:14 ; Jas 3:17,18; 1 Pe 3:10,11 SPIRITUAL Job 22:21,26; 34:29 ; Ps 1:1,2; 4:8; 17:15; 25:12,13; 29:11; 37:4,11,37; 73:25,26; 85:8; 119:165; 125:1,5 ; Pr 3:13-18,24; 14:14 ; Isa 9:6; 11:6-9,13; 12:1,2; 25:7,8; 26:3,12; 27:5; 28:12; 30:26; 32:2,17,18; 48:18; 53:5; 54:1,10,13; 55:2,12; 57:1,2,19; 60:20 ; Jer 33:6 ; Eze 34:25 ; Hag 2:9 ; Mal 2:5 ; Lu 1:79; 2:14 ; Joh 7:38; 14:27; 16:33; 20:19 ; Ac 10:36 ; Ro 2:10; 5:1; 8:6; 10:15; 14:17; 15:13,33; 1 Co 1:3; 2Co 1:2 ; Ga 1:3; 5:22 ; Eph 2:14-17 ; Php 4:7,9 ; Col 1:20; 3:15; 1 Th 1:1; 2Th 3:16; 1 Ti 1:2; 2Ti 1:2 ; Tit 1:4 ; Phm 1:3 ; Re 1:4 See CHARITABLENESS See JOY See PRAISE … 42 more entries in this topic RELATED TOPICS CHARITABLENESS · NATION, PEACE OF · JOY · PRAISE STUDY OUTLINE • topical grouping, not a doctrinal definition DEEP • Thayer (1889) peace, i. e. 1. a state of national tranquillity; exemption from the rage and havoc of war: Rev. vi. 4; πολλὴ εἰρήνη, Acts xxiv. 2 (3); τὰ [WH txt. om. τά] πρὸς εἰρήνην, things that look towards peace, as an armistice, conditions for the restoration of peace, Lk. xiv. 32; αἰτεῖσθαι εἰρήνην, Acts xii. 20; ἔχειν εἰρήνην, of the church free from persecutions, Acts ix. 31. 2. peace between individuals, i. e. harmony, concord: Mt. x. 34; Lk. xii. 51; Acts vii. 26; Ro. xiv. 17; 1 Co. vii. 15; Gal. v. 22; Eph. ii. 17; iv. 3; i. q. the author of peace, Eph. ii. 14 [cf. B. 125 (109)]; ἐν εἰρήνῃ, where harmony prevails, in a peaceful mind, Jas. iii. 18; ὁδὸς εἰρήνης, way leading to peace, a course of life promoting harmony, Ro. iii. 17 (fr. Is. lix. 8); μετ’ εἰρήνης, in a mild and friendly spirit, Heb. xi. 31; ποιεῖν εἰρήνην, to promote concord, Jas. iii. 18; to effect it, Eph. ii. 15; ζητεῖν, 1 Pet. iii. 11; διώκειν, 2 Tim. ii. 22; with μετὰ πάντων added, Heb. xii. 14; τὰ τῆς εἰρήνης διώκειν, Ro. xiv. 19 [cf. B. 95 (83); W. 109 (103 sq.)]. spec. good order, opp. to ἀκαταστασία, 1 Co. xiv. 33. 3. after the Hebr. שָׁלוֹם, security, safety, prosperity, felicity, (because peace and harmony make and keep things safe and prosperous): Lk. xix. 42; Heb. vii. 2; εἰρήνη κ. ἀσφάλεια, opp. to ὄλεθρος, 1 Th. v. 3; ἐν εἰρήνῃ ἐστὶ τὰ ὑπάρχοντα αὐτοῦ, his goods are secure from hostile attack, Lk. xi. 21; ὕπαγε εἰς εἰρήνην, Mk. v. 34, and πορεύου εἰς εἰρ. Lk. vii. 50; viii. 48, a formula of wishing well, blessing, addressed by the Hebrews to departing friends (לֵךְ לְשָׁלוֹם 1 S. i. 17; xx. 42, etc.; properly, depart into a place or state of peace; [cf. B. 184 (160)]); πορεύεσθαι ἐν εἰρήνῃ, Acts xvi. 36, and ὑπάγετε ἐν εἰρήνῃ, Jas. ii. 16, go in peace i. e. may happiness attend you; ἀπολύειν τινὰ μετ’ εἰρήνης, to dismiss one with good wishes, Acts xv. 33; ἐν εἰρήνῃ, with my wish fulfilled, and therefore happy, Lk. ii. 29 (see ἀπολύω, 2 a.); προπέμπειν τινὰ ἐν εἰρ. free from danger, safe, 1 Co. xvi. 11 [al. take it of inward peace or of harmony; cf. Mey. ad loc.]. The Hebrews in invoking blessings on a man called out שָׁלוֹם לְךָ (Judg. vi. 23; Dan. x. 19); from this is to be derived the explanation of those expressions which refer apparently to the Messianic blessings (see 4 below): εἰρήνη τῷ οἴκῳ τούτῳ, let peace, blessedness, come to this household, Lk. x. 5; υἱὸς εἰρήνης, worthy of peace [cf. W. § 34, 3 N. 2; B. 161 sq. (141)], Lk. x. 6; ἐλθέτω ἡ εἰρήνη ἐπ’ αὐτόν, let the peace which ye wish it come upon it, i. e. be its lot, Mt. x. 13; to the same purport ἐπαναπ. ἡ εἰρ. ὑμ. ἐπ’ αὐτόν, Lk. x. 6; ἡ εἰρ. ὑμ. πρὸς ὑμᾶς ἐπιστραφήτω, let your peace return to you, because it could not rest upon it, i. e. let it be just as if ye had not uttered the wish, Mt. x. 13. 4. spec. the Messiah’s peace: Lk. ii. 14; ὁδὸς εἰρήνης, the way that leads to peace (salvation), Lk. i. 79; εἰρ. ἐν οὐρανῷ, peace, salvation, is prepared for us in heaven, Lk. xix. 38; εὐαγγελίζεσθαι εἰρήνην, Acts x. 36. 5. acc. to a conception distinctly peculiar to Christianity, the tranquil state of a soul assured of its salvation through Christ, and so fearing nothing from God and content with its earthly lot, of whatsoever sort that is: Ro. viii. 6; ἐν εἰρήνῃ sc. ὄντες is used of those who, assured of salvation, tranquilly await the return of Christ and the transformation of all things which will accompany that event, 2 Pet. iii. 14; [πληροῦν πάσης . . . εἰρήνης ἐν τῷ πιστεύειν, Ro. xv. 13 (where L mrg. ἐν π. εἰρήνῃ)]; ἔχειν ἐν Χριστῷ εἰρήνην (opp. to ἐν τῷ κόσμῳ θλίψιν ἔχειν), Jn. xvi. 33; ἔχειν εἰρ. πρὸς τ. θεόν, with God, Ro. v. 1, (εἰρ. πρός τινα, Plat. rep. 5 p. 465 b.; cf. Diod. 21, 12; [cf Mey. on Ro. l. c.; W. 186 (175); 406 (379)]); εὐαγγελίζεσθαι εἰρήνην, Ro. x. 15 [R G Tr mrg. in br.]; τὸ εὐαγγέλιον τῆς εἰρήνης, Eph. vi. 15; in the expression εἰρήνην ἀφίημι κτλ. Jn. xiv. 27, in which Christ, with allusion to the usual Jewish formula at leave-taking (see 3 above), says that he not merely wishes, but gives peace; ἡ εἰρήνη τοῦ Χριστοῦ, which comes from Christ, Col. iii. 15 [Rec. θεοῦ]; τοῦ θεοῦ, Phil. iv. 7, [cf. W. 186 (175)]. Comprehensively of every kind of peace (blessing), yet with a predominance apparently of the notion of peace with God, εἰρήνη is used — in the salutations of Christ after his resurrection, εἰρήνη ὑμῖν (שָׁלוֹם לָכֶם), Lk. xxiv. 36 [T om. WH reject the cl.]; Jn. xx. 19, 21, 26; in the phrases ὁ κύριος τῆς εἰρήνης, the Lord who is the author and promoter of peace, 2 Th. iii. 16; ὁ θεὸς τῆς εἰρ. Ro. xv. 33; xvi. 20; 2 Co. xiii. 11; Phil. iv. 9; 1 Th. v. 23; Heb. xiii. 20; in the salutations at the beginning and the close of the apostolic Epp.: Ro. i. 7; 1 Co. i. 3; 2 Co. i. 2; Gal. i. 3; vi. 16; Eph. i. 2; vi. 23; Phil. i. 2; Col. i. 2; 1 Th. i. 1; 2 Th. i. 2; iii. 16; 1 Tim. i. 2; 2 Tim. i. 2; Tit. i. 4; [Philem. 3]; 1 Pet. i. 2; v. 14; 2 Pet. i. 2; 2 Jn. 3; 3 Jn. 15 (14); [Jude 2]; Rev. i. 4. Cf. Kling in Herzog iv. p. 596 sq. s. v. Friede mit Gott; Weiss, Bibl. Theol. d. N. T. § 83 b.; [Otto in the Jahrbb. für deutsch. Theol. for 1867, p. 678 sqq.; cf. W. 549 (511)]. 6. of the blessed state of devout and upright men after death (Sap. iii. 3): Ro. ii. 10.*"
+      }
+    },
+    {
+      "id": "easton-harp-use",
+      "query": "What is a harp used for?",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "easton-harp-use",
+        "verdict": "DEFINE",
+        "source": "Easton's Dictionary (1897) • local",
+        "scripture_ref": "gen 4:21",
+        "refs": [],
+        "nodes": [
+          "harp"
+        ],
+        "reply": "EASTON • Harp It was used as an accompaniment to songs of cheerfulness as well as of praise to God (Gen. 31:27; 1 Sam. 16:23; 2 Chr. 20:28; Ps. 33:2; 137:2). The soothing effect of the music of the harp is referred to 1 Sam. 16:16, 23; 18:10; 19:9."
+      }
+    }
+  ],
+  "summary": {
+    "PASS": 28,
+    "FAIL": 0,
+    "REVIEW": 3
+  }
+}
