@@ -19,55 +19,65 @@
 <p>Versioned checks for TRU's offline routing, with results and known limits. These are regression checks, not a claim that every biblical interpretation is settled.</p>
 </header>
 <section class="card">
-<h2>Current human-test build: v40</h2>
-<p><span class="score">Test candidate · not canonical</span></p>
+<h2>Current human-test build: v44</h2>
+<p><span class="score">Public static test candidate · not canonical</span></p>
 <ul>
-<li><a href="../test-candidates/v40/">Open the v40 preview</a></li>
-<li><a href="../test-candidates/v40/TRU-v40.html">Open the standalone app</a></li>
-<li><a href="../test-candidates/v40/README.md">Read the v40 teaching guide and test prompts</a></li>
+<li><a href="../test-candidates/v44/">Open the v44 preview</a></li>
+<li><a href="../test-candidates/v44/TRU-v44.html">Open or download the standalone app</a></li>
+<li><a href="../test-candidates/v44/README.md">Read v44 test notes and prompts</a></li>
+<li><a href="reports/v44-fix-smoke-v1.0.json">Read the v44 route and voice regression report</a></li>
+<li><a href="../test-candidates/v43/">Compare with the v43 candidate</a></li>
 </ul>
-<p class="meta">App SHA-256 <code>8c7df8f1b79efc5dee5ff8ac6863043d726444ccfd965343b4ab6d4d26fdefad</code><br>Teaches up to 500 browser-local Scripture Q&amp;As; local KJV references are checked, while the user-supplied interpretation is not independently reviewed.</p>
+<p class="meta">App SHA-256 <code>0388514562e13159c8511ed9c0bd235ef1aae2b30ebb5d1f38310e8f85803b93</code><br>Retains v43’s source-checked lexicon and plural fixes; adds a KJV word-index follow-up for indexed terms, concise repeated GAP wording, and one-time voice-mismatch guidance.</p>
 </section>
 <div class="grid">
 <section class="card">
 <h2>Five-plus-word question pilot</h2>
-<p><span class="score">v38: 28/28 · v39: 28/28 · v40: 28/28</span></p>
+<p><span class="score">v38: 28/28 · v39: 28/28 · v40: 28/28 · v43: 28/28 · v44: 28/28</span></p>
 <p>31 generic test prompts: 28 scored targets and 3 review-only cases left unscored.</p>
 <ul>
 <li><a href="benchmarks/question-quality-public-v1.0.jsonl">Public test questions and checks</a></li>
 <li><a href="reports/question-quality-v38-v1.0.json">v38 recorded results</a></li>
 <li><a href="reports/question-quality-v39-v1.0.json">v39 recorded results</a></li>
 <li><a href="reports/question-quality-v40-v1.0.json">v40 recorded results</a></li>
+<li><a href="reports/question-quality-v43-v1.0.json">v43 recorded results</a></li>
+<li><a href="reports/question-quality-v44-v1.0.json">v44 recorded results</a></li>
 </ul>
 </section>
 <section class="card">
 <h2>Exact-term object routing</h2>
-<p><span class="score">v38: 1/5 · v39: 5/5 · v40: 5/5</span></p>
+<p><span class="score">v38: 1/5 · v39: 5/5 · v40: 5/5 · v43: 5/5 · v44: 5/5</span></p>
 <p>Checks that chair does not trigger an unrelated gloss, door reaches its exact local entry, and an existing harp dictionary answer remains available.</p>
 <ul>
 <li><a href="benchmarks/object-routing-v1.0.jsonl">Five-case fixture</a></li>
 <li><a href="reports/object-routing-v38-v1.0.json">v38 recorded results</a></li>
 <li><a href="reports/object-routing-v39-v1.0.json">v39 recorded results</a></li>
 <li><a href="reports/object-routing-v40-v1.0.json">v40 recorded results</a></li>
+<li><a href="reports/object-routing-v43-v1.0.json">v43 recorded results</a></li>
+<li><a href="reports/object-routing-v44-v1.0.json">v44 recorded results</a></li>
 <li><a href="reports/object-routing-history-v1.0.md">Historical comparison across v19–v38</a></li>
 </ul>
 </section>
 </div>
 <section class="card">
 <h2>Scripture teaching mechanics</h2>
-<p><span class="score">v40: 8/8 · 500-entry cap checked</span></p>
+<p><span class="score">v40: 8/8 · v43: 8/8 · v44: 8/8 · 500-entry cap checked</span></p>
 <p>Sequential tests cover valid and rejected citations, exact-answer retrieval, list/remove commands, and preservation of ordinary memory.</p>
 <ul>
 <li><a href="benchmarks/scripture-teaching-v1.0.jsonl">Eight-case teaching fixture</a></li>
 <li><a href="reports/scripture-teaching-v40-v1.0.json">v40 recorded results</a></li><li><a href="test_v40_capacity.py">500-entry capacity check</a></li>
+<li><a href="reports/scripture-teaching-v43-v1.0.json">v43 recorded results</a></li><li><a href="test_v43_capacity.py">v43 500-entry capacity check</a></li>
+<li><a href="test_v43_browser.py">v43 offline browser smoke checks</a></li>
+<li><a href="reports/scripture-teaching-v44-v1.0.json">v44 recorded results</a></li><li><a href="test_v44_capacity.py">v44 500-entry capacity check</a></li>
+<li><a href="test_v44_browser.py">v44 offline browser smoke and route/voice regressions</a></li>
 <li><a href="../test-candidates/v40/README.md">How to teach an entry and test it</a></li>
 </ul>
 <p>The 500-entry capacity is a personal teaching feature, not a 500-question benchmark or a preloaded answer set. Entries stay in the browser's local memory; the supplied interpretation is not independently vetted.</p>
 </section>
 <section class="card">
 <h2>Source lineage and limits</h2>
-<p>v40 is a deterministic artifact-based patch to v39; all 11 embedded source/data blocks remain byte-identical. The matching modular source tree for v17 SUPER has not been recovered; v40 is not claimed to rebuild it. The published scores check selected routing, local citations and mechanics only. They do not establish source completeness, theological correctness, or general-purpose performance.</p>
-<p><a href="verify_v40.py">Verify the pinned v40 hash and lineage</a> · <a href="build_v40.py">View the deterministic build patch</a></p>
+<p>v43 is a deterministic static update to v40: it replaces the embedded LOGOS Lexicon pack with a source-verified repaired pack, adds selected plural fallback and the Text-Rooted Understanding identity answer, and retains the local Scripture teaching shelf. v44 is a pinned static patch to v43 that addresses repeated GAP guidance, routes a verified personal-status follow-up to the KJV word index without answering the personal question, and shortens repeated voice-mismatch notices. Selected tests do not establish full source completeness, theological correctness, or general-purpose performance.</p>
+<p>Historical v40 lineage: <a href="verify_v40.py">verify the pinned v40 hash</a> · <a href="build_v40.py">view its deterministic patch</a>. v43: <a href="build_v43.py">view its deterministic builder</a> · <a href="test_v43_browser.py">run its browser smoke</a>. v44: <a href="build_v44.py">view its pinned builder</a> · <a href="test_v44_browser.py">run browser and route/voice checks</a> · <a href="test_v44_capacity.py">check the 500-entry limit</a>.</p>
 <p><a href="README.md">Read the methods, runner instructions and full caveats</a> · <a href="https://github.com/splashdown1/tru-shelf">View the public repository</a></p>
 </section>
 <footer>Reports are pinned to the candidate hash. The review-only questions are intentionally not scored until their intended behaviour is agreed.</footer>

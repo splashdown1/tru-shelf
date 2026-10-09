@@ -1,0 +1,144 @@
+{
+  "benchmark": "scripture-teaching-v1.0",
+  "artifact": "test-candidates/v44/TRU-v44.html",
+  "artifact_sha256": "0388514562e13159c8511ed9c0bd235ef1aae2b30ebb5d1f38310e8f85803b93",
+  "cases": [
+    {
+      "id": "reject_missing_verse",
+      "query": "remember: scripture: What supports hope in God? = V40_INVALID_CITATION_MARKER | John 999:999",
+      "word_count": 11,
+      "target_status": "target",
+      "observed": {
+        "id": "reject_missing_verse",
+        "verdict": "MEMORY",
+        "source": "local KJV validation",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No answer stored. Use 1–5 exact KJV verse references separated by semicolons; verse ranges are not accepted. Check the question and answer length. teach TRU a Scripture-grounded answer with: remember: scripture: = | ; . References are checked against the local KJV; the answer wording is yours to review."
+      }
+    },
+    {
+      "id": "invalid_citation_not_saved",
+      "query": "What supports hope in God?",
+      "word_count": 5,
+      "target_status": "target",
+      "observed": {
+        "id": "invalid_citation_not_saved",
+        "verdict": "SCRIPTURE",
+        "source": "KJV primary • local",
+        "scripture_ref": "rom 15:13",
+        "refs": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "nodes": [
+          "rom 15:13",
+          "heb 6:19",
+          "1pet 1:3"
+        ],
+        "reply": "SCRIPTURE • HOPE Romans 15:13 — Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost. Hebrews 6:19 — Which hope we have as an anchor of the soul, both sure and stedfast, and which entereth into that within the veil; 1 Peter 1:3 — Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead, abundant: Gr. much"
+      }
+    },
+    {
+      "id": "save_scripture_answer",
+      "query": "remember: scripture: How can I forgive someone personally? = Forgive one another, as God forgives you. | Ephesians 4:32; Colossians 3:13",
+      "word_count": 21,
+      "target_status": "target",
+      "observed": {
+        "id": "save_scripture_answer",
+        "verdict": "MEMORY",
+        "source": "user-taught answer • local KJV references",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "scripture_qa_v40__how can i forgive someone personally"
+        ],
+        "reply": "saved Scripture answer 1/500 for: How can I forgive someone personally? KJV references checked locally: Ephesians 4:32; Colossians 3:13"
+      }
+    },
+    {
+      "id": "retrieve_exact_answer",
+      "query": "How can I forgive someone personally!",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "retrieve_exact_answer",
+        "verdict": "SCRIPTURE",
+        "source": "user-taught answer • references checked against local KJV",
+        "scripture_ref": "eph 4:32",
+        "refs": [],
+        "nodes": [
+          "scripture_qa_v40__how can i forgive someone personally"
+        ],
+        "reply": "ANSWER YOU TAUGHT Forgive one another, as God forgives you. KJV • LOCAL Ephesians 4:32 — And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you. Colossians 3:13 — Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye. quarrel: or, complaint Your wording is user-supplied. References and quoted verse text were checked against the local KJV; the interpretation was not independently reviewed."
+      }
+    },
+    {
+      "id": "list_taught_answers",
+      "query": "scripture answers",
+      "word_count": 2,
+      "target_status": "target",
+      "observed": {
+        "id": "list_taught_answers",
+        "verdict": "MEMORY",
+        "source": "local Scripture teaching shelf",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "Scripture teaching shelf: 1/500 • How can I forgive someone personally?"
+      }
+    },
+    {
+      "id": "forget_exact_answer",
+      "query": "forget: scripture: How can I forgive someone personally?",
+      "word_count": 8,
+      "target_status": "target",
+      "observed": {
+        "id": "forget_exact_answer",
+        "verdict": "MEMORY",
+        "source": "local Scripture teaching shelf",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "forgot taught Scripture question: How can I forgive someone personally?"
+      }
+    },
+    {
+      "id": "teaching_removed",
+      "query": "scripture answers",
+      "word_count": 2,
+      "target_status": "target",
+      "observed": {
+        "id": "teaching_removed",
+        "verdict": "MEMORY",
+        "source": "local Scripture teaching shelf",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No Scripture answers taught yet (0/500). teach TRU a Scripture-grounded answer with: remember: scripture: = | ; . References are checked against the local KJV; the answer wording is yours to review."
+      }
+    },
+    {
+      "id": "generic_memory_preserved",
+      "query": "remember: v40_generic_memory = generic memory still works",
+      "word_count": 6,
+      "target_status": "target",
+      "observed": {
+        "id": "generic_memory_preserved",
+        "verdict": "MEMORY",
+        "source": "",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "remembered: v40_generic_memory = generic memory still works"
+      }
+    }
+  ],
+  "summary": {
+    "PASS": 8,
+    "FAIL": 0,
+    "REVIEW": 0
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Public static test page for TRU v43, an offline Scripture and word-study system.">
+<meta name="theme-color" content="#10140f">
+<title>TRU v43 — Text-Rooted Understanding</title>
+<style>
+:root{color-scheme:light dark;--bg:#10140f;--fg:#e7f0dc;--muted:#a8b89a;--line:#2c3824;--accent:#c6d86a;--card:#1a2216}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:820px;margin:0 auto;padding:48px 22px 72px}a{color:var(--accent)}.eyebrow{font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(2.8rem,8vw,5rem);line-height:1;margin:.5rem 0}h1 span{color:var(--accent)}h2{font-size:1.25rem;margin:0 0 .5rem}p,li{color:var(--muted)}section{border-top:1px solid var(--line);padding:24px 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 32px}.button{display:inline-block;background:var(--accent);color:#17200f;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:700}.button.secondary{background:var(--card);color:var(--fg);border:1px solid var(--line)}pre{white-space:pre-wrap;background:var(--card);border:1px solid var(--line);padding:16px;border-radius:8px;color:var(--fg)}.status{font-size:.9rem;border-left:3px solid var(--accent);padding-left:14px}footer{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<a class="eyebrow" href="../../">TRU Shelf / test candidates / v43</a>
+<h1>TRU <span>v43</span></h1>
+<p>Text-Rooted Understanding — a local, offline Scripture and word-study system.</p>
+<div class="actions">
+<a class="button" href="TRU-v43.html">Open the v43 app</a>
+<a class="button secondary" href="TRU-v43.html" download>Download the standalone HTML</a>
+<a class="button secondary" href="README.md">Test notes</a>
+</div>
+<section>
+<h2>What this test checks</h2>
+<ul>
+<li>Repairs to the baseline Strong’s gloss defects, checked against pinned Hebrew and Greek source snapshots; the verifier reports no remaining targeted changes or missing source definitions in either lexicon copy.</li>
+<li>Offline lookup regressions, including “define Graces”, corrected Strong’s entries, and the answer to “what does TRU mean?”</li>
+<li>The retained browser-local Scripture teaching shelf: up to 500 exact questions, each requiring one to five valid local KJV verse references.</li>
+</ul>
+<p class="status">Automated checks: v43 browser 9/9; modular-source smoke 27/27; question-quality 28/28 scored (3 review-only); object routing 5/5; Scripture teaching 8/8; 500-entry boundary passes.</p>
+</section>
+<section>
+<h2>Try these queries</h2>
+<pre>what does TRU mean?
+define Graces
+define churches
+H1323
+H8598
+G932
+faith without works
+John 3:16</pre>
+<p>To test the teaching shelf, use the example and prompts in the test notes. Entries stay in that browser’s local storage; the supplied answer is not independently judged for accuracy.</p>
+</section>
+<footer>
+<p>This is a public test candidate, not a canonical release. The app runs as a static HTML file; no account or server is required. <a href="https://splashdown1.github.io/tru-shelf/quality/">View the audit and verification report</a>.</p>
+</footer>
+</main>
+</body>
+</html>

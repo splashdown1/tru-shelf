@@ -1,0 +1,61 @@
+{
+  "report": "v44-fix-smoke-v1.0",
+  "artifact": "test-candidates/v44/TRU-v44.html",
+  "artifact_sha256": "0388514562e13159c8511ed9c0bd235ef1aae2b30ebb5d1f38310e8f85803b93",
+  "artifact_bytes": 35363336,
+  "verified_at_utc": "2026-10-09T02:42:53Z",
+  "result": "PASS",
+  "browser_smoke": {
+    "checks_passed": 9,
+    "checks_failed": 0,
+    "offline_startup": "PASS",
+    "console_errors": 0,
+    "page_errors": 0,
+    "retained_checks": [
+      "Text-Rooted Understanding identity queries",
+      "define Graces and churches",
+      "H1323, H8598, and G932 repaired-entry lookups",
+      "faith without works",
+      "John 3:16"
+    ]
+  },
+  "route_regressions": {
+    "first_gap_keeps_full_guidance": "PASS",
+    "later_gap_uses_concise_guidance": "PASS",
+    "are_you_saved_remains_gap": "PASS",
+    "saved_follow_up_uses_kjv_word_index": "PASS",
+    "saved_occurrences": 107,
+    "existing_heaven_topic_suggestion_preserved": "PASS",
+    "unknown_word_index_query_remains_gap": "PASS",
+    "personal_question_suggestion_rendered_in_chat": "PASS",
+    "suggestion_click_shows_107_occurrences": "PASS"
+  },
+  "voice_regression": {
+    "first_mismatch_notice_is_full": "PASS",
+    "repeated_mismatch_notice_is_concise": "PASS",
+    "voice_selection_logic_changed": false,
+    "test_voice": "mocked local English voice in isolated browser"
+  },
+  "teaching_shelf_capacity": {
+    "entries_accepted": 500,
+    "501st_distinct_entry_refused": true,
+    "existing_entry_updateable_at_capacity": true,
+    "prior_browser_overlay_restored": true,
+    "result": "PASS"
+  },
+  "benchmarks": {
+    "question_quality": {"pass": 28, "fail": 0, "review": 3},
+    "object_routing": {"pass": 5, "fail": 0, "review": 0},
+    "scripture_teaching": {"pass": 8, "fail": 0, "review": 0}
+  },
+  "reproducible_build": {
+    "pinned_parent": "test-candidates/v43/TRU-v43.html",
+    "parent_sha256": "8ab37266a47076e0213e1ed7464927b7a13dc0144d99eefa774da57ad2ad9f9c",
+    "rebuilt_byte_for_byte": true
+  },
+  "limitations": [
+    "Three question-quality cases remain review-only and are not counted as passes or failures.",
+    "Automated checks do not establish theological correctness or prove the completeness of the entire Strong's corpus.",
+    "The mismatch-notice test uses a mocked local voice; actual device voice availability remains device-specific."
+  ]
+}
