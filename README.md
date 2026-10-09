@@ -4,9 +4,11 @@ Door for the public offline lanes.
 
 Open the page: https://splashdown1.github.io/tru-shelf/
 
+TRU Portal index: https://splashdown1.github.io/tru-shelf/portal/ — searchable table of contents for published TRU reader candidates, the public engines and field doors, plus seven externally hosted public-domain film records. The gold portal in the v46 test candidate opens this page in the same tab; browser Back returns to the reader. GitHub Pages hosts the index only, not the films.
+
 Quality & audit: https://splashdown1.github.io/tru-shelf/quality/ — published benchmarks, versioned results, and source-lineage limits.
 
-Current human-test candidate: [TRU v45 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v45/) · [direct app](https://splashdown1.github.io/tru-shelf/test-candidates/v45/TRU-v45.html) · [test notes](https://splashdown1.github.io/tru-shelf/test-candidates/v45/README.md). v45 keeps v44’s tested behaviour, cleans up original-language entries, gives “where is heaven?” three linked KJV passages with careful scope, and tightens the phone header. It is a test candidate, not a canonical release.
+Current human-test candidate: [TRU v46 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v46/) · [direct app](https://splashdown1.github.io/tru-shelf/test-candidates/v46/TRU-v46.html) · [test notes](https://splashdown1.github.io/tru-shelf/test-candidates/v46/README.md). v46 sends the gold portal to the searchable family index and updates its help text; reader data and answer routing are unchanged. It is a test candidate, not a canonical release.
 
 Two engines sit above the cards:
 
@@ -45,7 +47,7 @@ Two engines sit above the cards:
 - Watch — one awake, a relief, a challenge word
 - Load — heavy high and close, hip belt, rain doubles it
 - Code — one file, words, look, steps
-- AI — ask for the source, keep the gap, save what you checked
+- Synthetic Intelligence — ask for the source, keep the gap, save what you checked
 - Place — type a packed city, get the coordinate. Not a map.
 - Sun — remaining light from a clear horizon. Not a clock.
 - Salt — draws water out. Seawater is not a drink. No cure schedule.

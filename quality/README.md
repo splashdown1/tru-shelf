@@ -2,7 +2,27 @@
 
 The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-shelf/quality/). This folder publishes repeatable local regression checks and recorded results. It is separate from TRU's offline app data.
 
-## Current human-test candidate: v45
+## Current human-test candidate: v46
+
+- [v46 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v46/)
+- [v46 app](https://splashdown1.github.io/tru-shelf/test-candidates/v46/TRU-v46.html)
+- [v46 test notes](../test-candidates/v46/README.md)
+- [v46 portal-link smoke report](reports/portal-v46-smoke-v1.0.json)
+- App SHA-256: `3a06dee754ca16e03ac88df1a1256c61c6b9fd40aa0d819b246cee99a796197b`
+
+v46 is a pinned portal patch to v45: the gold control opens the searchable TRU family index in the same tab, browser Back returns to the reader, and the reader's short architecture reply describes that destination. Scripture, lexicon, topical data, and answer routing are unchanged. The v45 15-check reader suite passes on v46, and the v46 browser check verifies same-tab navigation and return history. The portal itself renders 92 searchable cards, including the published v19–v40 and v43–v46 reader candidates, public engines/lanes, and seven Internet Archive film links. The videos are not copied into this repository.
+
+```sh
+python3 quality/build_v46.py --output /tmp/TRU-v46-rebuilt.html
+cmp /tmp/TRU-v46-rebuilt.html test-candidates/v46/TRU-v46.html
+python3 quality/test_v46_browser.py
+python3 quality/test_v46_capacity.py
+python3 quality/test_portal_index.py
+```
+
+The reader remains a test candidate, not a canonical release. v46 passed the 500-entry teaching-capacity boundary directly. The movie shelf is a static catalogue with external playback; its linked source records and file sizes can change independently.
+
+## Previous human-test candidate: v45
 
 - [v45 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v45/)
 - [v45 app](https://splashdown1.github.io/tru-shelf/test-candidates/v45/TRU-v45.html)
@@ -109,7 +129,7 @@ The v39 candidate is preserved at [its preview](https://splashdown1.github.io/tr
 
 ## Re-running locally
 
-The runner requires Python 3 and `agent-browser`. It opens the standalone artifact and calls TRU's local router directly; it does not use an AI service. Each fixture is executed sequentially in one browser session so stateful command tests can teach, retrieve, and forget an entry.
+The runner requires Python 3 and `agent-browser`. It opens the standalone artifact and calls TRU's local router directly; it does not use an external model service. Each fixture is executed sequentially in one browser session so stateful command tests can teach, retrieve, and forget an entry.
 
 From the repository root:
 

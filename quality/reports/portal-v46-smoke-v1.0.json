@@ -1,0 +1,131 @@
+{
+  "benchmark": "portal-v46-smoke-v1.0",
+  "recorded_at_utc": "2026-10-09T13:38:05Z",
+  "artifact": "test-candidates/v46/TRU-v46.html",
+  "artifact_sha256": "3a06dee754ca16e03ac88df1a1256c61c6b9fd40aa0d819b246cee99a796197b",
+  "portal": "portal/index.html",
+  "portal_sha256": "014b656c51f3521c4561dc0217af2c4d76afe0c2dcd6c9ac67b29fa44bb92052",
+  "checks": {
+    "inherited_reader_browser_regressions": {
+      "cases": 15,
+      "pass": 15,
+      "fail": 0,
+      "console_errors": 0,
+      "page_errors": 0,
+      "result": "PASS"
+    },
+    "gold_portal_navigation": {
+      "target": "https://splashdown1.github.io/tru-shelf/portal/",
+      "opens_same_tab": true,
+      "browser_back_returns_to_reader": true,
+      "accessible_name_matches_destination": true,
+      "help_copy_matches_destination": true,
+      "status_panel_links_to_index": true,
+      "result": "PASS"
+    },
+    "synthetic_intelligence_lane": {
+      "visible_label": "Synthetic Intelligence",
+      "old_ai_label_absent": true,
+      "same_tab_navigation": true,
+      "browser_back_returns_to_portal": true,
+      "result": "PASS"
+    },
+    "family_index": {
+      "searchable_cards": 92,
+      "published_reader_candidates": "v19-v40 and v43-v46",
+      "film_cards": 7,
+      "search_checks": 3,
+      "video_player_loaded_only_after_selection": true,
+      "mobile_overflow": false,
+      "homepage_index_link": true,
+      "homepage_portal_link_opens_in_same_tab": true,
+      "browser_back_returns_from_portal_to_shelf": true,
+      "portal_routes_open_in_same_tab": true,
+      "browser_back_returns_from_lane_to_portal": true,
+      "browser_back_returns_from_lane_to_shelf": true,
+      "console_errors": 0,
+      "page_errors": 0,
+      "result": "PASS"
+    },
+    "teaching_capacity": {
+      "accepted_entries": 500,
+      "refused_entry_501": true,
+      "existing_entry_updateable_at_capacity": true,
+      "previous_browser_overlay_restored": true,
+      "result": "PASS"
+    }
+  },
+  "film_shelf": {
+    "host": "Internet Archive",
+    "files_copied_to_github_pages": false,
+    "small_mp4_total_bytes": 4012709924,
+    "small_mp4_total_decimal_gb": 4.0127,
+    "small_mp4_total_gib": 3.7371,
+    "records": [
+      {
+        "title": "Shadow Ranch",
+        "year": 1930,
+        "genre": "Western",
+        "identifier": "ShadowRanch1930-BuckJones",
+        "rights_label": "Public Domain Mark 1.0",
+        "selected_file": "Buck_jonesInShadow_ranch_1930_512kb.mp4",
+        "bytes": 277140828
+      },
+      {
+        "title": "Camille",
+        "year": 1921,
+        "genre": "Drama",
+        "identifier": "1921Camille",
+        "rights_label": "Public Domain Mark 1.0",
+        "selected_file": "1921Camille.mp4",
+        "bytes": 318590135
+      },
+      {
+        "title": "The Lost World",
+        "year": 1925,
+        "genre": "Science fiction adventure",
+        "identifier": "TheLostWorld512",
+        "rights_label": "Public Domain Mark 1.0",
+        "selected_file": "TheLostWorld512.mp4",
+        "bytes": 526979706
+      },
+      {
+        "title": "The General",
+        "year": 1926,
+        "genre": "Comedy adventure",
+        "identifier": "The_General_Buster_Keaton",
+        "rights_label": "Public Domain",
+        "selected_file": "The_General_512kb.mp4",
+        "bytes": 302790246
+      },
+      {
+        "title": "Speedy",
+        "year": 1928,
+        "genre": "City comedy",
+        "identifier": "speedytest_202602",
+        "rights_label": "Public Domain Mark 1.0",
+        "selected_file": "speedyTEST.ia.mp4",
+        "bytes": 492548321
+      },
+      {
+        "title": "The Bat",
+        "year": 1926,
+        "genre": "Mystery",
+        "identifier": "TheBat1926",
+        "rights_label": "Public Domain",
+        "selected_file": "TheBat1926.mp4",
+        "bytes": 329334657
+      },
+      {
+        "title": "Greed",
+        "year": 1924,
+        "genre": "Drama",
+        "identifier": "Greed1924_201612",
+        "rights_label": "Public Domain Mark 1.0",
+        "selected_file": "Greed 1924 Remaster.mp4",
+        "bytes": 1765326031
+      }
+    ]
+  },
+  "scope_note": "The film records are marked public domain by their Internet Archive item metadata; this is not independent legal advice. Rights in added music, restoration, subtitles, and territories can differ. The portal embeds external players on request and does not rehost video files. v46 changes the gold portal to same-tab navigation, updates the matching architecture reply, and labels the lane Synthetic Intelligence; question and content-routing behavior remain v45. Content-quality benchmarks remain those recorded for v45."
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Human-test TRU v46, an offline Scripture reader whose gold portal opens the searchable TRU family index in the same tab.">
+<meta name="theme-color" content="#071116">
+<title>TRU v46 — Public Test</title>
+<style>
+:root{color-scheme:dark;--bg:#071116;--panel:#0c1b22;--line:#16404b;--ink:#e6f2f4;--muted:#a8c2c9;--cyan:#55d9f3;--gold:#e8c85a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#10303a 0,transparent 40%),var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(850px,100%);margin:0 auto;padding:clamp(28px,7vw,72px) 22px 54px}a{color:var(--cyan);text-underline-offset:3px}.portal{display:inline-flex;gap:8px;align-items:center;color:var(--gold);font-size:.9rem;text-decoration:none}.eyebrow{color:var(--cyan);font:700 .76rem ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.16em;text-transform:uppercase;margin-top:24px}h1{font-size:clamp(3rem,10vw,6rem);line-height:.95;letter-spacing:-.055em;margin:8px 0 18px}h1 span{color:var(--cyan)}.lede{max-width:700px;color:var(--muted);font-size:1.15rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 17px;border:1px solid var(--cyan);border-radius:8px;background:var(--cyan);color:#04151b;text-decoration:none;font-weight:750}.button.secondary{background:transparent;color:var(--ink);border-color:#32616b}.button:hover{filter:brightness(1.1)}.notice{border-left:3px solid var(--gold);padding:10px 14px;background:#e8c85a12;color:#d9d4b4}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:28px 0}.card{border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#0e2027,#09161b);padding:20px}.card h2{margin:0 0 8px;font-size:1.05rem}.card p,.card li{color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;color:var(--muted);font-size:.9rem}footer p{margin:7px 0}@media(max-width:640px){.grid{grid-template-columns:1fr}.card{padding:16px}.actions .button{flex:1 1 100%}}
+</style>
+</head>
+<body>
+<main>
+<a class="portal" href="../../portal/">◈ Open the TRU family index</a>
+<div class="eyebrow">TRU Shelf · public human test</div>
+<h1>TRU <span>v46</span></h1>
+<p class="lede">The same offline Scripture and word-study reader as v45, with a focused improvement: the gold portal opens the searchable TRU table of contents in this tab, and its help text explains how to return.</p>
+<div class="actions">
+<a class="button" href="TRU-v46.html">Open the v46 app</a>
+<a class="button secondary" href="TRU-v46.html" download>Download the standalone app</a>
+<a class="button secondary" href="README.md">Read test notes</a>
+</div>
+<p class="notice"><strong>Test build, not a canonical release.</strong> v45 remains available unchanged for comparison. The offline reader does not download the portal or its external film streams.</p>
+<section class="grid" aria-label="What to test">
+<article class="card"><h2>Try the gold portal</h2><p>Open the family index here, then search for <em>v25</em>, <em>shelter</em>, or <em>western</em>. Use browser Back to return to the reader.</p></article>
+<article class="card"><h2>Seven film doors</h2><p>The index offers one small, public-domain-marked black-and-white film per card. Choose “Play” to load an Internet Archive player; nothing is copied to GitHub Pages.</p></article>
+<article class="card"><h2>Offline reader unchanged</h2><p>Scripture, lexicon, question routing, teaching entries, and local storage retain the v45 behaviour. Only the portal destination and its help text changed.</p></article>
+<article class="card"><h2>Verification</h2><ul><li>15 inherited reader browser checks pass.</li><li>Portal link and accessibility check pass.</li><li>92 index cards filter; movie players load only on request.</li><li>500-entry teaching-capacity boundary passes.</li></ul></article>
+</section>
+<footer><p>v46 file SHA-256: <code>3a06dee754ca16e03ac88df1a1256c61c6b9fd40aa0d819b246cee99a796197b</code></p><p><a href="../../">TRU Shelf</a> · <a href="../../portal/">TRU Portal index</a> · <a href="../../quality/">Quality &amp; audit</a> · <a href="../v45/">Compare v45</a> · <a href="https://github.com/splashdown1/tru-shelf">Source repository</a></p></footer>
+</main>
+</body>
+</html>
