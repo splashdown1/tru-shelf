@@ -6,7 +6,7 @@ Open the page: https://splashdown1.github.io/tru-shelf/
 
 Quality & audit: https://splashdown1.github.io/tru-shelf/quality/ — published benchmarks, versioned results, and source-lineage limits.
 
-Current human-test candidate: [TRU v44 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v44/) · [direct app](https://splashdown1.github.io/tru-shelf/test-candidates/v44/TRU-v44.html) · [test notes](https://splashdown1.github.io/tru-shelf/test-candidates/v44/README.md). v44 retains v43’s source-checked Strong’s repairs and adds a verified KJV word-index follow-up for “are you saved?”, concise repeat-GAP guidance, and a one-time voice-mismatch notice. It is a test candidate, not a canonical release.
+Current human-test candidate: [TRU v45 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v45/) · [direct app](https://splashdown1.github.io/tru-shelf/test-candidates/v45/TRU-v45.html) · [test notes](https://splashdown1.github.io/tru-shelf/test-candidates/v45/README.md). v45 keeps v44’s tested behaviour, cleans up original-language entries, gives “where is heaven?” three linked KJV passages with careful scope, and tightens the phone header. It is a test candidate, not a canonical release.
 
 Two engines sit above the cards:
 

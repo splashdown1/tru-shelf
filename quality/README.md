@@ -2,7 +2,29 @@
 
 The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-shelf/quality/). This folder publishes repeatable local regression checks and recorded results. It is separate from TRU's offline app data.
 
-## Current human-test candidate: v44
+## Current human-test candidate: v45
+
+- [v45 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v45/)
+- [v45 app](https://splashdown1.github.io/tru-shelf/test-candidates/v45/TRU-v45.html)
+- [v45 test notes](../test-candidates/v45/README.md)
+- [v45 combined polish report](reports/v45-polish-smoke-v1.0.json)
+- [v45 question-quality report](reports/question-quality-v45-v1.0.json)
+- [v45 object-routing report](reports/object-routing-v45-v1.0.json)
+- [v45 Scripture-teaching report](reports/scripture-teaching-v45-v1.0.json)
+- App SHA-256: `1cffce39f2ce605d52f0d2bc9b58c83acaa9bd1aeed7d04ae9eb10aec5d0b23c`
+
+v45 is a reproducible, pinned static update to v44. It presents the long BDB/Thayer material in a collapsible, cleaned display, gives “where is heaven?” three linked passages from the local KJV and topical index without claiming a physical coordinate, and makes the header more legible on phones. The embedded data and source lineage are unchanged. It retains v44’s GAP boundaries, word-index follow-up, voice notice, and teaching shelf.
+
+```sh
+python3 quality/build_v45.py --output /tmp/TRU-v45-rebuilt.html
+cmp /tmp/TRU-v45-rebuilt.html test-candidates/v45/TRU-v45.html
+python3 quality/test_v45_browser.py
+python3 quality/test_v45_capacity.py
+```
+
+The 15 browser query/interaction checks pass with a clean console; question quality is 28/28 scored targets with 3 review-only; object routing is 5/5; Scripture teaching is 8/8; and the 500-entry capacity boundary passes. This remains a public test candidate, not a canonical release.
+
+## Previous candidate: v44
 
 - [v44 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v44/)
 - [v44 app](https://splashdown1.github.io/tru-shelf/test-candidates/v44/TRU-v44.html)
@@ -10,16 +32,7 @@ The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-s
 - [v44 route and voice regression report](reports/v44-fix-smoke-v1.0.json)
 - App SHA-256: `0388514562e13159c8511ed9c0bd235ef1aae2b30ebb5d1f38310e8f85803b93`
 
-v44 is a reproducible static patch to the pinned v43 app. It keeps personal-status questions as GAPs, adds a verified KJV word-index follow-up where one exists, avoids repeating generic GAP instructions, and shortens repeated voice-mismatch notices without changing voice selection. `are you saved?` remains a GAP; its follow-up reports only the word’s 107 KJV occurrences and references. Three review-only benchmark cases remain unscored.
-
-```sh
-python3 quality/build_v44.py --output /tmp/TRU-v44-rebuilt.html
-cmp /tmp/TRU-v44-rebuilt.html test-candidates/v44/TRU-v44.html
-python3 quality/test_v44_browser.py
-python3 quality/test_v44_capacity.py
-```
-
-The v44 builder pins the exact v43 parent hash and reproduces the published artifact byte-for-byte. Automated results are 28/28 scored question-quality targets (3 `REVIEW`), object routing 5/5, Scripture teaching 8/8, nine browser smoke checks, and the 500-entry capacity boundary. This is a public test candidate, not a canonical release.
+v44 keeps personal-status questions as GAPs, adds a verified KJV word-index follow-up where one exists, avoids repeating generic GAP instructions, and shortens repeated voice-mismatch notices without changing voice selection. `are you saved?` remains a GAP; its follow-up reports only the word’s 107 KJV occurrences and references.
 
 ## Historical candidate: v40
 
@@ -51,7 +64,7 @@ The v40 builder and verifier use only Python's standard library: [`build_v40.py`
 
 ### Five-plus-word question pilot (`question-quality-public-v1.0`)
 
-Thirty-one generic prompts cover Bible questions, Scripture lookup, word study, explicit Hebrew/Greek intent, bounded out-of-scope queries, and three intentionally unscored review cases. v38, v39, v40, v43 and v44 pass 28 of 28 scored target checks; three cases remain `REVIEW`. This is a curated pilot, not a statistically representative benchmark.
+Thirty-one generic prompts cover Bible questions, Scripture lookup, word study, explicit Hebrew/Greek intent, bounded out-of-scope queries, and three intentionally unscored review cases. v38, v39, v40, v43, v44 and v45 pass 28 of 28 scored target checks; three cases remain `REVIEW`. This is a curated pilot, not a statistically representative benchmark.
 
 - Fixture: [`benchmarks/question-quality-public-v1.0.jsonl`](benchmarks/question-quality-public-v1.0.jsonl)
 - v38 report: [`reports/question-quality-v38-v1.0.json`](reports/question-quality-v38-v1.0.json)
@@ -59,10 +72,11 @@ Thirty-one generic prompts cover Bible questions, Scripture lookup, word study, 
 - v40 report: [`reports/question-quality-v40-v1.0.json`](reports/question-quality-v40-v1.0.json)
 - v43 report: [`reports/question-quality-v43-v1.0.json`](reports/question-quality-v43-v1.0.json)
 - v44 report: [`reports/question-quality-v44-v1.0.json`](reports/question-quality-v44-v1.0.json)
+- v45 report: [`reports/question-quality-v45-v1.0.json`](reports/question-quality-v45-v1.0.json)
 
 ### Exact-term object routing (`object-routing-v1.0`)
 
-Five checks cover exact definitions for `chair` and `door`, both as short and longer questions, plus a dictionary answer that must be preserved. v38 passes 1/5; v39, v40, v43 and v44 pass 5/5.
+Five checks cover exact definitions for `chair` and `door`, both as short and longer questions, plus a dictionary answer that must be preserved. v38 passes 1/5; v39, v40, v43, v44 and v45 pass 5/5.
 
 - Fixture: [`benchmarks/object-routing-v1.0.jsonl`](benchmarks/object-routing-v1.0.jsonl)
 - v38 report: [`reports/object-routing-v38-v1.0.json`](reports/object-routing-v38-v1.0.json)
@@ -70,11 +84,12 @@ Five checks cover exact definitions for `chair` and `door`, both as short and lo
 - v40 report: [`reports/object-routing-v40-v1.0.json`](reports/object-routing-v40-v1.0.json)
 - v43 report: [`reports/object-routing-v43-v1.0.json`](reports/object-routing-v43-v1.0.json)
 - v44 report: [`reports/object-routing-v44-v1.0.json`](reports/object-routing-v44-v1.0.json)
+- v45 report: [`reports/object-routing-v45-v1.0.json`](reports/object-routing-v45-v1.0.json)
 - Historical comparison: [`reports/object-routing-history-v1.0.md`](reports/object-routing-history-v1.0.md), with all 100 machine-readable observations in [`reports/object-routing-history-v1.0.json`](reports/object-routing-history-v1.0.json)
 
 ### Scripture teaching mechanics (`scripture-teaching-v1.0`)
 
-Eight sequential local checks cover missing or invalid citations, a valid answer and exact retrieval, listing and removal, and backward compatibility with ordinary `remember:`. All 8 pass on v40, v43 and v44. Separate isolated browser tests fill the 500-entry capacity and confirm a new question is refused while an existing one remains updateable.
+Eight sequential local checks cover missing or invalid citations, a valid answer and exact retrieval, listing and removal, and backward compatibility with ordinary `remember:`. All 8 pass on v40, v43, v44 and v45. Separate isolated browser tests fill the 500-entry capacity and confirm a new question is refused while an existing one remains updateable.
 
 - Fixture: [`benchmarks/scripture-teaching-v1.0.jsonl`](benchmarks/scripture-teaching-v1.0.jsonl)
 - v40 report: [`reports/scripture-teaching-v40-v1.0.json`](reports/scripture-teaching-v40-v1.0.json)
@@ -83,6 +98,8 @@ Eight sequential local checks cover missing or invalid citations, a valid answer
 - v43 capacity check: [`test_v43_capacity.py`](test_v43_capacity.py)
 - v44 report: [`reports/scripture-teaching-v44-v1.0.json`](reports/scripture-teaching-v44-v1.0.json)
 - v44 capacity check: [`test_v44_capacity.py`](test_v44_capacity.py)
+- v45 report: [`reports/scripture-teaching-v45-v1.0.json`](reports/scripture-teaching-v45-v1.0.json)
+- v45 capacity check: [`test_v45_capacity.py`](test_v45_capacity.py)
 
 The teaching feature's 500-entry capacity is **not** a 500-question benchmark and does not mean any answers are preloaded. The five-plus-word pilot remains at 31 cases; expand its answer key only in small, source-checked batches after human review.
 
@@ -120,4 +137,4 @@ The runner refuses to overwrite an existing report path. Choose new filenames. T
 
 ### Human session audit (2026-10-06)
 
-A real-machine session transcript was audited against the v40 artifact source: [`reports/human-session-audit-v40-2026-10-06.md`](reports/human-session-audit-v40-2026-10-06.md). GAP/doctrine behaviour held; the audit also found source and presentation defects in the Strong’s block plus routing/voice issues. v43 repaired its flagged Strong’s glosses against pinned Hebrew and Greek source snapshots, restored plural fallback, and named TRU; v44 addresses repeated GAP guidance and voice-mismatch repetition. The selected repairs do not establish the entire lexicon’s completeness or theological correctness.
+A real-machine session transcript was audited against the v40 artifact source: [`reports/human-session-audit-v40-2026-10-06.md`](reports/human-session-audit-v40-2026-10-06.md). GAP/doctrine behaviour held; the audit also found source and presentation defects in the Strong’s block plus routing/voice issues. v43 repaired its flagged Strong’s glosses against pinned Hebrew and Greek source snapshots, restored plural fallback, and named TRU; v44 addresses repeated GAP guidance and voice-mismatch repetition; v45 improves lexicon presentation and surfaces bounded, cited topical evidence. The selected repairs do not establish the entire lexicon’s completeness or theological correctness.

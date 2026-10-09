@@ -1,0 +1,108 @@
+{
+  "benchmark": "object-routing-v1.0",
+  "artifact": "test-candidates/v45/TRU-v45.html",
+  "artifact_sha256": "1cffce39f2ce605d52f0d2bc9b58c83acaa9bd1aeed7d04ae9eb10aec5d0b23c",
+  "cases": [
+    {
+      "id": "chair_short_no_false_match",
+      "query": "What is a chair?",
+      "word_count": 4,
+      "target_status": "target",
+      "observed": {
+        "id": "chair_short_no_false_match",
+        "verdict": "GAP",
+        "source": "Exact lexical matching • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No exact local Bible lexicon entry was found for “chair”. I will not infer a Strong’s match from a similar gloss. Try an indexed Bible word or enter a Strong’s code."
+      }
+    },
+    {
+      "id": "door_short_exact_entry",
+      "query": "What is a door?",
+      "word_count": 4,
+      "target_status": "target",
+      "observed": {
+        "id": "door_short_exact_entry",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local + Nave's/Torrey • offline",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "H8179",
+          "H6607",
+          "G2374",
+          "H5592"
+        ],
+        "reply": "H8179 שַׁעַר (šaʿar) masculine noun DEFINITION an opening, i.e. door or gate USAGE gate (of entrance), gate (of space inside gate, i.e. marketplace, public meeting place), city, town, gate (of palace, royal castle, temple, court of tabernacle), heaven KJV gate(364x), city(3x), door(2x), port(1x), porters(1x) ROOT H8176 | שָׁעַר | think H6607 פֶּתַח (peṯaḥ) masculine noun DEFINITION an opening (literally), i.e. door (gate) or entrance way — door, entering (in), entrance (-ry), gate, opening, place USAGE opening, doorway, entrance KJV door(126x), entering(10x), entry(8x), gate(7x), in(7x), entrance(3x), openings(1x), place(1x) ROOT H6605 | פָּתַח | open, loose, grave, wide, engrave, put off, out, appear, drawn, break forth, set forth, misc G2374 θύρα (thyra) feminine noun DEFINITION th ' -rah apparently a primary word (compare \"door\" a portal or entrance (theopening or the closure, literally or figuratively) — door, gate USAGE a door, the vestibule, used of any opening like a door, an entrance, way or passage into, in a parable or metaphor, the door through which sheep go in and out, the name of him who brings salvation to those who follow his guidance, \" an open door\" is used of the opportunity of doing something, the door of the kingdom of heaven (likened to a palace) denotes the conditions which must be complied with in order to be received into the kingdom of God KJV door(38x), gate(1x) ROOT primitive root H5592 סַף (sap̄) masculine noun DEFINITION in its original sense of containing a vestibule (as a limit) also a dish (for holding blood or wine) — bason, bowl, cup, door (post), gate, post, threshold USAGE a spreading out, basin, goblet, bowl, basin, goblet, threshold, sill, threshold, sill, door-keeper KJV door(12x), threshold(8x), bason(4x), posts(3x), bowls(2x), gates(2x), cup(1x) ROOT H5605 | סָפַף | doorkeeper Source: LOGOS Lexicon • offline Strong's/KJV companion TOPIC • DOOR SOURCE nave • local Posts of, sprinkled with the blood of the paschal lamb Ex 12:22 The law to be written on De 11:20 Hinges for Pr 26:14 Made of gold 1 Ki 7:50 Doors of the temple made of two leaves, cherubim and flowers carved upon, covered with gold 1 Ki 6:31-35 FIGURATIVE • Door of hope Ho 2:15 • Of opportunity 1Co 16:9 ; Re 3:8 • Closed Mt 25:10 ; Lu 13:25 ; Re 3:7 STUDY OUTLINE • topical grouping, not a doctrinal definition"
+      }
+    },
+    {
+      "id": "chair_long_no_guess",
+      "query": "Can you tell me what a chair is in Scripture?",
+      "word_count": 10,
+      "target_status": "target",
+      "observed": {
+        "id": "chair_long_no_guess",
+        "verdict": "GAP",
+        "source": "Exact lexical matching • local",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [],
+        "reply": "No exact local Bible lexicon entry was found for “chair”. I will not infer a Strong’s match from a similar gloss. Try an indexed Bible word or enter a Strong’s code."
+      }
+    },
+    {
+      "id": "door_long_exact_entry",
+      "query": "Can you tell me what a door is in Scripture?",
+      "word_count": 10,
+      "target_status": "target",
+      "observed": {
+        "id": "door_long_exact_entry",
+        "verdict": "DEFINE",
+        "source": "LOGOS Lexicon • local + Nave's/Torrey • offline",
+        "scripture_ref": "",
+        "refs": [],
+        "nodes": [
+          "H8179",
+          "H6607",
+          "G2374",
+          "H5592"
+        ],
+        "reply": "H8179 שַׁעַר (šaʿar) masculine noun DEFINITION an opening, i.e. door or gate USAGE gate (of entrance), gate (of space inside gate, i.e. marketplace, public meeting place), city, town, gate (of palace, royal castle, temple, court of tabernacle), heaven KJV gate(364x), city(3x), door(2x), port(1x), porters(1x) ROOT H8176 | שָׁעַר | think H6607 פֶּתַח (peṯaḥ) masculine noun DEFINITION an opening (literally), i.e. door (gate) or entrance way — door, entering (in), entrance (-ry), gate, opening, place USAGE opening, doorway, entrance KJV door(126x), entering(10x), entry(8x), gate(7x), in(7x), entrance(3x), openings(1x), place(1x) ROOT H6605 | פָּתַח | open, loose, grave, wide, engrave, put off, out, appear, drawn, break forth, set forth, misc G2374 θύρα (thyra) feminine noun DEFINITION th ' -rah apparently a primary word (compare \"door\" a portal or entrance (theopening or the closure, literally or figuratively) — door, gate USAGE a door, the vestibule, used of any opening like a door, an entrance, way or passage into, in a parable or metaphor, the door through which sheep go in and out, the name of him who brings salvation to those who follow his guidance, \" an open door\" is used of the opportunity of doing something, the door of the kingdom of heaven (likened to a palace) denotes the conditions which must be complied with in order to be received into the kingdom of God KJV door(38x), gate(1x) ROOT primitive root H5592 סַף (sap̄) masculine noun DEFINITION in its original sense of containing a vestibule (as a limit) also a dish (for holding blood or wine) — bason, bowl, cup, door (post), gate, post, threshold USAGE a spreading out, basin, goblet, bowl, basin, goblet, threshold, sill, threshold, sill, door-keeper KJV door(12x), threshold(8x), bason(4x), posts(3x), bowls(2x), gates(2x), cup(1x) ROOT H5605 | סָפַף | doorkeeper Source: LOGOS Lexicon • offline Strong's/KJV companion TOPIC • DOOR SOURCE nave • local Posts of, sprinkled with the blood of the paschal lamb Ex 12:22 The law to be written on De 11:20 Hinges for Pr 26:14 Made of gold 1 Ki 7:50 Doors of the temple made of two leaves, cherubim and flowers carved upon, covered with gold 1 Ki 6:31-35 FIGURATIVE • Door of hope Ho 2:15 • Of opportunity 1Co 16:9 ; Re 3:8 • Closed Mt 25:10 ; Lu 13:25 ; Re 3:7 STUDY OUTLINE • topical grouping, not a doctrinal definition"
+      }
+    },
+    {
+      "id": "harp_dictionary_control",
+      "query": "What is a harp?",
+      "word_count": 4,
+      "target_status": "target",
+      "observed": {
+        "id": "harp_dictionary_control",
+        "verdict": "DEFINE",
+        "source": "Easton's Dictionary (1897) • local",
+        "scripture_ref": "gen 4:21",
+        "refs": [
+          "gen 4:21",
+          "gen 31:27",
+          "1sa 16:23",
+          "2ch 20:28",
+          "psa 33:2",
+          "psa 137:2",
+          "1ki 10:11",
+          "1ki 10:12"
+        ],
+        "nodes": [
+          "harp"
+        ],
+        "reply": "EASTON • Harp (Heb. kinnor), the national instrument of the Hebrews. It was invented by Jubal (Gen. 4:21). Some think the word kinnor denotes the whole class of stringed instruments. It was used as an accompaniment to songs of cheerfulness as well as of praise to God (Gen. 31:27; 1 Sam. 16:23; 2 Chr. 20:28; Ps. 33:2; 137:2). In Solomon’s time harps were made of almug-trees (1 Kings 10:11, 12). In 1 Chr. 15:21 mention is made of “harps on the Sheminith;” Revised Version, “harps set to the Sheminith;” better perhaps “harps of eight strings.” The soothing effect of the music of the harp is referred to 1 Sam. 16:16, 23; 18:10; 19:9. The church in heaven is represented as celebrating the triumphs of the Redeemer “harping with their harps” (Rev. 14:2)."
+      }
+    }
+  ],
+  "summary": {
+    "PASS": 5,
+    "FAIL": 0,
+    "REVIEW": 0
+  }
+}

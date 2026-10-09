@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Test TRU v45, an offline Scripture and word-study candidate with clearer lexicon entries and linked topical evidence.">
+<meta name="theme-color" content="#071116">
+<title>TRU v45 — Public Test</title>
+<style>
+:root{color-scheme:dark;--bg:#071116;--panel:#0c1b22;--line:#16404b;--ink:#e6f2f4;--muted:#a8c2c9;--cyan:#55d9f3;--lime:#c6d86a;--gold:#e8c85a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#10303a 0,transparent 40%),var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(920px,100%);margin:0 auto;padding:clamp(28px,7vw,72px) 22px 54px}a{color:var(--cyan);text-underline-offset:3px}.eyebrow{color:var(--cyan);font:700 .76rem ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.16em;text-transform:uppercase}.brand{display:flex;align-items:center;gap:12px;margin-bottom:26px}.mark{width:34px;height:34px;border:1px solid #16859a;border-radius:50%;display:grid;place-items:center;color:var(--cyan);box-shadow:0 0 18px #00d9ff33}.mark::after{content:"◈";font-size:17px}h1{font-size:clamp(3rem,10vw,6rem);line-height:.95;letter-spacing:-.055em;margin:0 0 18px}h1 span{color:var(--cyan)}.lede{max-width:700px;color:var(--muted);font-size:1.15rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 17px;border:1px solid var(--cyan);border-radius:8px;background:var(--cyan);color:#04151b;text-decoration:none;font-weight:750}.button.secondary{background:transparent;color:var(--ink);border-color:#32616b}.button:hover{filter:brightness(1.1)}.notice{border-left:3px solid var(--gold);padding:10px 14px;background:#e8c85a12;color:#d9d4b4}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:28px 0}.card{border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#0e2027,#09161b);padding:20px}.card h2{margin:0 0 8px;font-size:1.05rem}.card p,.card li{color:var(--muted);margin-top:0}.card ul{padding-left:20px;margin-bottom:0}.prompt{display:block;margin:8px 0;padding:10px 12px;border-radius:7px;background:#051115;border:1px solid #17444e;color:#bceaf2;font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0}.metric{border:1px solid var(--line);border-radius:9px;padding:12px;background:#0a1a20}.metric strong{display:block;color:var(--cyan);font:700 1.3rem ui-monospace,SFMono-Regular,Consolas,monospace}.metric span{color:var(--muted);font-size:.82rem}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;color:var(--muted);font-size:.9rem}footer p{margin:7px 0}@media(max-width:640px){.grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:16px}.actions .button{flex:1 1 100%}}
+</style>
+</head>
+<body>
+<main>
+<div class="brand"><div class="mark" aria-hidden="true"></div><div class="eyebrow">TRU Shelf · public human test</div></div>
+<h1>TRU <span>v45</span></h1>
+<p class="lede">Text-Rooted Understanding: a single-file, offline Scripture and word-study app. This candidate makes long original-language entries easier to read and gives “where is heaven?” a short, source-linked answer instead of leaving the evidence buried in a topic outline.</p>
+<div class="actions">
+<a class="button" href="TRU-v45.html">Open the v45 app</a>
+<a class="button secondary" href="TRU-v45.html" download>Download the standalone app</a>
+<a class="button secondary" href="README.md">Read test notes</a>
+</div>
+<p class="notice"><strong>Test build, not a canonical release.</strong> v44 remains available unchanged for comparison. Your learned entries stay in this browser’s local storage.</p>
+<section class="grid" aria-label="Changes to test">
+<article class="card">
+<h2>Try: “where is heaven?”</h2>
+<p>TRU names the local Nave–Torrey topic category, says it is not a physical map location, and shows linked KJV evidence.</p>
+<span class="prompt">Deuteronomy 26:15 · Isaiah 66:1 · Matthew 6:9</span>
+</article>
+<article class="card">
+<h2>Try: “H1323”</h2>
+<p>The concise LOGOS entry stays visible. Open the separate BDB detail panel for the full source entry; noisy extraction formatting is cleaned for reading.</p>
+<span class="prompt">Full original-language entry ▸ BDB (Brown–Driver–Briggs, 1906)</span>
+</article>
+<article class="card">
+<h2>Test boundaries</h2>
+<ul><li>“Are you saved?” remains a GAP; it does not make a personal or theological claim.</li><li>Unknown questions stay honest about the local-source limit.</li><li>Strong’s, dictionary, Bible, teaching-shelf and voice regressions are retained.</li></ul>
+</article>
+<article class="card">
+<h2>Verification</h2>
+<ul><li><a href="../../quality/reports/v45-polish-smoke-v1.0.json">15 browser checks; clean console</a></li><li><a href="../../quality/reports/question-quality-v45-v1.0.json">Question quality: 28/28 scored; 3 review-only</a></li><li><a href="../../quality/reports/object-routing-v45-v1.0.json">Object routing: 5/5</a> · <a href="../../quality/reports/scripture-teaching-v45-v1.0.json">Teaching shelf: 8/8</a></li><li>500-entry capacity boundary passes.</li></ul>
+</article>
+</section>
+<div class="metrics" aria-label="Embedded source counts">
+<div class="metric"><strong>31,100</strong><span>KJV verses</span></div>
+<div class="metric"><strong>14,088</strong><span>LOGOS lexicon entries</span></div>
+<div class="metric"><strong>5,742</strong><span>topical topics</span></div>
+<div class="metric"><strong>3,961</strong><span>dictionary entries</span></div>
+</div>
+<footer>
+<p>The app’s reference material is embedded; after opening or downloading the file it works offline. Source limits still apply: automated checks are a curated regression set, not proof of complete coverage or theological correctness.</p>
+<p><a href="../../">TRU Shelf</a> · <a href="../../quality/">Quality &amp; audit</a> · <a href="../v44/">Compare v44</a> · <a href="https://github.com/splashdown1/tru-shelf">Source repository</a></p>
+</footer>
+</main>
+</body>
+</html>

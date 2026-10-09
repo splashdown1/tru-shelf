@@ -1,0 +1,48 @@
+{
+  "benchmark": "v45-polish-smoke-v1.0",
+  "recorded_at_utc": "2026-10-09T11:03:43Z",
+  "artifact": "test-candidates/v45/TRU-v45.html",
+  "artifact_sha256": "1cffce39f2ce605d52f0d2bc9b58c83acaa9bd1aeed7d04ae9eb10aec5d0b23c",
+  "checks": {
+    "browser_queries_and_interactions": {
+      "pass": 15,
+      "fail": 0,
+      "result": "PASS"
+    },
+    "question_quality": {
+      "cases": 31,
+      "pass": 28,
+      "fail": 0,
+      "review_only": 3,
+      "result": "PASS"
+    },
+    "object_routing": {
+      "cases": 5,
+      "pass": 5,
+      "fail": 0,
+      "result": "PASS"
+    },
+    "scripture_teaching": {
+      "cases": 8,
+      "pass": 8,
+      "fail": 0,
+      "result": "PASS"
+    },
+    "teaching_capacity": {
+      "accepted_entries": 500,
+      "refused_entry_501": true,
+      "existing_entry_updateable_at_capacity": true,
+      "previous_browser_overlay_restored": true,
+      "result": "PASS"
+    },
+    "mobile_header": {
+      "viewport_css_pixels": "390x844",
+      "horizontal_overflow": false,
+      "mode_label_present": true,
+      "result": "PASS"
+    },
+    "browser_console_errors": 0,
+    "page_errors": 0
+  },
+  "scope_note": "Three question-quality cases remain review-only. Automated checks are curated regressions, not proof of full source completeness or theological correctness."
+}
