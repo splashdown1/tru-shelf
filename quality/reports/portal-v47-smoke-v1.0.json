@@ -1,0 +1,27 @@
+{
+  "benchmark": "portal-v47-smoke-v1.0",
+  "recorded_at_utc": "2026-10-09T14:04:01Z",
+  "artifact": "test-candidates/v47/TRU-v47.html",
+  "artifact_sha256": "f20d775a7c66349df9154c5d0418d8ba07182d3e11e48931855b0bbe21d61761",
+  "base_artifact": "test-candidates/v46/TRU-v46.html",
+  "base_artifact_sha256": "3a06dee754ca16e03ac88df1a1256c61c6b9fd40aa0d819b246cee99a796197b",
+  "shelf": "index.html",
+  "shelf_sha256": "6c2efad43bda0e32edf21c0cc9897edfcc0fe4f939d5073e7f9fe5bdd479a3a8",
+  "portal": "portal/index.html",
+  "portal_sha256": "61791b6b7e11eee1df952585a512856848ee41aad501a59238264e0aaf4b358d",
+  "results": {
+    "deterministic_rebuild": "pass",
+    "inherited_reader_browser_checks": "15 passed",
+    "reader_gold_portal_new_tab": "pass; reader tab remains open",
+    "reader_status_panel_new_tab": "pass; reader tab remains open",
+    "teaching_capacity": "500 accepted; 501st refused; existing entry update passed",
+    "portal_searchable_cards": 93,
+    "film_records": 7,
+    "new_tab_app_and_lane_links": "pass",
+    "section_and_return_links_current_tab": "pass",
+    "search_and_lazy_player": "pass",
+    "mobile_390x844": "pass; no horizontal overflow",
+    "browser_console_and_page_errors": "none"
+  },
+  "scope": "v47 changes navigation only; reader content and answer routing remain v46. Curated checks do not establish complete source coverage or theological correctness."
+}

@@ -2,7 +2,27 @@
 
 The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-shelf/quality/). This folder publishes repeatable local regression checks and recorded results. It is separate from TRU's offline app data.
 
-## Current human-test candidate: v46
+## Current human-test candidate: v47
+
+- [v47 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v47/)
+- [v47 app](https://splashdown1.github.io/tru-shelf/test-candidates/v47/TRU-v47.html)
+- [v47 test notes](../test-candidates/v47/README.md)
+- [v47 navigation smoke report](reports/portal-v47-smoke-v1.0.json)
+- App SHA-256: `f20d775a7c66349df9154c5d0418d8ba07182d3e11e48931855b0bbe21d61761`
+
+v47 is a pinned navigation patch to v46: the reader's gold Portal control and status-panel shortcut open the family index in a new tab, leaving the reader open. Shelf and Portal app/lane/source links also open in new tabs; section and return-to-shelf links stay in the current tab. Reader content and answer routing are unchanged. The Portal has 93 searchable cards, including v47, field doors, and seven external film records; the videos are not copied into this repository.
+
+```sh
+python3 quality/build_v47.py --output /tmp/TRU-v47-rebuilt.html
+cmp /tmp/TRU-v47-rebuilt.html test-candidates/v47/TRU-v47.html
+python3 quality/test_v47_browser.py
+python3 quality/test_v47_capacity.py
+python3 quality/test_portal_index.py
+```
+
+The inherited 15 reader checks, new-tab and keep-original-tab checks, 500-entry teaching-capacity test, 93-card/search/lazy-player/mobile checks, and clean-console checks pass. v47 remains a public human-test candidate, not a canonical release.
+
+## Previous human-test candidate: v46
 
 - [v46 preview](https://splashdown1.github.io/tru-shelf/test-candidates/v46/)
 - [v46 app](https://splashdown1.github.io/tru-shelf/test-candidates/v46/TRU-v46.html)
@@ -10,17 +30,7 @@ The live page is [TRU Shelf Quality & Audit](https://splashdown1.github.io/tru-s
 - [v46 portal-link smoke report](reports/portal-v46-smoke-v1.0.json)
 - App SHA-256: `3a06dee754ca16e03ac88df1a1256c61c6b9fd40aa0d819b246cee99a796197b`
 
-v46 is a pinned portal patch to v45: the gold control opens the searchable TRU family index in the same tab, browser Back returns to the reader, and the reader's short architecture reply describes that destination. Scripture, lexicon, topical data, and answer routing are unchanged. The v45 15-check reader suite passes on v46, and the v46 browser check verifies same-tab navigation and return history. The portal itself renders 92 searchable cards, including the published v19–v40 and v43–v46 reader candidates, public engines/lanes, and seven Internet Archive film links. The videos are not copied into this repository.
-
-```sh
-python3 quality/build_v46.py --output /tmp/TRU-v46-rebuilt.html
-cmp /tmp/TRU-v46-rebuilt.html test-candidates/v46/TRU-v46.html
-python3 quality/test_v46_browser.py
-python3 quality/test_v46_capacity.py
-python3 quality/test_portal_index.py
-```
-
-The reader remains a test candidate, not a canonical release. v46 passed the 500-entry teaching-capacity boundary directly. The movie shelf is a static catalogue with external playback; its linked source records and file sizes can change independently.
+v46 is preserved with its gold portal opening in the same tab and browser Back returning to the reader. Its page and content remain unchanged; the v47 candidate supersedes it for tab behaviour. The v46 portal listed 92 searchable cards at the time of that build, plus public engines/lanes and seven Internet Archive film links.
 
 ## Previous human-test candidate: v45
 

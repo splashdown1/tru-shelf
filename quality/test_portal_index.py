@@ -16,6 +16,26 @@ class QuietHandler(SimpleHTTPRequestHandler):
         return
 
 
+def expect_new_tab(page, link, url: str, title: str, label: str) -> None:
+    if link.count() != 1:
+        raise AssertionError(f"{label} must appear once")
+    if link.get_attribute("target") != "_blank":
+        raise AssertionError(f"{label} must open in a new tab")
+    rel = set((link.get_attribute("rel") or "").split())
+    if not {"noopener", "noreferrer"}.issubset(rel):
+        raise AssertionError(f"{label} must safely detach the new tab")
+    source_url = page.url
+    with page.expect_popup(timeout=15000) as popup_info:
+        link.click()
+    popup = popup_info.value
+    popup.wait_for_load_state("domcontentloaded", timeout=15000)
+    if popup.url != url or title not in popup.title():
+        raise AssertionError(f"{label} opened the wrong destination: {popup.url!r} {popup.title()!r}")
+    if page.url != source_url:
+        raise AssertionError(f"{label} replaced the original tab")
+    popup.close()
+
+
 def main() -> None:
     console_errors: list[str] = []
     page_errors: list[str] = []
@@ -33,14 +53,19 @@ def main() -> None:
                 page.goto(f"{base_url}/portal/", wait_until="load", timeout=120000)
                 if page.title() != "TRU Portal — Master Index":
                     raise AssertionError(f"wrong page title: {page.title()!r}")
-                if page.locator('a[target="_blank"]').count() != 0:
-                    raise AssertionError("portal links must stay in the current tab so browser Back works")
-                if "Text-Rooted Understanding" not in page.locator(".sub").inner_text():
-                    raise AssertionError("portal subtitle does not define TRU")
+                subtitle = page.locator(".sub").inner_text()
+                if "Text-Rooted Understanding" not in subtitle or "new tab" not in subtitle or "stays open" not in subtitle:
+                    raise AssertionError("portal subtitle does not explain TRU and the new-tab behaviour")
+                if page.locator('a[href^="#"][target]').count() != 0:
+                    raise AssertionError("section links must stay in the portal tab")
+                if page.locator('nav a[href="../"][target]').count() != 0 or page.locator('footer a[href="../"][target]').count() != 0:
+                    raise AssertionError("return-to-shelf links must stay in the current tab")
                 cards = page.locator(".index-card")
                 card_count = cards.count()
-                if card_count != 92:
-                    raise AssertionError(f"expected 92 searchable entries, found {card_count}")
+                if card_count != 93:
+                    raise AssertionError(f"expected 93 searchable entries including v47, found {card_count}")
+                if page.locator('#current-versions .index-card').filter(has_text="TRU v47").count() != 1:
+                    raise AssertionError("the v47 test candidate must appear in current versions")
                 for title in FILMS:
                     if page.locator("#films-out .movie-card").filter(has_text=title).count() != 1:
                         raise AssertionError(f"film card missing or duplicated: {title}")
@@ -66,70 +91,42 @@ def main() -> None:
                 if page.locator("#engines").is_visible():
                     raise AssertionError("unmatched portal sections should be hidden during a filtered search")
                 search.fill("")
-                if page.locator("#current-versions .index-card:visible").filter(has_text="TRU v46").count() != 1 or page.locator("#older-versions").get_attribute("open") is not None:
+                if page.locator("#current-versions .index-card:visible").filter(has_text="TRU v47").count() != 1 or page.locator("#older-versions").get_attribute("open") is not None:
                     raise AssertionError("clearing the search did not restore the default index view")
                 lane_names = page.locator("#lanes-out .index-card .big").all_inner_texts()
                 if "Synthetic Intelligence" not in lane_names or "AI" in lane_names:
-                    raise AssertionError("the AI lane must display as Synthetic Intelligence")
+                    raise AssertionError("the lane must display as Synthetic Intelligence, not AI")
                 synthetic_url = "https://splashdown1.github.io/tru-ai/"
+                sky_url = "https://splashdown1.github.io/tru-sky/"
                 page.context.route(synthetic_url, lambda route: route.fulfill(status=200, body="<!doctype html><title>Synthetic Intelligence test</title>", content_type="text/html"))
+                page.context.route(sky_url, lambda route: route.fulfill(status=200, body="<!doctype html><title>Sky test</title>", content_type="text/html"))
                 synthetic_link = page.locator("#lanes-out .index-card").filter(has_text="Synthetic Intelligence").locator(f'a[href="{synthetic_url}"]').first
-                if synthetic_link.count() != 1 or synthetic_link.get_attribute("target") is not None:
-                    raise AssertionError("the Synthetic Intelligence lane must stay in the portal tab")
-                synthetic_link.click()
-                if page.url != synthetic_url or page.title() != "Synthetic Intelligence test":
-                    raise AssertionError("the Synthetic Intelligence lane did not navigate in the current tab")
+                expect_new_tab(page, synthetic_link, synthetic_url, "Synthetic Intelligence test", "Synthetic Intelligence lane")
+                sky_link = page.locator("#lanes-out .index-card").filter(has_text="Sky").locator(f'a[href="{sky_url}"]').first
+                expect_new_tab(page, sky_link, sky_url, "Sky test", "Sky field door")
+                v47_preview = page.locator('#current-versions .index-card').filter(has_text="TRU v47").locator('a[href="../test-candidates/v47/"]')
+                expect_new_tab(page, v47_preview, f"{base_url}/test-candidates/v47/", "TRU v47", "v47 preview")
+                page.locator('nav a[href="../"]').click()
+                if page.url != f"{base_url}/" or page.title() != "TRU SHELF":
+                    raise AssertionError("TRU Shelf return link did not use the current tab")
                 page.go_back(wait_until="load", timeout=120000)
                 if page.url != f"{base_url}/portal/":
-                    raise AssertionError("browser Back did not return from Synthetic Intelligence to the portal")
+                    raise AssertionError("browser Back did not return from the shelf to the portal")
                 page.set_viewport_size({"width": 390, "height": 844})
                 if page.evaluate("document.documentElement.scrollWidth > innerWidth"):
                     raise AssertionError("portal index overflows horizontally on a phone-sized viewport")
-                synthetic_url = "https://splashdown1.github.io/tru-ai/"
-                page.context.route(synthetic_url, lambda route: route.fulfill(status=200, body="<!doctype html><title>Synthetic Intelligence test</title>", content_type="text/html"))
-                synthetic_card = page.locator("#lanes-out .index-card").filter(has_text="Synthetic Intelligence")
-                synthetic_link = synthetic_card.locator(f'a[href="{synthetic_url}"]')
-                if synthetic_card.count() != 1 or synthetic_link.count() != 1 or synthetic_link.get_attribute("target") is not None:
-                    raise AssertionError("Synthetic Intelligence must be visibly named and open in the current tab")
-                synthetic_link.click()
-                if page.url != synthetic_url or page.title() != "Synthetic Intelligence test":
-                    raise AssertionError("Synthetic Intelligence lane navigation did not use the current tab")
-                page.go_back(wait_until="load", timeout=120000)
-                if page.url != f"{base_url}/portal/":
-                    raise AssertionError("browser Back did not return from Synthetic Intelligence to the portal")
-                sky_url = "https://splashdown1.github.io/tru-sky/"
-                page.context.route(sky_url, lambda route: route.fulfill(status=200, body="<!doctype html><title>Sky test</title>", content_type="text/html"))
-                sky_link = page.locator("#lanes-out .index-card").filter(has_text="Sky").locator(f'a[href="{sky_url}"]').first
-                if sky_link.count() != 1 or sky_link.get_attribute("target") is not None:
-                    raise AssertionError("the Sky field-door link must stay in the portal tab")
-                sky_link.click()
-                if page.url != sky_url or page.title() != "Sky test":
-                    raise AssertionError("portal lane navigation did not use the current tab")
-                page.go_back(wait_until="load", timeout=120000)
-                if page.url != f"{base_url}/portal/":
-                    raise AssertionError("browser Back did not return from a lane to the portal")
                 root = browser.new_page()
-                root.context.route(sky_url, lambda route: route.fulfill(status=200, body="<!doctype html><title>Sky test</title>", content_type="text/html"))
+                root.on("console", lambda message: console_errors.append(message.text) if message.type == "error" else None)
+                root.on("pageerror", lambda error: page_errors.append(str(error)))
                 root.goto(f"{base_url}/", wait_until="load", timeout=120000)
-                portal_link = root.locator('a[href="portal/"]')
-                if portal_link.count() != 1 or portal_link.get_attribute("target") is not None:
-                    raise AssertionError("TRU Shelf home page must open the family index in the current tab")
-                portal_link.click()
-                if root.url != f"{base_url}/portal/" or root.title() != "TRU Portal — Master Index":
-                    raise AssertionError("TRU Shelf portal navigation did not use the current tab")
-                root.go_back(wait_until="load", timeout=120000)
-                if root.url != f"{base_url}/":
-                    raise AssertionError("browser Back did not return from the portal to TRU Shelf")
+                root.context.route(sky_url, lambda route: route.fulfill(status=200, body="<!doctype html><title>Sky test</title>", content_type="text/html"))
+
+                if "new tab" not in root.locator(".sub").inner_text() or "stays open" not in root.locator(".sub").inner_text():
+                    raise AssertionError("shelf subtitle does not explain that the shelf stays open")
+                local_portal_url = f"{base_url}/portal/"
+                expect_new_tab(root, root.locator('a[href="portal/"]'), local_portal_url, "TRU Portal — Master Index", "shelf portal link")
                 home_sky = root.locator(f'a[href="{sky_url}"]').first
-                if home_sky.count() != 1 or home_sky.get_attribute("target") is not None:
-                    raise AssertionError("TRU Shelf field-door links must stay in the current tab")
-                home_sky.click()
-                if root.url != sky_url or root.title() != "Sky test":
-                    raise AssertionError("TRU Shelf lane navigation did not use the current tab")
-                root.go_back(wait_until="load", timeout=120000)
-                if root.url != f"{base_url}/":
-                    raise AssertionError("browser Back did not return from a lane to TRU Shelf")
-                root.close()
+                expect_new_tab(root, home_sky, sky_url, "Sky test", "shelf Sky lane")
                 if console_errors or page_errors:
                     raise AssertionError(f"console errors={console_errors!r} page errors={page_errors!r}")
             finally:
@@ -137,7 +134,7 @@ def main() -> None:
     finally:
         server.shutdown()
         server.server_close()
-    print(f"PORTAL_INDEX_OK cards={card_count} films={len(FILMS)} live-search=passed lazy-embed=passed mobile=passed all-routes=same-tab/back-works console=clean")
+    print(f"PORTAL_INDEX_OK cards={card_count} films={len(FILMS)} new-tab-app-links=passed in-tab-sections-and-return=passed live-search=passed lazy-embed=passed mobile=passed console=clean")
 
 
 if __name__ == "__main__":
