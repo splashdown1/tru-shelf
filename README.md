@@ -24,6 +24,7 @@ Two engines sit above the cards:
 - Mark — north, pace, scale
 - Measure — units
 - Cord — six knots
+- Hitch — extra working hitches beyond Cord
 - Wind — Beaufort
 - Water — EPA emergency disinfection
 - Sky — Polaris and moon phase
@@ -42,6 +43,7 @@ Two engines sit above the cards:
 - Shelter — site, size, poncho lean-to
 - Ford — channels, upstream pole, 45-degree course
 - Cold — clean, avoid overheating, loose layers, dry
+- Heat — prevention and recognition only. No treatment.
 - Wash — hands, cat hole, latrine below the water
 - Blade — stone, oil, sheath
 - Watch — one awake, a relief, a challenge word
@@ -52,7 +54,10 @@ Two engines sit above the cards:
 - Sun — remaining light from a clear horizon. Not a clock.
 - Salt — draws water out. Seawater is not a drink. No cure schedule.
 - Quiet — light, sound, smoke. What gives you away. Not a sentry manual.
+- Breath — field rules for breath and quiet recovery
 - Fish — where they hold, bait, line
+- Tide — rule of twelfths, slack, flood/ebb. No live tables.
+- Prayer — fixed KJV texts only. No generation.
 
 ## Not lanes
 
