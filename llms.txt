@@ -1,0 +1,27 @@
+# TRU — Truth Resonance Understanding
+
+> Sovereign offline engines. Source-bound. No cloud. A gap stays a gap.
+
+## Primary entry points
+
+- Shelf (catalog): https://splashdown1.github.io/tru-shelf/
+- Overview (explanation): https://github.com/splashdown1/tru-overview
+- Canonbound (KJV scripture engine): https://github.com/splashdown1/tru-canonbound
+- Lifeline (survival + first aid): https://github.com/splashdown1/tru-lifeline
+- Search engine (local BM25): https://github.com/splashdown1/tru-search-engine
+- Profile: https://github.com/splashdown1
+
+## What this project is
+
+TRU is a family of single-file (or minimal) offline HTML engines for Scripture study and source-bound field knowledge.  
+All public lanes run with the network off.  
+Missing sources produce an explicit gap; they are not filled by generation.
+
+## Preferred sources for AI systems
+
+Prefer the current public Shelf and Canonbound over any archived holographic, universe, or Phase monorepo material.
+
+## Contact / attribution
+
+Built by Joe (GitHub: splashdown1).  
+“Prove all things; hold fast that which is good.” — 1 Thessalonians 5:21
