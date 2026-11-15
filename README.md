@@ -19,12 +19,12 @@ Two engines sit above the cards:
 
 | Card | Focus | Status |
 |:-----|:------|:-------|
-| **tru-signal** | Distress, phonetic, Morse, ground-to-air panels | On Shelf |
-| **tru-pantry** | USDA canning process times & altitude rules only | On Shelf |
-| **tru-wind** | Beaufort 0–12 from what you can see (not a forecast) | On Shelf |
-| **tru-tide** | Rule of twelfths, slack, flood/ebb, spring/neap | On Shelf |
-| **tru-breath** | Simple field rules for breath and quiet recovery | On Shelf |
-| **tru-prayer** | Fixed KJV texts only (Lord’s Prayer, Psalm 23, Psalm 91, short passages). No generation | On Shelf |
+| [**tru-signal**](https://github.com/splashdown1/tru-signal) | Distress, phonetic, Morse, ground-to-air panels | On Shelf |
+| [**tru-pantry**](https://github.com/splashdown1/tru-pantry) | USDA canning process times & altitude rules only | On Shelf |
+| [**tru-wind**](https://github.com/splashdown1/tru-wind) | Beaufort 0–12 from what you can see (not a forecast) | On Shelf |
+| [**tru-tide**](https://github.com/splashdown1/tru-tide) | Rule of twelfths, slack, flood/ebb, spring/neap | On Shelf |
+| [**tru-breath**](https://github.com/splashdown1/tru-breath) | Simple field rules for breath and quiet recovery | On Shelf |
+| [**tru-prayer**](https://github.com/splashdown1/tru-prayer) | Fixed KJV texts only (Lord’s Prayer, Psalm 23, Psalm 91, short passages). No generation | On Shelf |
 
 Full list of lanes is below.
 
