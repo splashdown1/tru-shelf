@@ -25,6 +25,7 @@ Two engines sit above the cards:
 | [**tru-tide**](https://github.com/splashdown1/tru-tide) | Rule of twelfths, slack, flood/ebb, spring/neap | On Shelf |
 | [**tru-breath**](https://github.com/splashdown1/tru-breath) | Simple field rules for breath and quiet recovery | On Shelf |
 | [**tru-prayer**](https://github.com/splashdown1/tru-prayer) | Fixed KJV texts only (Lord’s Prayer, Psalm 23, Psalm 91, short passages). No generation | On Shelf |
+| [**tru-hydro**](https://github.com/splashdown1/tru-hydro) | Hydroponic growing: setup, light, water, nutrients, steps to fruit or flower | On Shelf |
 
 Full list of lanes is below.
 
@@ -71,6 +72,7 @@ Full list of lanes is below.
 - Fish — where they hold, bait, line
 - Tide — rule of twelfths, slack, flood/ebb. No live tables.
 - Prayer — fixed KJV texts only. No generation.
+- Hydro — hydroponic setup, light, nutrients, steps to fruit or flower
 
 ## Not lanes
 
